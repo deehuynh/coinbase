@@ -10,7 +10,8 @@
 // Sizing the frame
 
 @mixin frame(
-  $width, $height:auto, $margin: 0
+  $width, $height:auto, $margin: 0,
+  $bg: 0 
 ) {
   max-width: $width;
   height: $height;
@@ -19,6 +20,9 @@
       left: auto;
       right: auto;
     }
+  }
+  @if $bg != 0 {
+    background-color: $bg;
   }
 }
 

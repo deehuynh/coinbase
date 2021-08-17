@@ -1,3 +1,3 @@
 .layout {
-  @include frame(1500px, auto, center);
+  @include frame(1500px, auto, center, $bg-layout);
 }

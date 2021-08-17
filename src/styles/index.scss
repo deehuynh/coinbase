@@ -1,11 +1,15 @@
 /* CSS Reset */ 
 @import-normalize;
 
+/* Variables */
+// Background
+$bg-layout: white;
+
 // Importing the mixin package
 @import 'mixin';
 
 // Importing the sass of the component
-@import 'layout', 'header';
+@import 'layout', 'header', 'nav';
 
 body {
   margin: 0;

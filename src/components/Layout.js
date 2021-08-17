@@ -1,5 +1,5 @@
 import { 
-  Header, Logo 
+  Header, Logo, Nav
 } from "./header"
 
 export default function Layout () {
@@ -7,6 +7,7 @@ export default function Layout () {
     <div className="layout">
       <Header>
         <Logo />
+        <Nav />
       </Header>
     </div>
   )

@@ -1,3 +1,5 @@
+import LogoI from '../images/Logo.png'
+
 function Header (props) {
   return (
     <header className="header">
@@ -9,9 +11,15 @@ function Header (props) {
 function Logo () {
   return (
     <div className="header__logo">
-      <img src="" alt="" />
+      <img src={LogoI} alt="Logo" />
     </div>
   )
 }
 
-export {Header, Logo};
+function Nav () {
+  return (
+    <nav className="nav"></nav>
+  )
+}
+
+export {Header, Logo, Nav};

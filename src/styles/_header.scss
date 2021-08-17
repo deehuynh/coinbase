@@ -1,3 +1,4 @@
 .header {
-  @include frame(100%);
+  @include frame(100%, 134px);
+  border-bottom: 1px solid #cccccc;
 }
