@@ -8,6 +8,7 @@ function Header (props) {
   )
 }
 
+/* Logo component */
 function Logo () {
   return (
     <div className="header__logo">
@@ -16,10 +17,44 @@ function Logo () {
   )
 }
 
+/* Navigation component */
 function Nav () {
+  const Link = (props) => {
+    return (
+      <a href="/">{props.name}</a>
+    )
+  }
+
+  const data = [];
+  const listNav = ['Home', 'About Us', 'Blog', 'Contact Us'];
+  listNav.forEach((item,index) => {
+    data.push(
+      <Link key={index} name={item} />
+    );
+  });
+
   return (
-    <nav className="nav"></nav>
+    <nav className="header__nav">
+      {data}
+    </nav>
   )
 }
 
-export {Header, Logo, Nav};
+/* Dropdown component */
+function Dropdown () {
+  return (
+    <div className="header__dropdown">
+      <div className="header__dropdown-title">
+        Sell Bitcoin/ Giftcard
+
+        <div className="header__dropdown-content">
+          <span>Sell Bitcoin</span>
+          <span>Sell Giftcard</span>
+        </div>
+        
+      </div>
+    </div>
+  )
+}
+
+export {Header, Logo, Nav, Dropdown};

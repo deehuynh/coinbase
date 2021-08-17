@@ -1,5 +1,8 @@
 import { 
-  Header, Logo, Nav
+  Header,
+  Logo,
+  Nav,
+  Dropdown
 } from "./header"
 
 export default function Layout () {
@@ -8,6 +11,7 @@ export default function Layout () {
       <Header>
         <Logo />
         <Nav />
+        <Dropdown />
       </Header>
     </div>
   )

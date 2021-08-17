@@ -9,7 +9,7 @@ $bg-layout: white;
 @import 'mixin';
 
 // Importing the sass of the component
-@import 'layout', 'header', 'nav';
+@import 'layout', 'header';
 
 body {
   margin: 0;
