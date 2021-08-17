@@ -1,7 +1,17 @@
 function Header (props) {
   return (
-    <header className="header"></header>
+    <header className="header">
+      {props.children}
+    </header>
   )
 }
 
-export {Header};
+function Logo () {
+  return (
+    <div className="header__logo">
+      <img src="" alt="" />
+    </div>
+  )
+}
+
+export {Header, Logo};

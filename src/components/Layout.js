@@ -1,9 +1,13 @@
-import { Header } from "./header"
+import { 
+  Header, Logo 
+} from "./header"
 
 export default function Layout () {
   return (
     <div className="layout">
-      <Header></Header>
+      <Header>
+        <Logo />
+      </Header>
     </div>
   )
 }
