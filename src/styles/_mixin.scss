@@ -10,10 +10,16 @@
 // Sizing the frame
 
 @mixin frame(
-  $width, $height:auto
+  $width, $height:auto, $margin: 0
 ) {
   max-width: $width;
   height: $height;
+  @if $margin == center {
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
 }
 
 //2. align a block to center
