@@ -4,6 +4,7 @@ import {
   Nav,
   Dropdown
 } from "./header"
+import Button from '../components/button'
 
 export default function Layout () {
   return (
@@ -12,6 +13,7 @@ export default function Layout () {
         <Logo />
         <Nav />
         <Dropdown />
+        <Button name='login' />
       </Header>
     </div>
   )
