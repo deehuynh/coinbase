@@ -1,0 +1,187 @@
+//1. Sizing the block
+@mixin block($width, $height:$width, $radius: 0) {
+  width: $width;
+  height: $height;
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+// Sizing the frame
+
+@mixin frame(
+  $width, $height:auto
+) {
+  max-width: $width;
+  height: $height;
+}
+
+//2. align a block to center
+@mixin block_center {
+  margin: { 
+    left: auto;
+    right: auto;
+  }
+}
+
+//3. Background image
+@mixin hero-img (
+  $src, $repeat: no-repeat, $size: cover,
+  $position: center
+) {
+  background: {
+      image: url($src);
+      repeat: $repeat;
+      size: $size;
+      position: $position;
+  }
+}
+
+//4. Flex box
+@mixin flex (
+    $direction: 0, $content: 0,
+    $item: 0, $wrap: 0
+) {
+  display: flex;
+  @if $direction != 0 {
+    flex-direction: $direction;
+  }
+
+  @if $content != 0 {
+    justify-content: $content;
+  }
+
+  @if $wrap != 0 {
+    flex-wrap: $wrap;
+  }
+
+  @if $item != 0 {
+    align-items: $item;
+  }
+}
+
+//5. Styling the a tag
+@mixin link (
+  $transform: 0, $color: 0, $font: 0,
+  $weight: 0, $spacing: 0
+) {
+  text-decoration: none;
+
+  @if $color != 0 {
+    color: $color;
+  } @else {
+    color: white;
+  }
+
+  @if $transform != 0 {
+    text-transform: $transform;
+  }
+
+  @if $font != 0 {
+    font-family: $font;
+  }
+
+  @if $weight != 0 {
+    font-weight: $weight;
+  }
+
+  @if $spacing != 0 {
+    letter-spacing: $spacing;
+  }
+}
+
+//6. Font style
+@mixin font_f-w-s (
+  $family: 0, $weight: 0, $size: 0,
+  $spacing: 0, $color: 0, $transform: 0
+) {
+  @if $family != 0 {
+    font-family: $family;
+  }
+
+  @if $weight != 0 {
+    font-weight: $weight;
+  }
+
+  @if $size != 0 {
+    font-size: $size;
+  }
+
+  @if $spacing != 0 {
+    letter-spacing: $spacing;
+  }
+
+  @if $color != 0 {
+    color: $color;
+  }
+
+  @if $transform != 0 {
+    text-transform: $transform;
+  }
+}
+
+//7. Absolute
+@mixin absolute (
+  $top: 0, $right: 0, $bottom: 0,
+  $left: 0, $margin: 0
+) {
+  position: absolute;
+  @if $top != 0 {
+    top: $top;
+  }
+
+  @if $right != 0 {
+    right: $right;
+  }
+
+  @if $bottom != 0 {
+    bottom: $bottom;
+  }
+
+  @if $left != 0 {
+    left: $left;
+  }
+
+  @if $margin != 0 {
+    margin: $margin;
+  }
+}
+
+//8. Styling the input tag
+@mixin input (
+  //Border-radius
+  $radius: 0,
+  // padding
+  $pd-all: 0, 
+  $pd-top: $pd-all, 
+  $pd-right: $pd-all,
+  $pd-bottom: $pd-all, 
+  $pd-left: $pd-all
+) {
+  outline: none;
+  border: none;
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+  padding: {
+    top: $pd-top;
+    right: $pd-right;
+    bottom: $pd-bottom;
+    left: $pd-left;
+  }
+}
+
+//9. Text
+@mixin text (
+  $color: white,
+  $indent: 0,
+  $align: 0, 
+) {
+  color: $color;
+  @if $indent != 0 {
+    text-indent: $indent;
+  }
+  @if $align != 0 {
+    text-align: $align;
+  }
+}
