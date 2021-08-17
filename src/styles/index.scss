@@ -5,7 +5,7 @@
 @import 'mixin';
 
 // Importing the sass of the component
-@import 'layout';
+@import 'layout', 'header';
 
 body {
   margin: 0;

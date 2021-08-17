@@ -1,7 +1,9 @@
-
+import { Header } from "./header"
 
 export default function Layout () {
   return (
-    <div className="layout"></div>
+    <div className="layout">
+      <Header></Header>
+    </div>
   )
 }
