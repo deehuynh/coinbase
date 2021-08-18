@@ -2,7 +2,7 @@ import LogoI from '../images/Logo.png'
 
 function Header (props) {
   return (
-    <header className="header">
+    <header className="header header--pd">
       {props.children}
     </header>
   )

@@ -4,6 +4,10 @@
 /* Variables */
 // Background
 $bg-layout: white;
+$c-linear: linear-gradient(
+  178.18deg, #FD749B -13.56%, #281AC8 158.3%
+);
+$c-nav-active: #FD749B;
 // Text color
 $c-nav-link: #333333;
 // Font
@@ -16,11 +20,11 @@ $f-primary: 'Poppins';
 @import 'mixin';
 
 // Importing the sass of the component
-@import 'layout', 'header';
+@import 'layout', 'header', 'button';
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: $f-primary,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

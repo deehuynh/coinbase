@@ -1,13 +1,74 @@
 .header {
   @include frame(100%, 134px);
+  // 100% = pd: 14%, logo: 12%, nav: 54%, dd: 20%
+
   @include flex(0,0,center);
-  border-bottom: 1px solid #cccccc;
+
+  &--pd {
+    @include padding(
+      0, 0px, 7%, 0px, 7%
+    );
+  }
+
+  &__logo {
+    width: 12%;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .header__nav {
+  width: 40%;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 14%;
   & a {
     @include link(
-      0, $c-nav-link, $f-primary, 400
+      0, $c-nav-link, 0, 700
     );
+    position: relative;
+
+    margin: {
+      left: 35px;
+      right: 35px;
+    }
+
+    &:hover:before{
+      display: block;
+    }
+
+    &::before {
+      display: none;
+      content: " ";
+      position: absolute;
+      width: 50%;
+      height: 3px;
+      border-radius: 10px;
+      background: $c-nav-active;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      margin: auto;
+    }
+  }
+}
+
+.header__dropdown {
+  width: 20%;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 2%;
+  cursor: pointer;
+  &-title {
+    @include text(
+      0,$c-nav-link, 700
+    );
+  }
+
+  &-content {
+    display: none;
   }
 }

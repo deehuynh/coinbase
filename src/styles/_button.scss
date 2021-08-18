@@ -1,0 +1,10 @@
+.button {
+  @include text(uppercase, white, 700);
+  font-size: 14px;
+
+  &--linear {
+    @include button(
+      $c-linear, 100px, 0, 20px, 55px, 20px, 55px
+    );
+  }
+}
