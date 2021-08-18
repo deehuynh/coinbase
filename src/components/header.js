@@ -1,4 +1,5 @@
 import LogoI from '../images/Logo.png'
+import {NavLink} from 'react-router-dom'
 
 function Header (props) {
   return (
@@ -21,7 +22,7 @@ function Logo () {
 function Nav () {
   const Link = (props) => {
     return (
-      <a href="/">{props.name}</a>
+      <NavLink to="/">{props.name}</NavLink>
     )
   }
 

@@ -1,3 +1,4 @@
+// Importing the components
 import { 
   Header,
   Logo,
@@ -5,6 +6,8 @@ import {
   Dropdown
 } from "./header"
 import Button from '../components/button'
+
+// Importing the react-router
 
 export default function Layout () {
   return (
