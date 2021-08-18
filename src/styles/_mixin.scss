@@ -7,7 +7,7 @@
   }
 }
 
-// Sizing the frame
+//2. Sizing the frame
 
 @mixin frame(
   $width, $height:auto, $margin: 0,
@@ -23,14 +23,6 @@
   }
   @if $bg != 0 {
     background-color: $bg;
-  }
-}
-
-//2. align a block to center
-@mixin block_center {
-  margin: { 
-    left: auto;
-    right: auto;
   }
 }
 

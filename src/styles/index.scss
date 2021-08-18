@@ -4,6 +4,13 @@
 /* Variables */
 // Background
 $bg-layout: white;
+// Text color
+$c-nav-link: #333333;
+// Font
+$f-primary: 'Poppins';
+
+/* Importing the fonts */
+@import 'font';
 
 // Importing the mixin package
 @import 'mixin';

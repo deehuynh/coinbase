@@ -1,4 +1,13 @@
 .header {
   @include frame(100%, 134px);
+  @include flex(0,0,center);
   border-bottom: 1px solid #cccccc;
+}
+
+.header__nav {
+  & a {
+    @include link(
+      0, $c-nav-link, $f-primary, 400
+    );
+  }
 }
