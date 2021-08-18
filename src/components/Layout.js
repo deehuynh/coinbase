@@ -8,16 +8,22 @@ import {
 import Button from '../components/button'
 
 // Importing the react-router
+import {
+  BrowserRouter as Router,
+  Switch, Route
+} from 'react-router-dom'
 
 export default function Layout () {
   return (
     <div className="layout">
-      <Header>
-        <Logo />
-        <Nav />
-        <Dropdown />
-        <Button name='login' />
-      </Header>
+      <Router>
+        <Header>
+          <Logo />
+          <Nav />
+          <Dropdown />
+          <Button name='login' />
+        </Header>
+      </Router>
     </div>
   )
 }

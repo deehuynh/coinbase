@@ -25,6 +25,20 @@
   font-size: 14px;
   text-align: center;
   margin-left: 14%;
+
+  &--active::after {
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    border-radius: 10px;
+    background: $c-nav-active;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+  }
+
   & a {
     @include link(
       0, $c-nav-link, 0, 700
@@ -62,13 +76,68 @@
   font-size: 14px;
   margin-left: 2%;
   cursor: pointer;
+  position: relative;
+  user-select: none;
   &-title {
     @include text(
       0,$c-nav-link, 700
     );
+
+    &::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 6px;
+      right: 40px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+    }
   }
 
   &-content {
-    display: none;
+    @include block(160px, auto, 5px);
+    @include absolute(50px,0,0,190px);
+    text-align: left;
+    border: 1px solid #E0E0E0;
+
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: -14px;
+      left: 14px;
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent #E0E0E0 transparent;
+    }
+
+    &::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: -12px;
+      left: 15px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent white transparent;
+    }
+
+    & span {
+      width: 100%;
+      display: inline-block;
+      padding: 8px 12px;
+      box-sizing: border-box;
+      @include text(0,white, 400);
+
+      &:first-child {
+        color: $c-nav-link;
+      }
+
+      &:last-child {
+        background: $c-linear;
+        border-radius: 0px 0px 5px 5px;
+      }
+    }
   }
 }

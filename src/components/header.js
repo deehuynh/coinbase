@@ -1,5 +1,6 @@
 import LogoI from '../images/Logo.png'
 import {NavLink} from 'react-router-dom'
+import { useRef} from 'react'
 
 function Header (props) {
   return (
@@ -20,17 +21,29 @@ function Logo () {
 
 /* Navigation component */
 function Nav () {
-  const Link = (props) => {
-    return (
-      <NavLink to="/">{props.name}</NavLink>
-    )
-  }
 
   const data = [];
-  const listNav = ['Home', 'About Us', 'Blog', 'Contact Us'];
+  const listNav = [
+    {
+      name: 'Home', url: '/'
+    },
+    {
+      name: 'About Us', url: '/about-us'
+    },
+    {
+      name: 'Blog', url: '/blog'
+    },
+    {
+      name: 'Contact Us', url: '/contact-us'
+    },
+  ];
   listNav.forEach((item,index) => {
     data.push(
-      <Link key={index} name={item} />
+      <NavLink 
+        key={index}
+        to={item.url}
+        activeClassName="header__nav--active"
+      >{item.name}</NavLink>
     );
   });
 
@@ -43,12 +56,22 @@ function Nav () {
 
 /* Dropdown component */
 function Dropdown () {
+  const refContainer = useRef(null);
+  const handleDropdown = () => {
+    const style = refContainer.current.style.display; 
+    if (style === 'none') {
+      refContainer.current.style = "display: block"
+    } else if (style === 'block') {
+      refContainer.current.style = "display: none"
+    }
+  }
+
   return (
     <div className="header__dropdown">
-      <div className="header__dropdown-title">
+      <div className="header__dropdown-title" onClick={handleDropdown}>
         Sell Bitcoin/ Giftcard
 
-        <div className="header__dropdown-content">
+        <div ref={refContainer} style={{display: 'none'}} id="dropdown" className="header__dropdown-content">
           <span>Sell Bitcoin</span>
           <span>Sell Giftcard</span>
         </div>
