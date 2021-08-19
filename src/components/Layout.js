@@ -38,9 +38,7 @@ export default function Layout () {
           </Route>
 
           <Route path='/about-us'>
-            <About>
-              <Row className="home__f-row" />
-            </About>
+            <About />
           </Route>
         </Switch>
       </Router>
