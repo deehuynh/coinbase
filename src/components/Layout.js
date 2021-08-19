@@ -8,7 +8,6 @@ import {
 import Button from '../components/button'
 import Home from "./home"
 import About from "./about"
-import Row from "./row"
 
 // Importing the react-router
 import {
@@ -32,9 +31,7 @@ export default function Layout () {
         <Switch>
           {/* Home component */}
           <Route exact path='/'>
-            <Home>
-              <Row className="home__f-row" />
-            </Home>
+            <Home />
           </Route>
 
           <Route path='/about-us'>
