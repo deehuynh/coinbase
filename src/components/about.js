@@ -1,4 +1,6 @@
 import Row from "./row"
+import IntroText from "./intro-text"
+import IntroImage from "./intro-image"
 
 
 export default function About (props) {
