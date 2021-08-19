@@ -4,7 +4,7 @@
 
 export default function About (props) {
     return (
-      <div className="content">
+      <div className="about">
         {props.children}
       </div>
     )
