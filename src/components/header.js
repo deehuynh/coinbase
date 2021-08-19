@@ -2,6 +2,8 @@ import LogoI from '../images/Logo.png'
 import {NavLink} from 'react-router-dom'
 import { useRef} from 'react'
 
+const baseUrl = "http://localhost:3000/"
+
 function Header (props) {
   return (
     <header className="header header--pd">
@@ -14,7 +16,9 @@ function Header (props) {
 function Logo () {
   return (
     <div className="header__logo">
-      <img src={LogoI} alt="Logo" />
+      <a href={baseUrl}>
+        <img src={LogoI} alt="Logo" />
+      </a>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 export default function IntroText (props) {
   return (
-    <div className="intro-text  intro-text--color intro-text--spacing">
+    <div className={`intro-text ` + props.className}>
       {props.children}
     </div>
   )

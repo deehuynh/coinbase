@@ -1,19 +1,19 @@
 .intro-text {
-  @include block(35%, auto);
 
   &--light {
     font-size: 18px;
     margin-bottom: 30px;
   }
 
-  &--spacing {
+  /* Home component */
+  &--home-style {
+    @include block(35%, auto);
+    
     margin: {
       top: 142px;
       left: 12%;
     }
-  }
 
-  &--color {
     font-size: 40px;
     color: white;
 

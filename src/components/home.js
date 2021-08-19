@@ -10,7 +10,7 @@ export default function Home (props) {
     <div className="home">
       {/* First row */}
       <Row className="home__f-row">
-        <IntroText>
+        <IntroText className="intro-text--home-style">
           <p>
             We provide easy solution
             to exchange your <span>
@@ -30,7 +30,7 @@ export default function Home (props) {
           />
         </IntroText>
 
-        <IntroImage image={HomeImg} />
+        <IntroImage className="intro-image--home-style" image={HomeImg} />
       </Row>
 
       {/* Second row */}
