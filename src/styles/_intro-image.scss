@@ -1,4 +1,10 @@
 .intro-image {
+  width: 42%;
+
+  & img {
+    max-width: 100%;
+  }
+
   &--spacing {
     margin: {
       top: 60px;

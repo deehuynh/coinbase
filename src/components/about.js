@@ -21,13 +21,11 @@ export default function About (props) {
             giftcard at the best rate, why not give us a trial.
             </p>
 
-          <Button
-            name="get started" className="button--white-linear" 
-            textClassName="button__text--linear"
-          />
-      </IntroText>
-
-      <IntroImage image={HomeImg} />
+            <Button
+              name="get started" className="button--white-linear" 
+              textClassName="button__text--linear"
+            />
+          </IntroText>
         </Row>
       </div>
     )
