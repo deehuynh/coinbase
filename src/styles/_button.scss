@@ -1,10 +1,23 @@
 .button {
   @include text(uppercase, white, 700);
   font-size: 14px;
+  display: inline-block;
 
-  &--linear {
+  &__text--linear {
+    background: $c-linear;
+    background-clip: text;
+	  -webkit-text-fill-color: transparent;
+  }
+
+  &--linear-white {
     @include button(
-      $c-linear, 100px, 0, 20px, 55px, 20px, 55px
+      $c-linear, 100px, 0, 18px, 55px, 18px, 55px
+    );
+  }
+
+  &--white-linear {
+    @include button(
+      white, 100px, 0, 20px, 35px, 20px, 35px
     );
   }
 }

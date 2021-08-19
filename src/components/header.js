@@ -40,6 +40,7 @@ function Nav () {
   listNav.forEach((item,index) => {
     data.push(
       <NavLink 
+        exact
         key={index}
         to={item.url}
         activeClassName="header__nav--active"

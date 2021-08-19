@@ -6,6 +6,8 @@ import {
   Dropdown
 } from "./header"
 import Button from '../components/button'
+import Home from "./home"
+import Row from "./row"
 
 // Importing the react-router
 import {
@@ -17,12 +19,25 @@ export default function Layout () {
   return (
     <div className="layout">
       <Router>
+        {/* Header component */}
         <Header>
           <Logo />
           <Nav />
           <Dropdown />
-          <Button name='login' />
+          <Button name='login' className="button--linear-white" />
         </Header>
+
+        {/* Content */}
+        <Switch>
+          {/* Home component */}
+          <Route exact path='/'>
+            <Home>
+              <Row className="home__f-row" />
+            </Home>
+          </Route>
+
+
+        </Switch>
       </Router>
     </div>
   )

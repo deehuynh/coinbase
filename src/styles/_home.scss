@@ -1,0 +1,9 @@
+.home {
+  @include frame(100%);
+
+  &__f-row {
+    @include block(100%, 816.31px);
+    @include hero-img('../images/HomeBg.png');
+    @include flex(0,space-between);
+  }
+}

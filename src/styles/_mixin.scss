@@ -68,6 +68,7 @@
   $weight: 0, $spacing: 0
 ) {
   text-decoration: none;
+  user-select: none;
 
   @if $color != 0 {
     color: $color;

@@ -20,8 +20,8 @@ $f-primary: 'Poppins';
 @import 'mixin';
 
 // Importing the sass of the component
-@import 'layout', 'header', 'button';
-
+@import 'layout', 'header', 'home';
+@import 'button', 'intro-image', 'intro-text';
 
 body {
   margin: 0;
