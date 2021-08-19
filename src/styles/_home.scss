@@ -24,8 +24,24 @@
     box-sizing: border-box;
   }
 
+  /* fourth row */ 
   &__fourth-row {
     @include block(100%, 480px);
     @include flex();
+  }
+
+  /* fifth row */
+  &__fifth-row {
+    @include block(100%, 625px);
+    @include hero-img('../images/home-bg-3.png');
+    padding: {
+      top: 143px;
+    }
+    box-sizing: border-box;
+  }
+
+  /* sixth row */ 
+  &__sixth-row {
+    @include block(100%, 500px);
   }
 }

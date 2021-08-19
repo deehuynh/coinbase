@@ -9,6 +9,7 @@ import Button from "./button"
 import HomeImg from '../images/home-hero.png'
 import HomeImg2 from '../images/s-row-img.png'
 import HomeImg3 from '../images/home-img-3.png'
+import BigCoin from '../svgs/bitcoin.svg'
 
 export default function Home (props) {
   return (
@@ -64,7 +65,7 @@ export default function Home (props) {
 
       {/* Fourth row */}
       <Row className="home__fourth-row">
-       <Col className="col--home-3">
+       <Col className="col--home-4">
           <h2>Great experience <br /> with CoinBase</h2>
           <p>
           CoinBase is an online site and a p2admin platform that allows users to buy, 
@@ -75,8 +76,27 @@ export default function Home (props) {
           <Button className="button--linear-white button--pd-18-40" name="discover" />
         </Col>
 
-        <ColImage className="col-image--home-3" image={HomeImg3} />
+        <ColImage className="col-image--home-4" image={HomeImg3} />
       </Row>
+
+      {/* fifth row */}
+      <Row className="home__fifth-row">
+        <Col className="col--home-5">
+          <h2>Trade from anywhere</h2>
+
+          <div>
+            <p>
+              <img src={BigCoin} alt="Bigcoin" />
+            </p>
+            <p>
+              <img src={BigCoin} alt="Giftcard" />
+            </p>
+          </div>
+        </Col>
+      </Row>
+
+      {/* Sixth row */}
+      <Row className="home__sixth-row"></Row>
     </div>
   )
 }

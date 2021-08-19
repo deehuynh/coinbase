@@ -1,4 +1,4 @@
-%text-gradient-style {
+%text-gradient-h2 {
   h2 {
     font-size: 28px;
     @include text-gradient($c-linear);
@@ -15,7 +15,9 @@
       bottom: -20px;
     }
   }
+}
 
+%text-gradient-p {
   p {
     color: $c-nav-link;
     line-height: 40px;
@@ -59,7 +61,8 @@
           left: 3%;
         };
 
-        @extend %text-gradient-style;
+        @extend %text-gradient-h2;
+        @extend %text-gradient-p;
         h2 {
           margin: {
             top: -32px;
@@ -69,13 +72,69 @@
       }
 
     // Col at fourth row
-      &-3 {
+      &-4 {
         @include block(36%, auto);
-        @extend %text-gradient-style;
+        @extend %text-gradient-h2;
+        @extend %text-gradient-p;
 
         margin: {
           top: -35px;
           left: 14%;
+        }
+      }
+    // Col at fifth row
+      &-5 {
+        @include block(65.4%, 504px);
+        background-color: white;
+        opacity: 0.98;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        margin: {
+          left: auto;
+          right: auto;
+        }
+
+        @extend %text-gradient-h2;
+        h2 {
+          top: 80px;
+          text-align: center;
+          display: block;
+
+          &::before {
+            right: 0;
+            left: 0;
+            margin: auto;
+          }
+        }
+
+        div {
+          padding: {
+            top: 120px;
+            left: 20%;
+            right: 20%;
+          }
+          box-sizing: border-box;
+          @include flex(0, space-between);
+          p {
+            @include block(262px, 226px);
+            border-radius: 15px;
+            border: 2px solid transparent;
+            background: white;
+            background-clip: padding-box;
+            position: relative;
+
+            &::after {
+              position: absolute;
+              background: $c-linear;
+              content: "";
+              z-index: -1;
+              top: -2px;
+              left: -2px;
+              right: -2px;
+              bottom: -2px;
+              border-radius: 15px;
+            }
+          }
         }
       }
     }
