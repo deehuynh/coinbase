@@ -1,3 +1,31 @@
+%text-gradient-style {
+  h2 {
+    font-size: 28px;
+    @include text-gradient($c-linear);
+    position: relative;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 7px;
+      border-radius: 100px;
+      background-color: $c-nav-active;
+      bottom: -20px;
+    }
+  }
+
+  p {
+    color: $c-nav-link;
+    line-height: 40px;
+    margin: {
+      top: 60px;
+      bottom: 30px;
+    }
+  }
+}
+
 .col {
     font-size: 16px;
 
@@ -24,40 +52,30 @@
       }
 
     // Col at Second row
+    
       &-2 {
         @include block(36.1%, auto);
         margin: {
           left: 3%;
         };
 
+        @extend %text-gradient-style;
         h2 {
           margin: {
             top: -32px;
             bottom: 0px;
           }
-          font-size: 28px;
-          @include text-gradient($c-linear);
-          position: relative;
-
-          &::before {
-            content: " ";
-            position: absolute;
-            display: block;
-            width: 50px;
-            height: 7px;
-            border-radius: 100px;
-            background-color: $c-nav-active;
-            bottom: -20px;
-          }
         }
+      }
 
-        p {
-          color: $c-nav-link;
-          line-height: 40px;
-          margin: {
-            top: 60px;
-            bottom: 30px;
-          }
+    // Col at fourth row
+      &-3 {
+        @include block(36%, auto);
+        @extend %text-gradient-style;
+
+        margin: {
+          top: -35px;
+          left: 14%;
         }
       }
     }

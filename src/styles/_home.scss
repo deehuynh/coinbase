@@ -18,5 +18,14 @@
   &__th-row {
     @include block(100%, 1128.41px);
     @include hero-img('../images/home-bg-2.png');
+    padding: {
+      top: 400px;
+    }
+    box-sizing: border-box;
+  }
+
+  &__fourth-row {
+    @include block(100%, 480px);
+    @include flex();
   }
 }

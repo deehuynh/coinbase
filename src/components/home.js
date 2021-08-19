@@ -8,6 +8,7 @@ import Button from "./button"
 // Importing the image
 import HomeImg from '../images/home-hero.png'
 import HomeImg2 from '../images/s-row-img.png'
+import HomeImg3 from '../images/home-img-3.png'
 
 export default function Home (props) {
   return (
@@ -58,7 +59,23 @@ export default function Home (props) {
 
       {/* Third row */}
       <Row className="home__th-row">
+        ...
+      </Row>
 
+      {/* Fourth row */}
+      <Row className="home__fourth-row">
+       <Col className="col--home-3">
+          <h2>Great experience <br /> with CoinBase</h2>
+          <p>
+          CoinBase is an online site and a p2admin platform that allows users to buy, 
+          sell and/ or exchange digital and fiat assets safely. Owned and managed 
+          by CoinBase Business Services established and Incoperated in Nigeria.
+          </p>
+
+          <Button className="button--linear-white button--pd-18-40" name="discover" />
+        </Col>
+
+        <ColImage className="col-image--home-3" image={HomeImg3} />
       </Row>
     </div>
   )

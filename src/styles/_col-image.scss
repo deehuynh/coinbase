@@ -19,5 +19,13 @@
         left: 10%;
       }
     }
+
+    &-3 {
+      @include block(35%, auto);
+      margin: {
+        top: -45px;
+        left: 4%;
+      }
+    }
   }
 }
