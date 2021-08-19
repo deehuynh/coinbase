@@ -7,6 +7,7 @@ import {
 } from "./header"
 import Button from '../components/button'
 import Home from "./home"
+import About from "./about"
 import Row from "./row"
 
 // Importing the react-router
@@ -36,7 +37,11 @@ export default function Layout () {
             </Home>
           </Route>
 
-
+          <Route path='/about-us'>
+            <About>
+              <Row className="home__f-row" />
+            </About>
+          </Route>
         </Switch>
       </Router>
     </div>
