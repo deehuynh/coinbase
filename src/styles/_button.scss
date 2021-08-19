@@ -2,6 +2,7 @@
   @include text(uppercase, white, 700);
   font-size: 14px;
   display: inline-block;
+  cursor: pointer;
 
   &__text--linear {
     background: $c-linear;
@@ -10,14 +11,24 @@
   }
 
   &--linear-white {
-    @include button(
-      $c-linear, 100px, 0, 18px, 55px, 18px, 55px
-    );
+    background: $c-linear;
+    border-radius: 100px;
   }
 
   &--white-linear {
-    @include button(
-      white, 100px, 0, 20px, 35px, 20px, 35px
-    );
+    background: white;
+    border-radius: 100px;
+  }
+
+  &--pd-18-55 {
+    padding: 18px 55px;
+  }
+
+  &--pd-20-35 {
+    padding: 20px 35px;
+  }
+
+  &--pd-18-40 {
+    padding: 18px 40px;
   }
 }

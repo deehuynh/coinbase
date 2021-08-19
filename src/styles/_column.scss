@@ -1,0 +1,64 @@
+.col {
+    font-size: 16px;
+
+    &--light {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  
+    /* Home component */
+    // Col at First row
+    &--home {
+      @include block(35%, auto);
+      
+      margin: {
+        top: 142px;
+        left: 12%;
+      }
+  
+      font-size: 40px;
+      color: white;
+  
+      & span {
+        font-weight: 700;
+      }
+
+    // Col at Second row
+      &-2 {
+        @include block(36.1%, auto);
+        margin: {
+          left: 3%;
+        };
+
+        h2 {
+          margin: {
+            top: -32px;
+            bottom: 0px;
+          }
+          font-size: 28px;
+          @include text-gradient($c-linear);
+          position: relative;
+
+          &::before {
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 7px;
+            border-radius: 100px;
+            background-color: $c-nav-active;
+            bottom: -20px;
+          }
+        }
+
+        p {
+          color: $c-nav-link;
+          line-height: 40px;
+          margin: {
+            top: 60px;
+            bottom: 30px;
+          }
+        }
+      }
+    }
+  }

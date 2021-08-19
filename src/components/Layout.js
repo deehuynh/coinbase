@@ -24,7 +24,7 @@ export default function Layout () {
           <Logo />
           <Nav />
           <Dropdown />
-          <Button name='login' className="button--linear-white" />
+          <Button name='login' className="button--linear-white button--pd-18-55" />
         </Header>
 
         {/* Content */}

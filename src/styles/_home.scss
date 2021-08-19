@@ -1,9 +1,22 @@
 .home {
   @include frame(100%);
 
+  /* First row */ 
   &__f-row {
     @include block(100%, 816.31px);
     @include hero-img('../images/HomeBg.png');
     @include flex(0,space-between);
+  }
+
+  /* Second row */ 
+  &__s-row {
+    @include block(100%, 170px);
+    @include flex();
+  }
+
+  /* Third row */ 
+  &__th-row {
+    @include block(100%, 1128.41px);
+    @include hero-img('../images/home-bg-2.png');
   }
 }

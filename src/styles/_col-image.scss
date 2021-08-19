@@ -1,0 +1,23 @@
+.col-image {
+  & img {
+    max-width: 100%;
+  }
+
+  /* Home */   
+  // Col at First row
+  &--home {
+    margin: {
+      top: 60px;
+      right: 5%;
+    }
+
+  // Col at Second row
+    &-2 {
+      @include block(42%, auto);
+      margin: {
+        top: -20px;
+        left: 10%;
+      }
+    }
+  }
+}

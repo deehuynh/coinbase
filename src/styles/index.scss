@@ -21,7 +21,9 @@ $f-primary: 'Poppins';
 
 // Importing the sass of the component
 @import 'layout', 'header', 'home';
-@import 'button', 'intro-image', 'intro-text';
+@import
+  'button', 'intro-image','intro-text',
+  'col-image','column';
 
 body {
   margin: 0;

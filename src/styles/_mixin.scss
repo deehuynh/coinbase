@@ -240,3 +240,10 @@
     left: $pd-left;
   }
 }
+
+//12. text color gradient
+@mixin text-gradient ($color) {
+  background: $color;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
