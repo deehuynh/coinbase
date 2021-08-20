@@ -1,6 +1,5 @@
 import Row from "./row"
 import IntroText from "./intro-text"
-import IntroImage from "./intro-image"
 import Button from "./button"
 
 export default function About (props) {
