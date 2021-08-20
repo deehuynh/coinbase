@@ -3,13 +3,21 @@ import Row from "./row"
 // Importing the column component
 import Col from '../components/column'
 import ColImage from "./column-image"
+import Image from "./image";
 // Importing the button component
 import Button from "./button"
+import ImageButton from "./image-button"
 // Importing the image
 import HomeImg from '../images/home-hero.png'
 import HomeImg2 from '../images/s-row-img.png'
 import HomeImg3 from '../images/home-img-3.png'
-import BigCoin from '../svgs/bitcoin.svg'
+import BitCoin from '../svgs/bitcoin.svg'
+import Gifcard from '../svgs/giftcard.svg'
+import Testimonial from '../images/testimonial.png'
+import AppStoreDownload from '../images/app-store.png'
+import GGPlayDownload from '../images/gg-play.png'
+import Phone1 from '../images/phone-1.png'
+import Phone2 from '../images/phone-2.png'
 
 export default function Home (props) {
   return (
@@ -86,10 +94,12 @@ export default function Home (props) {
 
           <div>
             <p>
-              <img src={BigCoin} alt="Bigcoin" />
+              <img src={BitCoin} alt="Bitcoin" />
+              <span>Bitcoin</span>
             </p>
             <p>
-              <img src={BigCoin} alt="Giftcard" />
+              <img src={Gifcard} alt="Giftcard" />
+              <span>Gift Cards</span>
             </p>
           </div>
         </Col>
@@ -97,6 +107,60 @@ export default function Home (props) {
 
       {/* Sixth row */}
       <Row className="home__sixth-row"></Row>
+
+      {/* Seventh row */}
+      <Row className="home__seventh-row">
+        <Col className="col--home-7">
+          <h2>
+            10,000 Satisfied clients <br />
+            around the world
+          </h2>
+
+          <p>
+          Yeah! we’re proud with numbers. We’ve helped thousands of clients all around 
+          the world with our bespoke service. Hover ontop of them pic to view their 
+          testimonials.
+          </p>
+
+          <img src={Testimonial} alt="Testimonial" />
+        </Col>
+      </Row>
+
+      {/* Eighth row */}
+      <Row className="home__eighth-row">
+        <Col className="col--home-8">
+          <h2>Download our app</h2>
+          <p>
+            Discover exclusive deals and discounts with <br />
+            our mobile experience.
+          </p>
+
+          <div className="button__container">
+            <ImageButton image={AppStoreDownload} />
+            <ImageButton image={GGPlayDownload} />
+          </div>
+
+          <Col className="col--home-9">
+            <Image image={Phone1} />
+            <Image image={Phone2} />
+          </Col>
+        </Col>
+      </Row>
+
+      {/* Ninth row */}
+      <Row className="home__ninth-row">
+        <Col className="col--home-10">
+          <h2>Subscribe our newsletter</h2>
+          <p>
+            Subscribe to our newsletter for daily/weekly <br /> update of our products and services.
+          </p>
+        </Col>
+
+        <Col className='col--home-11'>
+          <input type='text' defaultValue='' placeholder='EMAIL' />
+          <Button className="button--linear-white button--pd-18-40" name="discover"  />
+        </Col>
+      </Row>
     </div>
   )
 }

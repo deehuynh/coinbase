@@ -42,6 +42,27 @@
 
   /* sixth row */ 
   &__sixth-row {
-    @include block(100%, 500px);
+    @include block(100%, 460px);
   }
+
+  /* Seventh row */ 
+  &__seventh-row {
+    @include block(100%, 1542.15px);
+    @include hero-img('../images/home-bg-4.png');
+  }
+
+  /* Eighth row */
+  &__eighth-row {
+    @include block(100%, 657px);
+    @include hero-img('../images/home-bg-5.png');
+    margin-top: -80px;
+  } 
+
+  /* Ninth row */ 
+  &__ninth-row {
+    @include block(100%, 675px);
+    margin-top: 300px;
+  }
+
+  /* ten */ 
 }

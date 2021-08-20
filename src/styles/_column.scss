@@ -17,6 +17,20 @@
   }
 }
 
+%text-gradient-h2-center {
+  @extend %text-gradient-h2;
+  h2 {
+    text-align: center;
+    display: block;
+
+    &::before {
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+}
+
 %text-gradient-p {
   p {
     color: $c-nav-link;
@@ -95,16 +109,9 @@
         }
 
         @extend %text-gradient-h2;
+        @extend %text-gradient-h2-center;
         h2 {
           top: 80px;
-          text-align: center;
-          display: block;
-
-          &::before {
-            right: 0;
-            left: 0;
-            margin: auto;
-          }
         }
 
         div {
@@ -117,6 +124,7 @@
           @include flex(0, space-between);
           p {
             @include block(262px, 226px);
+            position: relative;
             border-radius: 15px;
             border: 2px solid transparent;
             background: white;
@@ -134,7 +142,111 @@
               bottom: -2px;
               border-radius: 15px;
             }
+
+            img {
+              @include absolute(-50px, 0px, 0px, 0px, auto);
+            }
+
+            span {
+              @include block(100px, auto);
+              @include absolute(0, 0px, 50px, 0px, auto);
+              text-align: center;
+              font-weight: 700;
+            }
           }
+        }
+      }
+
+    // Col at seventh-row 
+      &-7 {
+        @include block(100%, auto);
+        @extend %text-gradient-h2-center;
+        h2 {
+          @include text-gradient(white);
+          top: 540px;
+        }
+        @extend %text-gradient-p;
+        p {
+          @include block(36%, auto);
+          color: white;
+          margin: {
+            top: 600px;
+            left: auto;
+            right: auto;
+          }
+          text-align: center;
+        }
+
+        img {
+          margin: {
+            top: 230px;
+            left: 50%;
+          };
+        }
+      }
+
+    // Col at eighth row
+      &-8 {
+        @include block(100%, auto);
+
+        @extend %text-gradient-h2-center;
+        @extend %text-gradient-p;
+
+        h2 {
+          top: -80px;
+        }
+
+        p {
+          text-align: center;
+          margin-top: -25px;
+        }
+      }
+    
+    // Col at eighth row
+      &-9 {
+        @include block(100%, auto);
+        @include flex(0, center);
+        margin: {
+          top: 110px;
+        }
+
+        & img {
+          margin: {
+            left: 15px;
+            right: 15px;
+          }
+        }
+      }
+
+    // Col at tenth row
+      &-10 {
+        @include block(100%, auto);
+
+        @extend %text-gradient-h2-center;
+        @extend %text-gradient-p;
+
+        p {
+          text-align: center;
+          margin-bottom: 70px;
+        }
+      }
+
+    // Col at ninth row
+      &-11 {
+        @include block(40%, auto);
+        @include flex();
+        margin: auto;
+
+        input {
+          width: 100%;
+          padding: 18px 20px;
+          border-radius: 50px;
+          outline: none;
+          margin-right: 10px;
+          border: double 3px transparent;
+          background-image: $c-linear;
+          background-origin: border-box;
+          background-clip: padding-box, border-box;
         }
       }
     }

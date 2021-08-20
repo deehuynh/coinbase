@@ -3,6 +3,7 @@
   font-size: 14px;
   display: inline-block;
   cursor: pointer;
+  user-select: none;
 
   &__text--linear {
     background: $c-linear;
@@ -31,4 +32,14 @@
   &--pd-18-40 {
     padding: 18px 40px;
   }
+}
+
+.image-button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button__container {
+  @include frame(195px, 35px, center);
+  @include flex(0, space-between, center);
 }
