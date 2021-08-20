@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/coinbase/static/css/main.a617e044.chunk.css",
-    "main.js": "/coinbase/static/js/main.c97399ef.chunk.js",
-    "main.js.map": "/coinbase/static/js/main.c97399ef.chunk.js.map",
-    "runtime-main.js": "/coinbase/static/js/runtime-main.9f21c4ef.js",
-    "runtime-main.js.map": "/coinbase/static/js/runtime-main.9f21c4ef.js.map",
-    "static/js/2.8894c780.chunk.js": "/coinbase/static/js/2.8894c780.chunk.js",
-    "static/js/2.8894c780.chunk.js.map": "/coinbase/static/js/2.8894c780.chunk.js.map",
-    "static/js/3.d0cfe30c.chunk.js": "/coinbase/static/js/3.d0cfe30c.chunk.js",
-    "static/js/3.d0cfe30c.chunk.js.map": "/coinbase/static/js/3.d0cfe30c.chunk.js.map",
+    "main.css": "/coinbase/static/css/main.439584f2.chunk.css",
+    "main.js": "/coinbase/static/js/main.4e4bcd08.chunk.js",
+    "main.js.map": "/coinbase/static/js/main.4e4bcd08.chunk.js.map",
+    "runtime-main.js": "/coinbase/static/js/runtime-main.ea2f6a4c.js",
+    "runtime-main.js.map": "/coinbase/static/js/runtime-main.ea2f6a4c.js.map",
+    "static/js/2.d683074f.chunk.js": "/coinbase/static/js/2.d683074f.chunk.js",
+    "static/js/2.d683074f.chunk.js.map": "/coinbase/static/js/2.d683074f.chunk.js.map",
+    "static/js/3.507ed4fa.chunk.js": "/coinbase/static/js/3.507ed4fa.chunk.js",
+    "static/js/3.507ed4fa.chunk.js.map": "/coinbase/static/js/3.507ed4fa.chunk.js.map",
     "index.html": "/coinbase/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/coinbase/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.8894c780.chunk.js.LICENSE.txt": "/coinbase/static/js/2.8894c780.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/coinbase/static/media/logo.6ce24c58.svg"
+    "static/css/main.439584f2.chunk.css.map": "/coinbase/static/css/main.439584f2.chunk.css.map",
+    "static/js/2.d683074f.chunk.js.LICENSE.txt": "/coinbase/static/js/2.d683074f.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/coinbase/static/media/home-bg-5.0ec2bb93.png",
+    "static/media/bitcoin.39e8916e.svg": "/coinbase/static/media/bitcoin.39e8916e.svg",
+    "static/media/giftcard.ec5987a1.svg": "/coinbase/static/media/giftcard.ec5987a1.svg",
+    "static/media/home-hero.49a3db07.png": "/coinbase/static/media/home-hero.49a3db07.png",
+    "static/media/home-img-3.bdb680c6.png": "/coinbase/static/media/home-img-3.bdb680c6.png",
+    "static/media/phone-1.48fecdbb.png": "/coinbase/static/media/phone-1.48fecdbb.png",
+    "static/media/phone-2.45bf6729.png": "/coinbase/static/media/phone-2.45bf6729.png",
+    "static/media/s-row-img.ed514618.png": "/coinbase/static/media/s-row-img.ed514618.png",
+    "static/media/testimonial.b0c275f2.png": "/coinbase/static/media/testimonial.b0c275f2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9f21c4ef.js",
-    "static/js/2.8894c780.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.c97399ef.chunk.js"
+    "static/js/runtime-main.ea2f6a4c.js",
+    "static/js/2.d683074f.chunk.js",
+    "static/css/main.439584f2.chunk.css",
+    "static/js/main.4e4bcd08.chunk.js"
   ]
 }
