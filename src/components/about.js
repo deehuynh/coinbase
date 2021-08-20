@@ -1,6 +1,7 @@
 // Import row
 import Row from "./row"
-
+//Import column
+import Col from './column'
 import Button from "./button"
 
 export default function About (props) {
