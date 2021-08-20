@@ -1,5 +1,4 @@
 import Row from "./row"
-import IntroText from "./intro-text"
 import Button from "./button"
 
 export default function About (props) {
