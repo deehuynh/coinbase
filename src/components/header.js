@@ -1,4 +1,6 @@
-import LogoI from '../images/Logo.png'
+import LogoI from '../images/Logo-2.png'
+import LogoI2 from '../images/Logo.png'
+import LogoI3 from '../images/Logo-3.png'
 import {NavLink} from 'react-router-dom'
 import { useRef} from 'react'
 
@@ -17,7 +19,7 @@ function Logo () {
   return (
     <div className="header__logo">
       <a href={baseUrl}>
-        <img src={LogoI} alt="Logo" />
+        <img src={LogoI3} alt="Logo" />
       </a>
     </div>
   )

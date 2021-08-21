@@ -1,13 +1,12 @@
 import Col from './column'
-import Logo from '../svgs/full-logo.svg'
-import FullLogo from './full-logo'
+import LogoI from '../images/Logo.png'
 
 export default function Footer () {
   return (
     <footer className="footer">
       <Col className="footer__col-1">
         <div className="footer__logo">
-          <FullLogo />
+          <img src={LogoI} alt="Logo" />
         </div>
       </Col>
 
