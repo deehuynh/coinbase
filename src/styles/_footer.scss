@@ -109,6 +109,11 @@
           bottom: 10px;
           right: 10px;
         }
+
+        &:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
       }
 
       .footer__album--plus {
