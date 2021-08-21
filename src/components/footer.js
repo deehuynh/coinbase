@@ -5,6 +5,7 @@ import GGI from '../svgs/Google+.svg'
 import FBI from '../svgs/Facebook.svg'
 import TWTI from '../svgs/Twitter.svg'
 import ISTGRI from '../svgs/Instagram.svg'
+import PlusI from '../svgs/plus.svg'
 
 export default function Footer () {
   return (
@@ -53,7 +54,10 @@ export default function Footer () {
 
         <Row className="footer__row-14">
           <div></div>
-          <div className="footer__album--plus"></div>
+          <div className="footer__album--plus">
+            <img src={PlusI} alt="plus" />
+          </div>
+          <div></div>
           <div></div>
           <div></div>
           <div></div>

@@ -21,8 +21,8 @@
   background-color: $bg-footer;
   padding: {
     top: 70px;
-    right: 50px;
-    left: 50px;
+    right: 80px;
+    left: 80px;
   };
   box-sizing: border-box;
 
@@ -87,7 +87,32 @@
   }
 
   &__col-4 {
-    @include block(18%, auto);
+    @include block(24%, auto);
     @extend %h3;
+
+    .footer__row-14 {
+      @include block(100%, auto);
+      @include flex(0,0,0,wrap);
+
+      div {
+        @include block(70px);
+        background-color: #D8D8D8;
+        margin: {
+          bottom: 10px;
+          right: 10px;
+        }
+      }
+
+      .footer__album--plus {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          @include block(22px);
+        }
+      }
+    }
   }
 }
