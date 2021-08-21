@@ -1,6 +1,18 @@
 %h3 {
-  font-size: 18px;
-  color: white;
+  h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    margin: {
+      top: 0;
+      bottom: 30px;
+    };
+  }
+}
+
+%text {
+  font-size: 12px;
+  color: $c-footer;
 }
 
 .footer {
@@ -17,6 +29,7 @@
   // Col 1
   &__col-1 {
     @include block(30%, auto);
+    margin-right: 10%;
     .footer__row-1 {
       &2 {
         margin: {
@@ -39,7 +52,7 @@
   }
 
   &__col-2 {
-    @include block(20%, auto);
+    @include block(18%, auto);
 
     @extend %h3;
 
@@ -49,8 +62,32 @@
 
       a {
         display: inline-block;
-        @include link();
+        @include link(0, $c-footer);
+        @extend %text;
+        padding: {
+          top: 5px;
+          bottom: 15px;
+        };
       }
     }
+  }
+
+  &__col-3 {
+    @include block(18%, auto);
+    @extend %h3;
+
+    p {
+      @extend %text;
+
+      &:last-child {
+        margin-top: 75px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__col-4 {
+    @include block(18%, auto);
+    @extend %h3;
   }
 }

@@ -40,16 +40,16 @@ export default function Footer () {
       </Col>
 
       <Col className="footer__col-3">
-        <h2>Contact Us</h2>
+        <h3>Contact Us</h3>
 
-        <p>Phone</p>
-        <p>Email</p>
+        <p>(+84) 123456789</p>
+        <p>Email@gmail.com</p>
         <p>Address</p>
         <p>Download Our app</p>
       </Col>
 
       <Col className="footer__col-4">
-        <h2>Coinbase Instagram</h2>
+        <h3>Coinbase Instagram</h3>
 
         <Row className="footer__row-14">
           <div></div>
