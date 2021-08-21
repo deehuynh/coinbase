@@ -4,6 +4,7 @@
 /* Variables */
 // Background
 $bg-layout: white;
+$bg-footer: #151515;
 $c-linear: linear-gradient(
   178.18deg, #FD749B -13.56%, #281AC8 158.3%
 );
@@ -20,7 +21,7 @@ $f-primary: 'Poppins';
 @import 'mixin';
 
 // Importing the sass of the component
-@import 'layout', 'header', 'home';
+@import 'layout', 'header', 'home','footer';
 @import
   'button', 'intro-image','intro-text',
   'col-image','column', 'gradient-input';

@@ -1,0 +1,17 @@
+.footer {
+  @include block(100%, 351px);
+  @include flex();
+  background-color: $bg-footer;
+
+  // Col 1
+  &__col-1 {
+    svg {
+      fill: none;
+    }
+    path {
+      fill: white;
+      stroke: white;
+    }
+    color: white;
+  }
+}
