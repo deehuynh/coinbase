@@ -1,12 +1,56 @@
+%h3 {
+  font-size: 18px;
+  color: white;
+}
+
 .footer {
   @include block(100%, 351px);
   @include flex();
   background-color: $bg-footer;
+  padding: {
+    top: 70px;
+    right: 50px;
+    left: 50px;
+  };
+  box-sizing: border-box;
 
   // Col 1
   &__col-1 {
-    .footer__logo {
-      
+    @include block(30%, auto);
+    .footer__row-1 {
+      &2 {
+        margin: {
+          top: 40px;
+          bottom: 30px;
+        };
+
+        color: #A2A2A2;
+        line-height: 24px;
+      }
+
+      &3 {
+
+        span {
+          cursor: pointer;
+          margin-right: 22px;
+        }
+      }
+    }
+  }
+
+  &__col-2 {
+    @include block(20%, auto);
+
+    @extend %h3;
+
+    div {
+      @include block(100%, auto);
+      @include flex(column);
+
+      a {
+        display: inline-block;
+        @include link();
+      }
     }
   }
 }

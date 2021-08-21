@@ -10,16 +10,16 @@ export default function Footer () {
   return (
     <footer className="footer">
       <Col className="footer__col-1">
-        <Row className="footer__row-1.1">
+        <Row className="footer__row-11">
           <img src={LogoI} alt="Logo" />
         </Row>
 
-        <Row className="footer__row-1.2">
+        <Row className="footer__row-12">
           Fusce ut elit aliquet, fermentum leo vel, tempus nunc.
           Fusce eu rhoncus augue. Fusce vel metus pharetra, fermentum 
         </Row>
 
-        <Row className="footer__row-1.3">
+        <Row className="footer__row-13">
           <span><img src={GGI} alt="ICON" /></span>
           <span><img src={FBI} alt="ICON" /></span>
           <span><img src={TWTI} alt="ICON" /></span>
@@ -30,11 +30,13 @@ export default function Footer () {
       <Col className="footer__col-2">
         <h3>CoinBase Links</h3>
 
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Blog</a>
-        <a href="/">Sell</a>
-        <a href="/">Contact Us</a>
+        <div>
+          <span><a href="/">Home</a></span>
+          <span><a href="/">About</a></span>
+          <span><a href="/">Blog</a></span>
+          <span><a href="/">Sell</a></span>
+          <span><a href="/">Contact Us</a></span>
+        </div>
       </Col>
 
       <Col className="footer__col-3">
@@ -49,7 +51,7 @@ export default function Footer () {
       <Col className="footer__col-4">
         <h2>Coinbase Instagram</h2>
 
-        <div className="footer__album">
+        <Row className="footer__row-14">
           <div></div>
           <div className="footer__album--plus"></div>
           <div></div>
@@ -57,7 +59,7 @@ export default function Footer () {
           <div></div>
           <div></div>
           <div></div>
-        </div>
+        </Row>
       </Col>
     </footer>
   )
