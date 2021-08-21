@@ -227,27 +227,14 @@
 
         p {
           text-align: center;
-          margin-bottom: 70px;
+          margin-bottom: 60px;
         }
       }
 
     // Col at ninth row
       &-11 {
-        @include block(40%, auto);
-        @include flex();
-        margin: auto;
-
-        input {
-          width: 100%;
-          padding: 18px 20px;
-          border-radius: 50px;
-          outline: none;
-          margin-right: 10px;
-          border: double 3px transparent;
-          background-image: $c-linear;
-          background-origin: border-box;
-          background-clip: padding-box, border-box;
-        }
+        @include block(100%, auto);
+        @include flex(0, center);
       }
     }
   }

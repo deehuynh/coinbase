@@ -43,3 +43,7 @@
   @include frame(195px, 35px, center);
   @include flex(0, space-between, center);
 }
+
+.button__text {
+  align-items: center;
+}

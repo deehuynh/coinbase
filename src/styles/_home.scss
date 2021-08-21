@@ -61,7 +61,10 @@
   /* Ninth row */ 
   &__ninth-row {
     @include block(100%, 675px);
-    margin-top: 300px;
+    padding: {
+      top: 280px;
+    }
+    box-sizing: border-box;
   }
 
   /* ten */ 

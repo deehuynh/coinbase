@@ -7,6 +7,7 @@ import Image from "./image";
 // Importing the button component
 import Button from "./button"
 import ImageButton from "./image-button"
+import GradientInput from "./gradient-input";
 // Importing the image
 import HomeImg from '../images/home-hero.png'
 import HomeImg2 from '../images/s-row-img.png'
@@ -157,7 +158,7 @@ export default function Home (props) {
         </Col>
 
         <Col className='col--home-11'>
-          <input type='text' defaultValue='' placeholder='EMAIL' />
+          <GradientInput className="home__input" placeholder="EMAIL" />
           <Button className="button--linear-white button--pd-18-40" name="discover"  />
         </Col>
       </Row>

@@ -1,0 +1,23 @@
+.home__input {
+  @include block(388px, auto);
+  background: $c-linear;
+  border-radius: 40px;
+  padding: 1px;
+  box-sizing: border-box;
+  margin-right: 10px;
+
+  input {
+    @include block(100%, 100%);
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-indent: 10px;
+
+    &::placeholder {
+        color: $c-nav-link;
+        opacity: 1;
+    }
+  }
+}
