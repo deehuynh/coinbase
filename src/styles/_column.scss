@@ -134,7 +134,7 @@
             }
 
             .home__ch-col-1 {
-              
+              @include block(30%, auto);
             }
           }
         }

@@ -84,7 +84,15 @@ export default function Home (props) {
             </Row>
 
             <Row className="home__th-row-4">
-              <Col className="home__ch-col-1"></Col>
+              <Col className="home__ch-col-1">
+                <div>
+                  <p className="1">
+                    <img src={BitCoin} alt="bitcoin" />
+                  </p>
+                  <p className="2"></p>
+                </div>
+                <div></div>
+              </Col>
               <Col className="home__ch-col-2"></Col>
               <Col className="home__ch-col-3"></Col>
             </Row>
