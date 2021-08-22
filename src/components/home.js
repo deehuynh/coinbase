@@ -89,9 +89,11 @@ export default function Home (props) {
                 <div>
                   <p>
                     <img src={BitCoin} alt="bitcoin" />
+                    <span>BTC</span>
                   </p>
                   <p>
                     <img src={EthI} alt="Eth" />
+                    <span>ETH</span>
                   </p>
                 </div>
                 <div></div>
