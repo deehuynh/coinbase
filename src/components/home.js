@@ -19,6 +19,7 @@ import AppStoreDownload from '../images/app-store.png'
 import GGPlayDownload from '../images/gg-play.png'
 import Phone1 from '../images/phone-1.png'
 import Phone2 from '../images/phone-2.png'
+import EthI from '../svgs/Eth.svg'
 
 export default function Home (props) {
   return (
@@ -89,7 +90,9 @@ export default function Home (props) {
                   <p className="1">
                     <img src={BitCoin} alt="bitcoin" />
                   </p>
-                  <p className="2"></p>
+                  <p className="2">
+                    <img src={EthI} alt="Eth" />
+                  </p>
                 </div>
                 <div></div>
               </Col>
