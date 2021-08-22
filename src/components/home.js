@@ -69,7 +69,14 @@ export default function Home (props) {
 
       {/* Third row */}
       <Row className="home__th-row">
-        ...
+        <Col className="col--home-3">
+          <Row className="home__th-row-1">
+            <span>OUR RATES</span>
+            <span>OUR RESERVES</span>
+            <span>LATEST EXCHANGES</span>
+          </Row>
+          <Row className="home__th-row-2"></Row>
+        </Col>
       </Row>
 
       {/* Fourth row */}
