@@ -84,7 +84,9 @@ export default function Home (props) {
             </Row>
 
             <Row className="home__th-row-4">
-              ...
+              <Col className="home__ch-col-1"></Col>
+              <Col className="home__ch-col-2"></Col>
+              <Col className="home__ch-col-3"></Col>
             </Row>
           </Row>
         </Col>
