@@ -75,7 +75,11 @@ export default function Home (props) {
             <span>OUR RESERVES</span>
             <span>LATEST EXCHANGES</span>
           </Row>
-          <Row className="home__th-row-2"></Row>
+          <Row className="home__th-row-2">
+            <Row className="home__th-row-3">
+              <Button className="button--linear-white button--pd-18-40" name="8 hours ago" />
+            </Row>
+          </Row>
         </Col>
       </Row>
 
