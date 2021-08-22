@@ -96,7 +96,17 @@ export default function Home (props) {
                     <span>ETH</span>
                   </p>
                 </div>
-                <div></div>
+
+                <div>
+                  <p>
+                    <span>We Buy <strong>@ ₦350/$</strong></span>
+                    <span>We Sell <strong>@ ₦370/$</strong></span>
+                  </p>
+                  <p>
+                    <span>We Buy <strong>@ ₦345/$</strong></span>
+                    <span>We Sell <strong>@ ₦370/$</strong></span>
+                  </p>
+                </div>
               </Col>
               <Col className="home__ch-col-2"></Col>
               <Col className="home__ch-col-3"></Col>
