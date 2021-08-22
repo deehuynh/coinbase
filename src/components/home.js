@@ -87,10 +87,10 @@ export default function Home (props) {
             <Row className="home__th-row-4">
               <Col className="home__ch-col-1">
                 <div>
-                  <p className="1">
+                  <p>
                     <img src={BitCoin} alt="bitcoin" />
                   </p>
-                  <p className="2">
+                  <p>
                     <img src={EthI} alt="Eth" />
                   </p>
                 </div>

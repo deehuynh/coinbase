@@ -135,6 +135,14 @@
 
             .home__ch-col-1 {
               @include block(30%, auto);
+
+              div {
+                p:nth-child(1) {
+                  img {
+                    @include block(28px);
+                  }
+                }
+              }
             }
           }
         }
