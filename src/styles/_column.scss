@@ -137,6 +137,14 @@
               @include block(30%, auto);
 
               div {
+                p {
+                  @include flex(0,0, center);
+                  span {
+                    margin: 0 15px;
+                    font-size: 14px;
+                    color: #333333;
+                  }
+                }
                 p:nth-child(1) {
                   img {
                     @include block(28px);
