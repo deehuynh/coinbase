@@ -134,12 +134,13 @@
             }
 
             .home__ch-col-1 {
-              @include block(30%, auto);
-              @include flex();
+              @include block(21%, auto);
+              @include flex(0, space-between);
 
               div:nth-child(1) {
                 p {
                   @include flex(0,0, center);
+                  margin-bottom: 75px;
                   span {
                     margin: 0 15px;
                     font-size: 14px;
@@ -154,10 +155,14 @@
               }
 
               div:nth-child(2) {
+                p {
+                  margin-bottom: 52px;
+                }
                 span {
                   display: block;
                   font-size: 14px;
                   color: #333333;
+                  margin-bottom: 25px;
                 }
               }
             }
