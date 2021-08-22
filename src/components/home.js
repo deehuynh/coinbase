@@ -77,7 +77,14 @@ export default function Home (props) {
           </Row>
           <Row className="home__th-row-2">
             <Row className="home__th-row-3">
-              <Button className="button--linear-white button--pd-18-40" name="8 hours ago" />
+              <Button
+                className="button--linear-white button--pd-10-20 button--s8"
+                name="8 hours ago" 
+              />
+            </Row>
+
+            <Row className="home__th-row-4">
+              ...
             </Row>
           </Row>
         </Col>

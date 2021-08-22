@@ -105,12 +105,34 @@
             right: 65px;
           };
           box-sizing: border-box;
+
+          span {
+            font-size: 18px;
+            font-weight: 700;
+            @include text-gradient($c-linear);
+          }
         }
 
-        span {
-          font-size: 18px;
-          font-weight: 700;
-          @include text-gradient($c-linear);
+        .home__th-row-2 {
+          @include block(100%, auto);
+
+          .home__th-row-3 {
+            width: 100%;
+            @include flex(0, flex-end);
+            padding: {
+              top: 20px;
+              right: 110px;
+            }
+            box-sizing: border-box;
+          }
+
+          .home__th-row-4 {
+            width: 100%;
+            padding: {
+              right: 65px;
+              left: 65px;
+            }
+          }
         }
       }
 
