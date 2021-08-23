@@ -176,11 +176,15 @@
               div:nth-child(1) {
                 p {
                   @include flex(0,0, center);
-                  margin-bottom: 25px;
+                  margin-bottom: 35px;
                   span {
                     margin: 0 15px;
                     font-size: 14px;
                     color: #333333;
+                  }
+
+                  &:nth-child(1) {
+                    margin-bottom: 70px;
                   }
                 }
                 p {
