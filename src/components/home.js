@@ -189,6 +189,7 @@ export default function Home (props) {
       <Row className="home__sixth-row">
         <Col className="col--home-6">
           <h2>Our blog</h2>
+          <p>Get to know the latest stuff via our blog post.</p>
         </Col>
       </Row>
 

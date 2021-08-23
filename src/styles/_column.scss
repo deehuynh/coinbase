@@ -324,6 +324,11 @@
           }
         }
       }
+    // Col at sixth row
+      &-6 {
+        @include block(100%, auto);
+        @extend %text-gradient-h2-center;
+      }
 
     // Col at seventh-row 
       &-7 {

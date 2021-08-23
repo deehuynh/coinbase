@@ -43,6 +43,10 @@
   /* sixth row */ 
   &__sixth-row {
     @include block(100%, 460px);
+    padding: {
+      top: 160px;
+    }
+    box-sizing: border-box;
   }
 
   /* Seventh row */ 
