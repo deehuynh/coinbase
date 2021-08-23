@@ -332,6 +332,19 @@
         p {
           text-align: center;
         }
+        .home__sixth-row11 {
+          @include block(100%, auto);
+          padding: {
+            left: 100px;
+            right: 100px;
+          }
+          box-sizing: border-box;
+          text-align: center;
+
+          img {
+            width: 100px;
+          }
+        }
       }
 
     // Col at seventh-row 

@@ -8,6 +8,9 @@ import Image from "./image";
 import Button from "./button"
 import ImageButton from "./image-button"
 import GradientInput from "./gradient-input";
+// Importing the splice
+import {Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 // Importing the image
 import HomeImg from '../images/home-hero.png'
 import HomeImg2 from '../images/s-row-img.png'
@@ -190,6 +193,26 @@ export default function Home (props) {
         <Col className="col--home-6">
           <h2>Our blog</h2>
           <p>Get to know the latest stuff via our blog post.</p>
+
+          <Row className="home__sixth-row11">
+            <Splide
+            options={ {
+              rewind : false,
+              width  : 800,
+              gap    : '1rem',
+            } }
+            >
+              <SplideSlide>
+                <img src="https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg" alt="" />
+              </SplideSlide>
+              <SplideSlide>
+                <img src="https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg" alt="" />
+              </SplideSlide>
+              <SplideSlide>
+                <img src="https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg" alt="" />
+              </SplideSlide>
+            </Splide>
+          </Row>
         </Col>
       </Row>
 
