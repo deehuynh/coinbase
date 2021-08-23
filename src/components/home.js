@@ -195,7 +195,7 @@ export default function Home (props) {
           <p>Get to know the latest stuff via our blog post.</p>
 
           <Row className="home__sixth-row11">
-            <Splide
+            {/* <Splide
               options={ {
                 type: 'loop',
                 autoWidth: true,
@@ -203,15 +203,14 @@ export default function Home (props) {
               } }
             >
               <SplideSlide>
-                <img src="https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg" alt="" />
+                <Col className='col--home-6-1'></Col>
               </SplideSlide>
-              <SplideSlide>
-                <img src="https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg" alt="" />
-              </SplideSlide>
-              <SplideSlide>
-                <img src="https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg" alt="" />
-              </SplideSlide>
-            </Splide>
+            </Splide> */}
+            <Col className='col--home-6-1'>
+              <div>
+                <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
+              </div>
+            </Col>
           </Row>
         </Col>
       </Row>
