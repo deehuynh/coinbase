@@ -126,7 +126,12 @@ export default function Home (props) {
                     <span>Ethereum</span>
                   </p>
                 </div>
-                <div></div>
+                <div>
+                  <p>NGN</p>
+                  <strong>#3452030300303.24/$</strong>
+                  <p><strong>399.98</strong> BTC</p>
+                  <p><strong>1000.00</strong> ETH</p>
+                </div>
               </Col>
               <Col className="home__ch-col-3">
                 <p>Bitcoin BTC <img src={Transfer} alt="transfer" /> Bank <br /> Transfer NGN</p>
