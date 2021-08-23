@@ -186,7 +186,11 @@ export default function Home (props) {
       </Row>
 
       {/* Sixth row */}
-      <Row className="home__sixth-row"></Row>
+      <Row className="home__sixth-row">
+        <Col className="col--home-6">
+          <h2>Our blog</h2>
+        </Col>
+      </Row>
 
       {/* Seventh row */}
       <Row className="home__seventh-row">
