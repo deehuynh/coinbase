@@ -328,6 +328,10 @@
       &-6 {
         @include block(100%, auto);
         @extend %text-gradient-h2-center;
+        @extend %text-gradient-p;
+        p {
+          text-align: center;
+        }
       }
 
     // Col at seventh-row 
