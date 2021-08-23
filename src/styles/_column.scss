@@ -127,9 +127,21 @@
           }
 
           .home__th-row-4 {
+            @include block(100%, 220px);
             overflow-y: scroll;
+            &::-webkit-scrollbar {
+              width: 4px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              background: $c-nav-active;
+            }
+
+            &::-webkit-scrollbar-track {
+              background: #E5E5E5;
+            }
             &--container {
-              width: 100%;
+              @include block(100%, 400px);
               @include flex(0, space-between);
               padding: {
                 right: 65px;
