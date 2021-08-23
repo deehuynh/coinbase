@@ -22,6 +22,7 @@ import Phone2 from '../images/phone-2.png'
 import EthI from '../svgs/Eth.svg'
 import BankI from '../svgs/bank-building.svg'
 import Transfer from '../svgs/Transfer.svg'
+import Transfer2 from '../svgs/Transfer2.svg'
 
 export default function Home (props) {
   return (
@@ -129,10 +130,14 @@ export default function Home (props) {
               </Col>
               <Col className="home__ch-col-3">
                 <p>Bitcoin BTC <img src={Transfer} alt="transfer" /> Bank <br /> Transfer NGN</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>
+                  <span><strong>1.16</strong> BTC</span>
+                  <img src={Transfer2} alt="doubletransfer" />
+                  <span><strong>696152299929.23</strong> NGN</span>
+                </p>
+                <p>
+                  Amazon Card <img src={Transfer} alt="transfer" /> Bank <br /> Transfer NGN
+                </p>
               </Col>
             </Row>
           </Row>
