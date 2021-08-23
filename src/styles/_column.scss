@@ -127,13 +127,16 @@
           }
 
           .home__th-row-4 {
-            width: 100%;
-            @include flex(0, space-between);
-            padding: {
-              right: 65px;
-              left: 65px;
+            overflow-y: scroll;
+            &--container {
+              width: 100%;
+              @include flex(0, space-between);
+              padding: {
+                right: 65px;
+                left: 65px;
+              }
+              box-sizing: border-box;
             }
-            box-sizing: border-box;
 
             .home__ch-col-1 {
               @include block(21%, auto);

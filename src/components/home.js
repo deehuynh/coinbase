@@ -88,6 +88,7 @@ export default function Home (props) {
             </Row>
 
             <Row className="home__th-row-4">
+              <div className="home__th-row-4--container">
               <Col className="home__ch-col-1">
                 <div>
                   <p>
@@ -144,6 +145,7 @@ export default function Home (props) {
                   Amazon Card <img src={Transfer} alt="transfer" /> Bank <br /> Transfer NGN
                 </p>
               </Col>
+              </div>
             </Row>
           </Row>
         </Col>
