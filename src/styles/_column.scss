@@ -170,7 +170,7 @@
             }
 
             .home__ch-col-2 {
-              @include block(21%, auto);
+              @include block(32%, auto);
               @include flex(0, space-between);
 
               div:nth-child(1) {
@@ -191,6 +191,20 @@
                   img {
                     @include block(28px);
                   }
+                }
+              }
+
+              div:nth-child(2) {
+                font-size: 14px;
+                color: #333333;
+                p {
+                  margin-bottom: 25px;
+                  text-align: right;
+                }
+
+                strong {
+                  display: inline-block;
+                  margin-bottom: 25px;
                 }
               }
             }
