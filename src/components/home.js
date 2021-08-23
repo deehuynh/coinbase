@@ -191,26 +191,34 @@ export default function Home (props) {
       {/* Sixth row */}
       <Row className="home__sixth-row">
         <Col className="col--home-6">
-          <h2>Our blog</h2>
-          <p>Get to know the latest stuff via our blog post.</p>
+          <Row className="home__sixth-row12">
+            <h2>Our blog</h2>
+            <p>Get to know the latest stuff via our blog post.</p>
+          </Row>
 
           <Row className="home__sixth-row11">
-            {/* <Splide
+            <Splide
               options={ {
                 type: 'loop',
-                autoWidth: true,
                 focus: 'center',
               } }
             >
               <SplideSlide>
-                <Col className='col--home-6-1'></Col>
+                <Col className='col--home-6-1'>
+                <div>
+                  <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
+                  <h2>ETH TO NAIRA EXCHANGE <br />
+                      RATE IS NOW #400 PER...
+                  </h2>
+                  <p>Lorem ipsum dolor sit amet, magna habemus
+                    ius ad, qui minimum voluptaria in. Ad mei modus 
+                    quodsi complectitur, postea...
+                  </p>
+                  <Button className='button--linear-white button--pd-18-40' name='read more' />
+                </div>
+              </Col>
               </SplideSlide>
-            </Splide> */}
-            <Col className='col--home-6-1'>
-              <div>
-                <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
-              </div>
-            </Col>
+            </Splide>
           </Row>
         </Col>
       </Row>

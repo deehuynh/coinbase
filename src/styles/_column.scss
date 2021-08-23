@@ -327,10 +327,12 @@
     // Col at sixth row
       &-6 {
         @include block(100%, auto);
-        @extend %text-gradient-h2-center;
-        @extend %text-gradient-p;
-        p {
-          text-align: center;
+        .home__sixth-row12 {
+          @extend %text-gradient-h2-center;
+          @extend %text-gradient-p;
+          p {
+            text-align: center;
+          }
         }
         .home__sixth-row11 {
           @include block(100%, auto);
@@ -339,24 +341,40 @@
             right: 100px;
           }
           box-sizing: border-box;
-          text-align: center;
         }
         &-1 {
           @include block(465px, auto);
           margin: 0 auto;
           div {
+            padding: 10px 20px;
+            border: 1px solid red;
+            @extend %text-gradient-p;
+            box-sizing: border-box;
+            p {
+              margin: {
+                top: 0;
+                bottom: 20px;
+              }
+            }
+
+            h2 {
+              font-size: 24px;
+              @include text-gradient($c-linear);
+            }
 
             h5 {
+              display: inline-block;
+              margin-bottom: 10px;
               font-size: 10px;
               font-weight: 400;
               color: #333333;
-            }
 
-            span {
-              border-right: 1px solid #333333;
-              padding-right: 10px;
-              box-sizing: border-box;
-              margin-right: 10px;
+              span {
+                border-right: 1px solid #333333;
+                padding-right: 10px;
+                box-sizing: border-box;
+                margin-right: 10px;
+              }
             }
           }
         }
