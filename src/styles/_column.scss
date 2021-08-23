@@ -128,10 +128,12 @@
 
           .home__th-row-4 {
             width: 100%;
+            @include flex(0, space-between);
             padding: {
               right: 65px;
               left: 65px;
             }
+            box-sizing: border-box;
 
             .home__ch-col-1 {
               @include block(21%, auto);
@@ -147,7 +149,7 @@
                     color: #333333;
                   }
                 }
-                p:nth-child(1) {
+                p {
                   img {
                     @include block(28px);
                   }
@@ -163,6 +165,42 @@
                   font-size: 14px;
                   color: #333333;
                   margin-bottom: 25px;
+                }
+              }
+            }
+
+            .home__ch-col-2 {
+              @include block(21%, auto);
+              @include flex(0, space-between);
+
+              div:nth-child(1) {
+                p {
+                  @include flex(0,0, center);
+                  margin-bottom: 25px;
+                  span {
+                    margin: 0 15px;
+                    font-size: 14px;
+                    color: #333333;
+                  }
+                }
+                p {
+                  img {
+                    @include block(28px);
+                  }
+                }
+              }
+            }
+
+            .home__ch-col-3 {
+              @include block(22%, auto);
+
+              p {
+                font-size: 14px;
+                color: #333333;
+                line-height: 24px;
+
+                img {
+                  margin-bottom: 2px;
                 }
               }
             }

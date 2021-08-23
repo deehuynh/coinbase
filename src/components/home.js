@@ -20,6 +20,8 @@ import GGPlayDownload from '../images/gg-play.png'
 import Phone1 from '../images/phone-1.png'
 import Phone2 from '../images/phone-2.png'
 import EthI from '../svgs/Eth.svg'
+import BankI from '../svgs/bank-building.svg'
+import Transfer from '../svgs/Transfer.svg'
 
 export default function Home (props) {
   return (
@@ -108,8 +110,30 @@ export default function Home (props) {
                   </p>
                 </div>
               </Col>
-              <Col className="home__ch-col-2"></Col>
-              <Col className="home__ch-col-3"></Col>
+              <Col className="home__ch-col-2">
+                <div>
+                  <p>
+                    <img src={BankI} alt="Bank transfer" />
+                    <span>Bank transfer</span>
+                  </p>
+                  <p>
+                    <img src={BitCoin} alt="bitcoin" />
+                    <span>Bitcoin</span>
+                  </p>
+                  <p>
+                    <img src={EthI} alt="Ethereum" />
+                    <span>Ethereum</span>
+                  </p>
+                </div>
+                <div></div>
+              </Col>
+              <Col className="home__ch-col-3">
+                <p>Bitcoin BTC <img src={Transfer} alt="transfer" /> Bank <br /> Transfer NGN</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </Col>
             </Row>
           </Row>
         </Col>
