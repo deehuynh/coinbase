@@ -196,11 +196,11 @@ export default function Home (props) {
 
           <Row className="home__sixth-row11">
             <Splide
-            options={ {
-              rewind : false,
-              width  : 800,
-              gap    : '1rem',
-            } }
+              options={ {
+                type: 'loop',
+                autoWidth: true,
+                focus: 'center',
+              } }
             >
               <SplideSlide>
                 <img src="https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg" alt="" />
