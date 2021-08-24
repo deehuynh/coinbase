@@ -203,6 +203,7 @@ export default function Home (props) {
                 autoWidth: true,
                 focus: 'center',
                 start: 1,
+                arrows: false,
                 pagination: false,
               } }
             >
