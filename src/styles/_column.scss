@@ -347,11 +347,14 @@
 
         .splide__slide.is-active {
           .col--home-6-1 {
+            position: relative;
+            z-index: 10;
             @include block(480px, auto);
             background: white;
             margin: {
               top: 0;
-              left: -10px;
+              left: -85px;
+              right: -85px;
             }
 
             .col--home-6-1-2 {
@@ -365,6 +368,7 @@
           }
           
           p {
+            width: 82.2%;
             font-size: 12px;
             color: #333333;
             line-height: 28px;
