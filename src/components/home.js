@@ -203,6 +203,7 @@ export default function Home (props) {
                 autoWidth: true,
                 focus: 'center',
                 start: 1,
+                pagination: false,
               } }
             >
               <SplideSlide>
@@ -238,7 +239,7 @@ export default function Home (props) {
               <SplideSlide>
                 <Col className='col--home-6-1'>
                 <Col className="col--home-6-1-2">
-                  <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
+                  <h5><span>01 FDEC, 2019</span> LIFESTYLE</h5>
                   <h2>EXCHANGE 5 PRODUCTS & <br />
                       GET 1 FREE PRODUCT.
                   </h2>
