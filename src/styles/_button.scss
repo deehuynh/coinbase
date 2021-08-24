@@ -4,6 +4,7 @@
   display: inline-block;
   cursor: pointer;
   user-select: none;
+  border-radius: 100px;
 
   &__text--linear {
     background: $c-linear;
@@ -13,12 +14,15 @@
 
   &--linear-white {
     background: $c-linear;
-    border-radius: 100px;
   }
 
   &--white-linear {
     background: white;
-    border-radius: 100px;
+  }
+
+  &--not-active {
+    background: #888888;
+    font-size: 9px;
   }
 
   &--pd-18-55 {
@@ -31,6 +35,10 @@
 
   &--pd-18-40 {
     padding: 18px 40px;
+  }
+
+  &--pd-15-30 {
+    padding: 15px 30px;
   }
 
   &--pd-10-20 {

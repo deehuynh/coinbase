@@ -209,14 +209,14 @@ export default function Home (props) {
                 <Col className='col--home-6-1'>
                 <Col className="col--home-6-1-2">
                   <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
-                  <h2>ETH TO NAIRA EXCHANGE <br />
-                      RATE IS NOW #400 PER...
+                  <h2>HOW TO SELL YOUR ITUNES <br />
+                      GIFTCARD WITH US .
                   </h2>
                   <p>Lorem ipsum dolor sit amet, magna habemus
                     ius ad, qui minimum voluptaria in. Ad mei modus 
                     quodsi complectitur, postea...
                   </p>
-                  <Button className='button--linear-white button--pd-18-40' name='read more' />
+                  <Button className='button--not-active button--pd-15-30' name='read more' />
                 </Col>
               </Col>
               </SplideSlide>
@@ -231,7 +231,7 @@ export default function Home (props) {
                     ius ad, qui minimum voluptaria in. Ad mei modus 
                     quodsi complectitur, postea...
                   </p>
-                  <Button className='button--linear-white button--pd-18-40' name='read more' />
+                  <Button className='button--not-active button--pd-15-30' name='read more' />
                 </Col>
               </Col>
               </SplideSlide>
@@ -239,14 +239,14 @@ export default function Home (props) {
                 <Col className='col--home-6-1'>
                 <Col className="col--home-6-1-2">
                   <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
-                  <h2>ETH TO NAIRA EXCHANGE <br />
-                      RATE IS NOW #400 PER...
+                  <h2>EXCHANGE 5 PRODUCTS & <br />
+                      GET 1 FREE PRODUCT.
                   </h2>
                   <p>Lorem ipsum dolor sit amet, magna habemus
                     ius ad, qui minimum voluptaria in. Ad mei modus 
                     quodsi complectitur, postea...
                   </p>
-                  <Button className='button--linear-white button--pd-18-40' name='read more' />
+                  <Button className='button--not-active button--pd-15-30' name='read more' />
                 </Col>
               </Col>
               </SplideSlide>
