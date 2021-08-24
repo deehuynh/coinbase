@@ -208,7 +208,7 @@ export default function Home (props) {
               <SplideSlide>
                 <Col className='col--home-6-1'>
                 <Col className="col--home-6-1-2">
-                  <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
+                  <h5><span>01 FEB, 2019</span> TECHNOLOGY</h5>
                   <h2>HOW TO SELL YOUR ITUNES <br />
                       GIFTCARD WITH US .
                   </h2>
