@@ -350,15 +350,20 @@
             position: relative;
             z-index: 10;
             @include block(480px, auto);
-            background: white;
             margin: {
               top: 0;
               left: -105px;
               right: -105px;
             }
 
+            background: $c-linear;
+            padding: 1px;
+            border-radius: 16px;
+
             .col--home-6-1-2 {
+              border: none;
               padding: 40px 60px;
+              background: white;
             }
           }
 
