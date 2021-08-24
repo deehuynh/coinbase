@@ -336,7 +336,7 @@
           margin-bottom: 50px;  
         }
         .home__sixth-row11 {
-          @include block(80%, auto);
+          @include block(90%, auto);
           padding: {
             left: 100px;
             right: 100px;
@@ -348,8 +348,10 @@
         .splide__slide.is-active {
           .col--home-6-1 {
             @include block(480px, auto);
+            background: white;
             margin: {
               top: 0;
+              left: -10px;
             }
 
             .col--home-6-1-2 {
