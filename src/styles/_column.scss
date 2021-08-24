@@ -333,6 +333,7 @@
           p {
             text-align: center;
           }
+          margin-bottom: 50px;  
         }
         .home__sixth-row11 {
           @include block(100%, auto);
@@ -343,10 +344,11 @@
           box-sizing: border-box;
         }
         &-1 {
-          @include block(465px, auto);
+          @include block(505px, auto);
           margin: 0 auto;
           .col--home-6-1-2 {
-            padding: 10px 20px;
+            border-radius: 15px;
+            padding: 40px 60px;
             border: 1px solid red;
             @extend %text-gradient-p;
             box-sizing: border-box;

@@ -200,9 +200,41 @@ export default function Home (props) {
             <Splide
               options={ {
                 type: 'loop',
+                autoWidth: true,
                 focus: 'center',
+                start: 1,
               } }
             >
+              <SplideSlide>
+                <Col className='col--home-6-1'>
+                <Col className="col--home-6-1-2">
+                  <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
+                  <h2>ETH TO NAIRA EXCHANGE <br />
+                      RATE IS NOW #400 PER...
+                  </h2>
+                  <p>Lorem ipsum dolor sit amet, magna habemus
+                    ius ad, qui minimum voluptaria in. Ad mei modus 
+                    quodsi complectitur, postea...
+                  </p>
+                  <Button className='button--linear-white button--pd-18-40' name='read more' />
+                </Col>
+              </Col>
+              </SplideSlide>
+              <SplideSlide>
+                <Col className='col--home-6-1'>
+                <Col className="col--home-6-1-2">
+                  <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
+                  <h2>ETH TO NAIRA EXCHANGE <br />
+                      RATE IS NOW #400 PER...
+                  </h2>
+                  <p>Lorem ipsum dolor sit amet, magna habemus
+                    ius ad, qui minimum voluptaria in. Ad mei modus 
+                    quodsi complectitur, postea...
+                  </p>
+                  <Button className='button--linear-white button--pd-18-40' name='read more' />
+                </Col>
+              </Col>
+              </SplideSlide>
               <SplideSlide>
                 <Col className='col--home-6-1'>
                 <Col className="col--home-6-1-2">
