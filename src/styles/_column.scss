@@ -345,7 +345,7 @@
         &-1 {
           @include block(465px, auto);
           margin: 0 auto;
-          div {
+          .col--home-6-1-2 {
             padding: 10px 20px;
             border: 1px solid red;
             @extend %text-gradient-p;

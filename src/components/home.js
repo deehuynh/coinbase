@@ -205,7 +205,7 @@ export default function Home (props) {
             >
               <SplideSlide>
                 <Col className='col--home-6-1'>
-                <div>
+                <Col className="col--home-6-1-2">
                   <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
                   <h2>ETH TO NAIRA EXCHANGE <br />
                       RATE IS NOW #400 PER...
@@ -215,7 +215,7 @@ export default function Home (props) {
                     quodsi complectitur, postea...
                   </p>
                   <Button className='button--linear-white button--pd-18-40' name='read more' />
-                </div>
+                </Col>
               </Col>
               </SplideSlide>
             </Splide>
