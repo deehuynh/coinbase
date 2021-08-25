@@ -1,8 +1,14 @@
 .about {
   @include frame(100%);
 
+  /**  ROW  **/
+  // 1st row
   &__1st-row {
     @include block(100%, 792.31px);
     @include hero-img("../images/about-bg-1.png");
   }
+
+  /**  COLUMN  **/
+  // Column at the 1st row
+  &__col-1-1 {}
 }
