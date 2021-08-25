@@ -11,6 +11,11 @@ export default function About (props) {
             <h1>Stay updated, <br />
                 Never miss a post.
             </h1>
+
+            <p>
+              Get to know the latest stuff about our services <br />
+              via our blog post.
+            </p>
           </Col>
 
           <Col className="about__col-1-2">

@@ -10,5 +10,13 @@
 
   /**  COLUMN  **/
   // Column at the 1st row
-  &__col-1-1 {}
+  &__col-1 {
+    &-1 {
+      @include block(50%, auto);
+    }
+
+    &-2 {
+      @include block(50%, auto);
+    }
+  }
 }
