@@ -2,8 +2,6 @@
 import Row from "./row"
 //Import column
 import Col from './column'
-// Import button
-import Button from "./button"
 
 export default function About (props) {
     return (
@@ -14,7 +12,7 @@ export default function About (props) {
           </Col>
 
           <Col className="about__col-1-2">
-            
+
           </Col>
         </Row>
       </div>
