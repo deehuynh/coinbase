@@ -15,8 +15,8 @@ export default function About (props) {
             </h1>
 
             <p>
-              Get to know the latest stuff about our services <br />
-              via our blog post.
+              CoinBase is a platform for trading your bitcoin and <br />
+              giftcard at the best rate, why not give us a trial.
             </p>
           </Col>
 
