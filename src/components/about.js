@@ -10,8 +10,9 @@ export default function About (props) {
           <Col className="about__col-1-1">
             <h5>HOME/BLOG</h5>
 
-            <h1>Stay updated, <br />
-                Never miss a post.
+            <h1>
+              Great service, <br />
+              Professional support
             </h1>
 
             <p>
