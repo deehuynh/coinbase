@@ -8,8 +8,10 @@ import Button from "./button"
 export default function About (props) {
     return (
       <div className="about">
-        <Row className="about__f-row">
-          
+        <Row className="about__1st-row">
+          <Col className="about__col-1-1">
+            
+          </Col>
         </Row>
       </div>
     )
