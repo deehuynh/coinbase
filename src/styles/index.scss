@@ -25,7 +25,8 @@ $f-primary: 'Poppins';
 @import 'layout', 'header', 'home','about','footer';
 @import
   'button', 'intro-image','intro-text',
-  'col-image','column', 'gradient-input';
+  'col-image','column', 'gradient-input',
+  'extend';
 
 body {
   margin: 0;
