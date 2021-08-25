@@ -10,6 +10,10 @@ export default function About (props) {
       <div className="about">
         <Row className="about__1st-row">
           <Col className="about__col-1-1">
+
+          </Col>
+
+          <Col className="about__col-1-2">
             
           </Col>
         </Row>
