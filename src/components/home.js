@@ -41,10 +41,10 @@ export default function Home (props) {
             </span>
           </p>
 
-          <p className="col--light">
+          <div className="col--light">
             CoinBase is a platform for trading your bitcoin and
             giftcard at the best rate, why not give us a trial.
-          </p>
+          </div>
 
           <Button
             name="get started" className="button--white-linear button--pd-20-35"

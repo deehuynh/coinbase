@@ -27,6 +27,10 @@
       p {
         @extend %p-18px;
       }
+
+      h5 {
+        @extend %h5-12px;
+      }
     }
 
     &-2 {
