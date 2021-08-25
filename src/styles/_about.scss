@@ -1,3 +1,7 @@
 .about {
   @include frame(100%);
+
+  &__1st-row {
+    @include block(100%, 792.31px);
+  }
 }
