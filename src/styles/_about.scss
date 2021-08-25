@@ -3,5 +3,6 @@
 
   &__1st-row {
     @include block(100%, 792.31px);
+    @include hero-img("../images/about-bg-1.png");
   }
 }
