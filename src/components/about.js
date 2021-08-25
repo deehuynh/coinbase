@@ -8,6 +8,8 @@ export default function About (props) {
       <div className="about">
         <Row className="about__1st-row">
           <Col className="about__col-1-1">
+            <h5>HOME/BLOG</h5>
+
             <h1>Stay updated, <br />
                 Never miss a post.
             </h1>
