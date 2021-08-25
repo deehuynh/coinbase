@@ -2,6 +2,8 @@
 import Row from "./row"
 //Import column
 import Col from './column'
+// Import images
+import IMG1 from '../images/about-img-1.png'
 
 export default function About (props) {
     return (
