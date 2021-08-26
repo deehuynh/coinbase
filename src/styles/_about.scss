@@ -15,6 +15,11 @@
     box-sizing: border-box;
   }
 
+  // 2nd row
+  &__2nd-row {
+    @include block(100%, 155px);
+  }
+
   /**  COLUMN  **/
   // Column at the 1st row
   &__col-1 {
