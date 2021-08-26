@@ -48,12 +48,24 @@
 
   // Column at 2nd row
   &__col-2 {
-    @include frame(100%);
+    @include frame(34%, auto, center);
+
+    box-sizing: border-box;
 
     h2 {
+      text-align: center;
       @extend %h2;
       font-size: 18px!important;
       line-height: 40px;
+      top: -110px;
+    }
+
+    p {
+      @extend %p-14px;
+      text-align: center;
+      margin: {
+        top: -80px;
+      }
     }
   }
 }

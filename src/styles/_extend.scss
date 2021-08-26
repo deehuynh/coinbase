@@ -9,6 +9,11 @@
   color: white;
 }
 
+%p-14px {
+  color: $c-nav-link;
+  font-size: 14px;
+}
+
 %h5-12px {
   font-size: 12px;
   font-weight: 400;
@@ -19,4 +24,19 @@
 %h2 {
   @include text-gradient($c-linear);
   font-size: 28px;
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 7px;
+    border-radius: 100px;
+    background-color: $c-nav-active;
+    bottom: -20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
 }
