@@ -5,6 +5,7 @@ import Col from './column'
 import ColImg from './column-image'
 // Import images
 import IMG1 from '../images/about-img-1.png'
+import IMG2 from '../images/about-img-2.png'
 
 export default function About (props) {
     return (
@@ -39,6 +40,10 @@ export default function About (props) {
               Ramon Ridwan • CEO CoinBase
             </p>
           </Col>
+        </Row>
+
+        <Row className="about__3th-row">
+          <ColImg className="about__col-3-1" image={IMG2} />
         </Row>
       </div>
     )
