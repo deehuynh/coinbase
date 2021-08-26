@@ -29,11 +29,11 @@ export default function About (props) {
 
         <Row className="about__2nd-row">
           <Col className="about__col-2">
-            <h4>
+            <h2>
               “Morbi sagittis ultricies ex, a tempus lorem suscipit non.
               Donec semper leo ut lobortis condimentum. Orci varius natoque penatibus et
               magnis”
-            </h4>
+            </h2>
           </Col>
         </Row>
       </div>
