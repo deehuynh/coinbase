@@ -20,6 +20,11 @@
     @include block(100%, 155px);
   }
 
+  // 3th row
+  &__3th-row {
+    @include block(100%, 790px);
+  }
+
   /**  COLUMN  **/
   // Column at the 1st row
   &__col-1 {

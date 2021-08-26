@@ -43,7 +43,9 @@ export default function About (props) {
         </Row>
 
         <Row className="about__3th-row">
-          <ColImg className="about__col-3-1" image={IMG2} />
+          <Col className="about__col-3">
+            <ColImg className="about__col-3-1" image={IMG2} />
+          </Col>
         </Row>
       </div>
     )
