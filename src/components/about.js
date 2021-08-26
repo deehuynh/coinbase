@@ -34,6 +34,10 @@ export default function About (props) {
               Donec semper leo ut lobortis condimentum. Orci varius natoque penatibus et
               magnis”
             </h2>
+
+            <p>
+              Ramon Ridwan • CEO CoinBase
+            </p>
           </Col>
         </Row>
       </div>
