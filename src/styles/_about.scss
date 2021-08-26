@@ -44,6 +44,11 @@
     @include block(100%, 580px);
   }
 
+  // 6th row
+  &__6th-row {
+    @include block(100%, 380px);
+  }
+
   /**  COLUMN  **/
   // Column at the 1st row
   &__col-1 {
