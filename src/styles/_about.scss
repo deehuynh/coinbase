@@ -44,4 +44,15 @@
       @include block(50%, auto);
     }
   }
+
+  // Column at 2nd row
+  &__col-2 {
+    @include frame(100%);
+
+    h2 {
+      @extend %h2;
+      font-size: 18px!important;
+      line-height: 40px;
+    }
+  }
 }
