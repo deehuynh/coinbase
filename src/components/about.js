@@ -3,6 +3,9 @@ import Row from "./row"
 //Import column
 import Col from './column'
 import ColImg from './column-image'
+// Import button
+import Button from "./button"
+import GradientInput from "./gradient-input"
 // Import images
 import IMG1 from '../images/about-img-1.png'
 import IMG2 from '../images/about-img-2.png'
@@ -111,6 +114,19 @@ export default function About (props) {
                 </div>
               </Col>
             </div>
+
+            <h3>To be continue…</h3>
+          </Col>
+        </Row>
+
+        <Row className="about__5th-row">
+          <Col className="about__col-5">
+            <h2>Meet the team</h2>
+
+            <p>
+              Meet the team that  makes the process of this system fast and <br />
+              painless as possible to provide you with good result 
+            </p>
           </Col>
         </Row>
       </div>

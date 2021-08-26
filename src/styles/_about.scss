@@ -33,10 +33,15 @@
 
   // 4th row
   &__4th-row {
-    @include block(100%, 1140px);
+    @include block(100%, 1100px);
     padding: {
       top: 100px;
     }
+  }
+
+  // 5th row
+  &__5th-row {
+    @include block(100%, 580px);
   }
 
   /**  COLUMN  **/
@@ -192,5 +197,18 @@
         box-sizing: border-box;
       }
     }
+
+    h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $c-nav-link;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+
+  // Column at 5th row
+  &__col-5 {
+    
   }
 }
