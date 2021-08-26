@@ -15,3 +15,10 @@
   color: white;
   text-transform: uppercase;
 }
+
+%h2 {
+  h2 {
+    @include text-gradient($c-linear);
+    font-size: 28px;
+  }
+}
