@@ -33,7 +33,7 @@
 
   // 4th row
   &__4th-row {
-    @include block(100%, 1100px);
+    @include block(100%, 1050px);
     padding: {
       top: 100px;
     }
@@ -209,6 +209,16 @@
 
   // Column at 5th row
   &__col-5 {
-    
+    color: $c-nav-link;
+
+    h2 {
+      @extend %h2;
+    }
+
+    p {
+      margin-top: 50px;
+      font-size: 16px;
+      text-align: center;
+    }
   }
 }

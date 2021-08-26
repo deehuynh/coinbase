@@ -129,6 +129,15 @@ export default function About (props) {
             </p>
           </Col>
         </Row>
+
+        <Row className="about__6th-row">
+          <h2>Subscribe our newsletter</h2>
+
+          <p>
+            Subscribe to our newsletter for daily/weekly <br />
+            update of our products and services.
+          </p>
+        </Row>
       </div>
     )
   }
