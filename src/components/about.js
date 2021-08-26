@@ -6,6 +6,12 @@ import ColImg from './column-image'
 // Import images
 import IMG1 from '../images/about-img-1.png'
 import IMG2 from '../images/about-img-2.png'
+import IMG3 from '../images/Tree.png'
+// Import svgs
+import SVG1 from '../svgs/Quality.svg'
+import SVG2 from '../svgs/medal.svg'
+import SVG3 from '../svgs/customer-review.svg'
+import SVG4 from '../svgs/support.svg'
 
 export default function About (props) {
     return (
@@ -54,6 +60,57 @@ export default function About (props) {
               and managed by CoinBase Business Services established and Incoperated
               in Nigeria.
             </p>
+
+            <Col className="about__col-3-2">
+              <img src={SVG1} alt="qualities" />
+              <img src={SVG2} alt="qualities" />
+              <img src={SVG3} alt="qualities" />
+              <img src={SVG4} alt="qualities" />
+            </Col>
+          </Col>
+        </Row>
+
+        <Row className="about__4th-row">
+          <Col className="about__col-4">
+            <h2>Our history</h2>
+
+            <div className="about__tree">
+              <Col className="about__col-4-1">
+                <div>
+                  <h1>May 2010</h1>
+                  <p>
+                    Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. 
+                    Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. 
+                    Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum 
+                    nibh.uspendisse
+                  </p>
+                </div>
+
+                <div>
+                  <h1>May 2019</h1>
+                  <p>
+                    Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. 
+                    Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. 
+                    Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum 
+                    nibh.uspendisse
+                  </p>
+                </div>
+              </Col>
+              <Col className="about__col-4-2">
+                <img src={IMG3} alt="Tree" />
+              </Col>
+              <Col className="about__col-4-3">
+                <div>
+                  <h1>May 2017</h1>
+                  <p>
+                    Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. 
+                    Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. 
+                    Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum 
+                    nibh.uspendisse
+                  </p>
+                </div>
+              </Col>
+            </div>
           </Col>
         </Row>
       </div>

@@ -25,6 +25,7 @@
   @include text-gradient($c-linear);
   font-size: 28px;
   position: relative;
+  text-align: center;
 
   &::before {
     content: " ";
