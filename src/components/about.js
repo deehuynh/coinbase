@@ -45,6 +45,15 @@ export default function About (props) {
         <Row className="about__3th-row">
           <Col className="about__col-3">
             <ColImg className="about__col-3-1" image={IMG2} />
+
+            <h2>About CoinBase</h2>
+
+            <p>
+              CoinBase is an online site and a p2admin platform that allows users
+              to buy, sell and/ or exchange digital and fiat assets safely. Owned
+              and managed by CoinBase Business Services established and Incoperated
+              in Nigeria.
+            </p>
           </Col>
         </Row>
       </div>
