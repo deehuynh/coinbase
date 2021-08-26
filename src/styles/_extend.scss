@@ -9,6 +9,14 @@
   color: white;
 }
 
+%p-16px {
+  margin-top: 50px;
+  font-size: 16px;
+  color: $c-nav-link;
+  text-align: center;
+  line-height: 40px;
+}
+
 %p-14px {
   color: $c-nav-link;
   font-size: 14px;

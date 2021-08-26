@@ -226,4 +226,18 @@
       text-align: center;
     }
   }
+
+  &__col-6 {
+    h2 {
+      @extend %h2;
+    }
+    p {
+      @extend %p-16px;
+    }
+
+    &-1 {
+      @include flex(0, center);
+      margin-top: 70px;
+    }
+  }
 }

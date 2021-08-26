@@ -131,12 +131,19 @@ export default function About (props) {
         </Row>
 
         <Row className="about__6th-row">
-          <h2>Subscribe our newsletter</h2>
+          <Col className="about__col-6">
+            <h2>Subscribe our newsletter</h2>
 
-          <p>
-            Subscribe to our newsletter for daily/weekly <br />
-            update of our products and services.
-          </p>
+            <p>
+              Subscribe to our newsletter for daily/weekly <br />
+              update of our products and services.
+            </p>
+
+            <Col className='about__col-6-1'>
+              <GradientInput className="home__input" placeholder="EMAIL" />
+              <Button className="button--linear-white button--pd-18-40" name="discover"  />
+            </Col>
+          </Col>
         </Row>
       </div>
     )
