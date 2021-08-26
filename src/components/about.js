@@ -26,6 +26,16 @@ export default function About (props) {
 
           <ColImg className="about__col-1-2" image={IMG1} />
         </Row>
+
+        <Row className="about__2nd-row">
+          <Col className="about__col-2">
+            <h4>
+              “Morbi sagittis ultricies ex, a tempus lorem suscipit non.
+              Donec semper leo ut lobortis condimentum. Orci varius natoque penatibus et
+              magnis”
+            </h4>
+          </Col>
+        </Row>
       </div>
     )
   }
