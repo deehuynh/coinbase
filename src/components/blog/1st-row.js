@@ -11,6 +11,11 @@ export default function FirstRow () {
           Stay updated, <br />
           Never miss a post.
         </h2>
+
+        <p>
+          Get to know the latest stuff about our services <br />
+          via our blog post.
+        </p>
       </Col>
       <ColImage className="blog__col-1-2" image={IMG1} />
     </Row>
