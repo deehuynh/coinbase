@@ -24,6 +24,10 @@
       h1 {
         @extend %h1-40px;
       }
+
+      p {
+        @extend %p-18px;
+      }
     }
   }
 }
