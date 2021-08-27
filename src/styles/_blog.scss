@@ -1,6 +1,7 @@
 .blog {
   @include frame(100%);
 
+  /**  Row  **/
   &__1st-row {
     @include block(100%, 792.31px);
     @include hero-img("../images/about-bg-1.png");
@@ -11,5 +12,18 @@
       top: 100px;
     }
     box-sizing: border-box;
+  }
+
+  /*  Column  */
+  &__col-1 {
+    &-1 {
+      h5 {
+        @extend %h5-12px;
+      }
+
+      h1 {
+        @extend %h1-40px;
+      }
+    }
   }
 }
