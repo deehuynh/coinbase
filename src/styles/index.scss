@@ -28,7 +28,8 @@ $f-primary: 'Poppins';
 @import 'mixin';
 
 // Importing the sass of the component
-@import 'layout', 'header', 'home','about','footer';
+@import 'layout', 'header', 'home','about',
+  'blog','footer';
 @import
   'button', 'intro-image','intro-text',
   'col-image','column', 'gradient-input',
