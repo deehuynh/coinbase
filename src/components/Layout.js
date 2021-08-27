@@ -8,6 +8,7 @@ import {
 import Button from '../components/button'
 import Home from "./home"
 import About from "./about"
+import Blog from "./blog/blog"
 import Footer from "./footer"
 
 // Importing the react-router
@@ -30,13 +31,16 @@ export default function Layout () {
 
         {/* Content */}
         <Switch>
-          {/* Home component */}
           <Route exact path='/'>
             <Home />
           </Route>
 
           <Route path='/about-us'>
             <About />
+          </Route>
+          
+          <Route path='/blog'>
+            <Blog />
           </Route>
         </Switch>
 
