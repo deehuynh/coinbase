@@ -1,3 +1,15 @@
 .blog {
   @include frame(100%);
+
+  &__1st-row {
+    @include block(100%, 792.31px);
+    @include hero-img("../images/about-bg-1.png");
+    @include flex();
+    padding: {
+      left: 12%;
+      right: 12%;
+      top: 100px;
+    }
+    box-sizing: border-box;
+  }
 }
