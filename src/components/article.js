@@ -5,7 +5,8 @@ export default function Article () {
     <article className="article">
       <img src="" alt="" />
       <h1></h1>
-
+      <h5></h5>
+      <p></p>
     </article>
   )
 }
