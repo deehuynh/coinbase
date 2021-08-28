@@ -3,7 +3,7 @@
 export default function Article () {
   return (
     <div className="article">
-      <article></article>
+      <article>Test</article>
     </div>
   )
 }
