@@ -7,6 +7,7 @@ export default function Article () {
       <h1></h1>
       <h5></h5>
       <p></p>
+      <Button className="button--linear-white" />
     </article>
   )
 }
