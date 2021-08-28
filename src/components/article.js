@@ -1,9 +1,9 @@
 import Button from './button'
 
-export default function Article () {
+export default function Article (props) {
   return (
     <article className="article">
-      <img src="" alt="" />
+      <img src={props.img} alt="Article img" />
       <h1></h1>
       <h5></h5>
       <p></p>
