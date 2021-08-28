@@ -2,6 +2,8 @@
 
 export default function Article () {
   return (
-    <div className="article"></div>
+    <div className="article">
+      <article></article>
+    </div>
   )
 }
