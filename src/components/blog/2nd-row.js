@@ -4,9 +4,9 @@ import Article from "../article"
 export default function SecondRow () {
   return (
     <Row className="blog__2nd-row">
-      <Article>
+      <Article 
         
-      </Article>
+      />
     </Row>
   )
 }
