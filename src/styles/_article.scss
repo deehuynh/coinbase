@@ -6,10 +6,10 @@
   padding-bottom: 40px;
   box-sizing: border-box;
   position: relative;
-//   background: white;
+  background: white;
   border: 1px solid transparent;
   background-clip: padding-box;
-  @include gradient-border;
+  @include gradient-border(-1px, 20px 20px 30px 30px);
   
   img {
     width: 100%;
