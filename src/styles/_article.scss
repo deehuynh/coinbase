@@ -1,11 +1,15 @@
 .article {
   @include frame(78%, auto, center);
   border-radius: 20px 20px 30px 30px;
-  overflow: hidden;
   text-align: center;
   color: $c-nav-link;
   padding-bottom: 40px;
   box-sizing: border-box;
+  position: relative;
+//   background: white;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  @include gradient-border;
   
   img {
     width: 100%;

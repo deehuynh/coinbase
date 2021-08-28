@@ -247,3 +247,17 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+//13. Gradient border
+@mixin gradient-border {
+  &::after {
+    position: absolute;
+    content: "";
+    background: $c-linear;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
