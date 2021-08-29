@@ -22,7 +22,7 @@ export default function SecondRow () {
 
       <Article
         className="article--mgbt-50"
-        image={Thumb1}
+        image={Thumb2}
         title="EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT."
         time="09 september, 2019" genre="business"
         description="
@@ -34,7 +34,7 @@ export default function SecondRow () {
 
       <Article
         className="article--mgbt-50"
-        image={Thumb1}
+        image={Thumb3}
         title="ETH TO NAIRA EXCHANGE RATE IS NOW #400 PER..."
         time="18 JUNE, 2019" genre="business"
         description="
