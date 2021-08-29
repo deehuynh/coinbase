@@ -17,6 +17,18 @@ export default function SecondRow () {
         postea verterem persecuti cu est, sea epicuri.
         "
       />
+
+      <Article
+        className="article--mgbt-50"
+        image={Thumb1}
+        title="HOW TO SELL YOUR ITUNES GIFTCARD WITH US"
+        time="19 JUNE, 2019" genre="business"
+        description="
+        Lorem ipsum dolor sit amet, magna habemus ius ad,
+        qui minimum voluptaria in. Ad mei modus quodsi complectitur, 
+        postea verterem persecuti cu est, sea epicuri.
+        "
+      />
     </Row>
   )
 }
