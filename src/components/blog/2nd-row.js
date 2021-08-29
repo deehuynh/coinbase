@@ -21,7 +21,7 @@ export default function SecondRow () {
       <Article
         className="article--mgbt-50"
         image={Thumb1}
-        title="HOW TO SELL YOUR ITUNES GIFTCARD WITH US"
+        title="EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT."
         time="09 september, 2019" genre="business"
         description="
         Lorem ipsum dolor sit amet, magna habemus ius ad,
@@ -33,7 +33,7 @@ export default function SecondRow () {
       <Article
         className="article--mgbt-50"
         image={Thumb1}
-        title="EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT."
+        title="ETH TO NAIRA EXCHANGE RATE IS NOW #400 PER..."
         time="18 JUNE, 2019" genre="business"
         description="
         Lorem ipsum dolor sit amet, magna habemus ius ad,
