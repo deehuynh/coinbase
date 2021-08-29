@@ -2,6 +2,8 @@ import Row from "../row"
 import Article from "../article"
 // Import image
 import Thumb1 from '../../images/blog-thumb-1.png'
+import Thumb2 from '../../images/blog-thumb-2.png'
+import Thumb3 from '../../images/blog-thumb-3.png'
 
 export default function SecondRow () {
   return (
