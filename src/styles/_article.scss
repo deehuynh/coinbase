@@ -17,6 +17,7 @@
   h1 {
     @include text-gradient($c-linear);
     margin: 50px 0 15px 0;
+    text-transform: uppercase;
   }
 
   h5 {
