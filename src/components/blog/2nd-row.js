@@ -22,7 +22,7 @@ export default function SecondRow () {
         className="article--mgbt-50"
         image={Thumb1}
         title="HOW TO SELL YOUR ITUNES GIFTCARD WITH US"
-        time="19 JUNE, 2019" genre="business"
+        time="09 september, 2019" genre="business"
         description="
         Lorem ipsum dolor sit amet, magna habemus ius ad,
         qui minimum voluptaria in. Ad mei modus quodsi complectitur, 
@@ -34,7 +34,7 @@ export default function SecondRow () {
         className="article--mgbt-50"
         image={Thumb1}
         title="EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT."
-        time="19 JUNE, 2019" genre="business"
+        time="18 JUNE, 2019" genre="business"
         description="
         Lorem ipsum dolor sit amet, magna habemus ius ad,
         qui minimum voluptaria in. Ad mei modus quodsi complectitur, 
