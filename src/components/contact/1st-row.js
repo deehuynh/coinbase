@@ -1,6 +1,7 @@
 import Row from "../row"
 import Col from "../column"
 import ColImage from "../column-image"
+import IMG1 from "../../images/contact-img-1.png"
 
 export default function FirstRow () {
   return (
@@ -18,7 +19,7 @@ export default function FirstRow () {
           of queries at hand.
         </p>
       </Col>
-      <ColImage className="contact__col-1-2" />
+      <ColImage className="contact__col-1-2" image={IMG1} />
     </Row>
   )
 }
