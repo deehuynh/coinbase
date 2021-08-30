@@ -9,6 +9,7 @@ import Button from '../components/button'
 import Home from "./home"
 import About from "./about"
 import Blog from "./blog/blog"
+import Contact from "./contact/contact"
 import Footer from "./footer"
 
 // Importing the react-router
@@ -41,6 +42,10 @@ export default function Layout () {
           
           <Route path='/blog'>
             <Blog />
+          </Route>
+
+          <Route path='/contact-us'>
+            <Contact />
           </Route>
         </Switch>
 
