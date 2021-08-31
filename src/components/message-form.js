@@ -8,7 +8,7 @@ export default function MessageForm (props) {
         <input type="text" placeholder="Email *" />
       </div>
 
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your comment"></textarea>
+      <textarea rows="10" placeholder="Your Comment"></textarea>
 
       <Button className="button--linear-white button--pd-15-40" name="publish" />
     </form>

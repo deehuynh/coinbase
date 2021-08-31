@@ -14,15 +14,22 @@
     border-radius: 5px;
     border: 1px solid $border-color;
     outline: none;
+    box-sizing: border-box;
+    font-family: $f-primary;
   }
 
   textarea {
+    width: 100%;
+    font-family: $f-primary;
     padding: 15px;
     border-radius: 5px;
     border: 1px solid $border-color;
+    box-sizing: border-box;
+    outline: none;
   }
 
   input::placeholder ,textarea::placeholder {
     opacity: 1;
+    font-size: 14px;
   }
 }
