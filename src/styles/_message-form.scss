@@ -1,5 +1,6 @@
 .message-form {
   @include block(100%, auto);
+  color: $c-nav-link;
 
   $border-color: #D1D1D1;
   input {
@@ -8,5 +9,15 @@
     border-radius: 5px;
     border: 1px solid $border-color;
     outline: none;
+  }
+
+  textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+  }
+
+  input::placeholder ,textarea::placeholder {
+    opacity: 1;
   }
 }
