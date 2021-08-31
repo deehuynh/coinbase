@@ -3,6 +3,11 @@
   color: $c-nav-link;
 
   $border-color: #D1D1D1;
+
+  &__input-group {
+    @include flex(0, space-between);
+  }
+
   input {
     width: 40%;
     padding: 15px;
