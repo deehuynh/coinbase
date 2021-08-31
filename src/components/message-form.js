@@ -2,7 +2,7 @@ import Button from './button'
 
 export default function MessageForm (props) {
   return (
-    <form className="massage-form">
+    <form className="message-form">
       <div className="message-form__input-group">
         <input type="text" placeholder="Name *" />
         <input type="text" placeholder="Email *" />

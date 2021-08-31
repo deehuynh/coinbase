@@ -1,1 +1,8 @@
-.message-form {}
+.message-form {
+  display: inline-block;
+
+  input {
+    padding: 15px;
+    border-radius: 5px;
+  }
+}
