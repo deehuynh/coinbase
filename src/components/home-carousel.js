@@ -13,6 +13,7 @@ export default function Carousel () {
           perPage: 3,
           perMove: 1,
           focus: 'center',
+          fixedWidth: '400px',
         }}
       >
         <SplideSlide className="home-carousel__slide">
@@ -27,7 +28,7 @@ export default function Carousel () {
           <Button className='button--not-active button--pd-15-30' name='read more' />
         </SplideSlide>
 
-        <SplideSlide>
+        <SplideSlide className="home-carousel__slide">
           <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
           <h2>ETH TO NAIRA EXCHANGE <br />
             RATE IS NOW #400 PER...
@@ -39,7 +40,7 @@ export default function Carousel () {
           <Button className='button--not-active button--pd-15-30' name='read more' />
         </SplideSlide>
 
-        <SplideSlide>
+        <SplideSlide className="home-carousel__slide">
           <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
           <h2>ETH TO NAIRA EXCHANGE <br />
             RATE IS NOW #400 PER...

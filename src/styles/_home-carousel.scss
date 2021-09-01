@@ -9,11 +9,41 @@
 
   &__slide {
     $c-not-active: #888888;
-    @include block(400px, auto);
-    margin: {
-      top: 35px;
-      left: 20px;
-      right: 20px;
+    border-radius: 15px;
+    padding: 30px 55px;
+    border: 1px solid $c-not-active;
+    @extend %text-gradient-p;
+    box-sizing: border-box;
+
+    p {
+        margin: {
+          top: 0;
+          bottom: 20px;
+        }
+        color: $c-not-active;
+        font-size: 10px;
+        line-height: 18.5px;
+      }
+
+    h2 {
+    font-size: 20px;
+    color: $c-not-active;
+    }
+
+    h5 {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 10px;
+      font-weight: 400;
+      // color: #333333;
+      color: $c-not-active;
+
+      span {
+        border-right: 1px solid $c-not-active;
+        padding-right: 10px;
+        box-sizing: border-box;
+        margin-right: 10px;
+      }
     }
   }
 
