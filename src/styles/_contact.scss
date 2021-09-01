@@ -15,11 +15,15 @@
 
     &__2nd-row {
       @include block(100%, auto);
+      padding: 0 10px;
+      box-sizing: border-box;
 
       p {
         font-size: 17px;
         color: $c-nav-link;
         text-align: center;
+        margin-top: -100px;
+        margin-bottom: 50px;
       }
     }
   
