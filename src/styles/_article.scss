@@ -3,15 +3,17 @@
   border-radius: 20px 20px 30px 30px;
   text-align: center;
   color: $c-nav-link;
-  padding-bottom: 40px;
   box-sizing: border-box;
-  position: relative;
-  background: white;
-  background-clip: padding-box;
-  @include gradient-border(-1px, 20px 20px 31px 31px);
   
   img {
     width: 100%;
+  }
+
+  &__info {
+    position: relative;
+    background: white;
+    background-clip: padding-box;
+    @include gradient-border(-1px, 20px 20px 31px 31px);
   }
 
   h1 {
