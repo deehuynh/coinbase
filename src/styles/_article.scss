@@ -20,7 +20,7 @@
     background: white;
     background-clip: padding-box;
     border-radius: 0 0 30px 30px;
-    @include gradient-border(-1px, 20px 20px 31px 31px);
+    @include gradient-border(-1px, 0px 0px 31px 31px);
   }
 
   h1 {
