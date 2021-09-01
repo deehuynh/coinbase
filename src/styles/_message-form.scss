@@ -35,4 +35,11 @@
     opacity: 1;
     font-size: 14px;
   }
+
+  /*  RESPONSIVE  */ 
+  @include media (425px) {
+    &__input-group, textarea {
+      margin-bottom: 20px;
+    }
+  }
 }

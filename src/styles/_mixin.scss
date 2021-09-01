@@ -262,3 +262,19 @@
     z-index: -1;
   }
 }
+
+/*  RESPONSIVE  */ 
+@mixin media (
+  $size,
+  $width: 'max'
+) {
+  @if $width == 'min' {
+    @media (min-width: $size) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $size) {
+      @content;
+    }
+  }
+}
