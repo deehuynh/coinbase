@@ -132,13 +132,11 @@
 
   /*  RESPONSIVE  */ 
 
+  @include media (1450px) {
+    padding-bottom: 20px;
+  }
+
   @include media (1024px) {
-    &__col-4 {
-      .footer__row-14 {
-        div {
-          
-        }
-      }
-    }
+    
   }
 }
