@@ -6,10 +6,11 @@
 
   &__input-group {
     @include flex(0, space-between);
+    margin-bottom: 30px;
   }
 
   input {
-    width: 43%;
+    width: 47.5%;
     padding: 15px;
     border-radius: 5px;
     border: 1px solid $border-color;
