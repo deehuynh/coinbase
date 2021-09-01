@@ -11,7 +11,7 @@
   }
 
   &__info {
-    @include block(calc(100% - 1px), auto, center);
+    @include frame(calc(100% - 2px), auto, center);
     padding: {
       top: 60px;
       bottom: 40px;
