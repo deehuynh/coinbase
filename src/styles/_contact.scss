@@ -15,6 +15,12 @@
 
     &__2nd-row {
       @include block(100%, auto);
+
+      p {
+        font-size: 17px;
+        color: $c-nav-link;
+        text-align: center;
+      }
     }
   
     &__3th-row {
