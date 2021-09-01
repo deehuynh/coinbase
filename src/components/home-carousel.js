@@ -12,9 +12,10 @@ export default function Carousel () {
           type: 'loop',
           perPage: 3,
           perMove: 1,
+          focus: 'center',
         }}
       >
-        <SplideSlide>
+        <SplideSlide className="home-carousel__slide">
           <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
           <h2>ETH TO NAIRA EXCHANGE <br />
             RATE IS NOW #400 PER...

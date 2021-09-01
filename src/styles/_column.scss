@@ -340,14 +340,7 @@
           margin-bottom: 50px;  
         }
         .home__sixth-row11 {
-          background-color: red;
-          @include block(90%, auto);
-          padding: {
-            left: 100px;
-            right: 100px;
-          }
-          box-sizing: border-box;
-          margin: 0 auto;
+          
         }
 
         .splide__slide.is-active {

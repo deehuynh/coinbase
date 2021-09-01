@@ -1,1 +1,13 @@
-.home-carousel {}
+.home-carousel {
+  @include block(90%, auto);
+  padding: {
+    left: 100px;
+    right: 100px;
+  }
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  &__slide {
+    
+  }
+}
