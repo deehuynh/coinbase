@@ -340,6 +340,7 @@
           margin-bottom: 50px;  
         }
         .home__sixth-row11 {
+          background-color: red;
           @include block(90%, auto);
           padding: {
             left: 100px;
@@ -356,8 +357,8 @@
             @include block(480px, auto);
             margin: {
               top: 0;
-              left: -105px;
-              right: -105px;
+              left: auto;
+              right: auto;
             }
 
             background: $c-linear;

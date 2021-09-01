@@ -200,11 +200,12 @@ export default function Home (props) {
             <Splide
               options={ {
                 type: 'loop',
-                autoWidth: true,
                 focus: 'center',
                 start: 1,
                 arrows: false,
                 pagination: false,
+                perPage: 3,
+                perMove: 1,
               } }
             >
               <SplideSlide>
