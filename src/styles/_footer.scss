@@ -16,13 +16,14 @@
 }
 
 .footer {
-  @include block(100%, 351px);
+  @include block(100%, auto);
   @include flex();
   background-color: $bg-footer;
   padding: {
     top: 70px;
     right: 80px;
     left: 80px;
+    bottom: 65px;
   };
   box-sizing: border-box;
 
@@ -128,4 +129,6 @@
       }
     }
   }
+
+  /*  RESPONSIVE  */ 
 }

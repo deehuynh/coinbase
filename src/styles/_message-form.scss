@@ -36,7 +36,7 @@
     font-size: 14px;
   }
 
-  /*  RESPONSIVE  */ 
+  /*  RESPONSIVE  */
   @include media (425px) {
     &__input-group, textarea {
       margin-bottom: 20px;
