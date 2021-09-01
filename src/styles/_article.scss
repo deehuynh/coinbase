@@ -11,7 +11,7 @@
   }
 
   &__info {
-    @include frame(calc(100% - 2px), auto, center);
+    @include frame(calc(100% - 1px), auto, center);
     padding: {
       top: 60px;
       bottom: 40px;
@@ -26,7 +26,7 @@
 
   h1 {
     @include text-gradient($c-linear);
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     text-transform: uppercase;
   }
 
