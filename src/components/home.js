@@ -195,9 +195,7 @@ export default function Home (props) {
             <p>Get to know the latest stuff via our blog post.</p>
           </Row>
 
-          <Row className="home__sixth-row11">
-            <Carousel />
-          </Row>
+          <Carousel />
         </Col>
       </Row>
 
