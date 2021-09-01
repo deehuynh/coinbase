@@ -9,7 +9,7 @@ export default function Carousel () {
     <div className="home-carousel">
       <Splide
         options = {{
-          type: 'loop',
+          type: 'slide',
           perPage: 3,
           perMove: 1,
           focus: 'center',

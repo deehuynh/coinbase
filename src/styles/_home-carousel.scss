@@ -6,6 +6,7 @@
   }
   box-sizing: border-box;
   margin: 0 auto;
+  position: relative;
 
   &__slide {
     $c-not-active: #888888;
@@ -49,26 +50,10 @@
 }
 
 .splide__slide.is-active {
-  .home-carousel__slide {
-    position: relative;
-    z-index: 10;
-    @include block(480px, auto);
-    margin: {
-      top: -100px;
-      left: auto;
-      right: auto;
-    }
-
-    background: $c-linear;
-    padding: 1px;
-    border-radius: 16px;
-
-    // .col--home-6-1-2 {
-    //     border: none;
-    //     padding: 40px 60px;
-    //     background: white;
-    //   }
-  }
+  @include block(480px!important, auto);
+  position: absolute;
+  top: 0;
+  right: 0;
 
   .button--not-active {
     background: $c-linear;
