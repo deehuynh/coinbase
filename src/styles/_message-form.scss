@@ -1,5 +1,5 @@
 .message-form {
-  @include block(100%, auto);
+  @include frame(732px, auto, center);
   color: $c-nav-link;
 
   $border-color: #D1D1D1;
@@ -9,7 +9,7 @@
   }
 
   input {
-    width: 40%;
+    width: 43%;
     padding: 15px;
     border-radius: 5px;
     border: 1px solid $border-color;
