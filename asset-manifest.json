@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/coinbase/static/css/main.d8e969ef.chunk.css",
-    "main.js": "/coinbase/static/js/main.da616472.chunk.js",
-    "main.js.map": "/coinbase/static/js/main.da616472.chunk.js.map",
+    "main.js": "/coinbase/static/js/main.f88691fb.chunk.js",
+    "main.js.map": "/coinbase/static/js/main.f88691fb.chunk.js.map",
     "runtime-main.js": "/coinbase/static/js/runtime-main.335ea720.js",
     "runtime-main.js.map": "/coinbase/static/js/runtime-main.335ea720.js.map",
     "static/css/2.4613347e.chunk.css": "/coinbase/static/css/2.4613347e.chunk.css",
@@ -50,6 +50,6 @@
     "static/css/2.4613347e.chunk.css",
     "static/js/2.7c23e5eb.chunk.js",
     "static/css/main.d8e969ef.chunk.css",
-    "static/js/main.da616472.chunk.js"
+    "static/js/main.f88691fb.chunk.js"
   ]
 }
