@@ -18,6 +18,7 @@
 .footer {
   @include block(100%, auto);
   @include flex();
+  flex-wrap: wrap;
   background-color: $bg-footer;
   padding: {
     top: 70px;
@@ -136,7 +137,105 @@
     padding-bottom: 20px;
   }
 
-  @include media (1024px) {
-    
+  @include media (1180px) {
+    &__col {
+      &-1 {
+        width: 35%;
+      }
+      &-2 {
+        width: 35%;
+      }
+      &-3 {
+        width: 20%;
+      }
+      &-4 {
+        width: 100%;
+        margin: 40px 0;
+      }
+    }
+  }
+
+  @include media (768px) {
+    &__col {
+      &-1 {
+        width: 90%;
+      }
+      &-2 {
+        width: 50%;
+        margin-top: 40px;
+        margin-right: 10%;
+      }
+      &-3 {
+        width: 40%;
+        margin-top: 40px;
+      }
+      &-4 {
+        width: 100%;
+        margin: {
+          bottom: 20px;
+          top: 40px;
+        };
+      }
+    }
+  }
+
+  @include media (500px) {
+    padding: {
+      left: 40px;
+      right: 40px;
+    }
+    &__col {
+      &-1 {
+        width: 90%;
+      }
+      &-2 {
+        width: 50%;
+        margin-top: 40px;
+        margin-right: 10%;
+      }
+      &-3 {
+        width: 40%;
+        margin-top: 40px;
+      }
+      &-4 {
+        width: 100%;
+        margin: {
+          bottom: 20px;
+          top: 40px;
+        };
+      }
+    }
+  }
+
+  @include media (400px) {
+    &__col {
+      &-4 {
+        .footer__row-14 {
+          div {
+            @include block(55px);
+          }
+        }
+      }
+    }
+  }
+
+  @include media (320px) {
+    padding: {
+      left: 20px;
+      right: 20px;
+    }
+    &__col {
+      &-2 {
+        width: 60%;
+        margin-right: 0;
+      }
+      &-4 {
+        .footer__row-14 {
+          div {
+            @include block(49px);
+          }
+        }
+      }
+    }
   }
 }

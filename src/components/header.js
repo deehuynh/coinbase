@@ -24,21 +24,21 @@ function Logo () {
 }
 
 /* Navigation component */
-function Nav () {
+function Nav (props) {
 
   const data = [];
   const listNav = [
     {
-      name: 'Home', url: '/'
+      name: 'Home', url: props.baseUrl
     },
     {
-      name: 'About Us', url: '/about-us'
+      name: 'About Us', url: props.baseUrl + '/about-us'
     },
     {
-      name: 'Blog', url: '/blog'
+      name: 'Blog', url: props.baseUrl + '/blog'
     },
     {
-      name: 'Contact Us', url: '/contact-us'
+      name: 'Contact Us', url: props.baseUrl + '/contact-us'
     },
   ];
   listNav.forEach((item,index) => {

@@ -19,32 +19,33 @@ import {
 } from 'react-router-dom'
 
 export default function Layout () {
+  const baseUrl = '/coinbase';
   return (
     <div className="layout">
       <Router>
         {/* Header component */}
         <Header>
           <Logo />
-          <Nav />
+          <Nav baseUrl={baseUrl}/>
           <Dropdown />
           <Button name='login' className="button--linear-white button--pd-18-55" />
         </Header>
 
         {/* Content */}
         <Switch>
-          <Route exact path='/'>
+          <Route exact path={baseUrl}>
             <Home />
           </Route>
 
-          <Route path='/about-us'>
+          <Route path={baseUrl + `/about-us`}>
             <About />
           </Route>
           
-          <Route path='/blog'>
+          <Route path={baseUrl + `/blog`}>
             <Blog />
           </Route>
 
-          <Route path='/contact-us'>
+          <Route path={baseUrl + `/contact-us`}>
             <Contact />
           </Route>
         </Switch>
