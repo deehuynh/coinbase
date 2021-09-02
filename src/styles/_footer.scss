@@ -208,7 +208,17 @@
   }
 
   @include media (400px) {
+    padding: {
+      top: 50px;
+      left: 30px;
+      right: 30px;
+    }
     &__col {
+      &-1 {
+        .footer__row-12 {
+          margin-top: 30px;
+        }
+      }
       &-4 {
         .footer__row-14 {
           div {

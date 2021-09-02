@@ -5,6 +5,7 @@ import {
   Nav,
   Dropdown
 } from "./header"
+import MobileNav from './mobile-nav'
 import Button from '../components/button'
 import Home from "./home"
 import About from "./about"
@@ -28,12 +29,15 @@ export default function Layout () {
           <Logo />
           <Nav baseUrl={baseUrl}/>
           <Dropdown />
-          <Button name='login' className="button--linear-white button--pd-18-55" />
+          <div className="m-menu-group">
+            <Button name='login' id="header__login-btn" className="button--linear-white button--pd-18-55" />
+            <MobileNav />
+          </div>
         </Header>
 
         {/* Content */}
         <Switch>
-          <Route exact path={baseUrl}>
+          <Route exact path='/'>
             <Home />
           </Route>
 
