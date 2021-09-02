@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/coinbase/static/css/main.652c202a.chunk.css",
-    "main.js": "/coinbase/static/js/main.f88691fb.chunk.js",
-    "main.js.map": "/coinbase/static/js/main.f88691fb.chunk.js.map",
+    "main.css": "/coinbase/static/css/main.d72c6e04.chunk.css",
+    "main.js": "/coinbase/static/js/main.deb5a81d.chunk.js",
+    "main.js.map": "/coinbase/static/js/main.deb5a81d.chunk.js.map",
     "runtime-main.js": "/coinbase/static/js/runtime-main.335ea720.js",
     "runtime-main.js.map": "/coinbase/static/js/runtime-main.335ea720.js.map",
     "static/css/2.4613347e.chunk.css": "/coinbase/static/css/2.4613347e.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.9511d2af.chunk.js.map": "/coinbase/static/js/3.9511d2af.chunk.js.map",
     "index.html": "/coinbase/index.html",
     "static/css/2.4613347e.chunk.css.map": "/coinbase/static/css/2.4613347e.chunk.css.map",
-    "static/css/main.652c202a.chunk.css.map": "/coinbase/static/css/main.652c202a.chunk.css.map",
+    "static/css/main.d72c6e04.chunk.css.map": "/coinbase/static/css/main.d72c6e04.chunk.css.map",
     "static/js/2.7c23e5eb.chunk.js.LICENSE.txt": "/coinbase/static/js/2.7c23e5eb.chunk.js.LICENSE.txt",
     "static/media/Eth.b7785a6d.svg": "/coinbase/static/media/Eth.b7785a6d.svg",
     "static/media/Facebook.1b6476f3.svg": "/coinbase/static/media/Facebook.1b6476f3.svg",
@@ -38,6 +38,7 @@
     "static/media/home-hero.49a3db07.png": "/coinbase/static/media/home-hero.49a3db07.png",
     "static/media/home-img-3.bdb680c6.png": "/coinbase/static/media/home-img-3.bdb680c6.png",
     "static/media/medal.74cb0217.svg": "/coinbase/static/media/medal.74cb0217.svg",
+    "static/media/menu-btn.ee40538e.svg": "/coinbase/static/media/menu-btn.ee40538e.svg",
     "static/media/phone-1.48fecdbb.png": "/coinbase/static/media/phone-1.48fecdbb.png",
     "static/media/phone-2.45bf6729.png": "/coinbase/static/media/phone-2.45bf6729.png",
     "static/media/plus.8bf9d15f.svg": "/coinbase/static/media/plus.8bf9d15f.svg",
@@ -49,7 +50,7 @@
     "static/js/runtime-main.335ea720.js",
     "static/css/2.4613347e.chunk.css",
     "static/js/2.7c23e5eb.chunk.js",
-    "static/css/main.652c202a.chunk.css",
-    "static/js/main.f88691fb.chunk.js"
+    "static/css/main.d72c6e04.chunk.css",
+    "static/js/main.deb5a81d.chunk.js"
   ]
 }
