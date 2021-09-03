@@ -1,0 +1,67 @@
+.hero {
+  @include block(100%, 792.31px);
+  @include hero-img("../images/about-bg-1.png");
+  @include flex();
+  padding: {
+    left: 12%;
+    right: 12%;
+  }
+  box-sizing: border-box;
+
+  &__col {
+    &-1 {
+      @include block(50%, auto);
+      margin-top: 140px;
+      h5 {
+        @extend %h5-12px;
+      }
+  
+      h1 {
+        @extend %h1-40px;
+      }
+  
+      p {
+        @extend %p-18px;
+      }
+    }
+
+    &-2 {
+      @include block(50%, auto);
+      text-align: right;
+    }
+  }
+
+  /*  CONTACT COMPONENT  */
+  &__contact {
+    margin-top: 35px;
+  }
+
+  @include media (1330px) {
+    padding: {
+      left: 10%;
+      right: 10%;
+    }
+  }
+
+  @include media (1230px) {
+    padding: {
+      left: 7%;
+      right: 7%;
+    }
+  }
+
+  @include media (1130px) {
+    padding: {
+      left: 3%;
+      right: 3%;
+    }
+  }
+
+  @include media (425px) {
+    flex-direction: column;
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+  }
+}
