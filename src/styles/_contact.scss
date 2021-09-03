@@ -66,5 +66,15 @@
 
 /*  RESPONSIVE  */ 
 @include media (425px) {
-  
+  .contact {
+    &__2nd-row {
+      p {
+        margin-top: -150px;
+      }
+    }
+
+    &__3th-row {
+      padding: 0;
+    }
+  }
 }
