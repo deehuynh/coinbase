@@ -1,8 +1,13 @@
 import MenuBtn from '../svgs/menu-btn.svg'
 import { NavLink } from 'react-router-dom';
 import Button from './button'
+import { useRef } from 'react';
 
 export default function MobileNav () {
+
+  const refContainer = useRef(null);
+  const refRightArrow = useRef(null);
+  const refDownArrow = useRef(null);
 
   const tabs = [];
 
@@ -20,6 +25,19 @@ export default function MobileNav () {
       name: 'Contact Us', url: '/contact-us'
     },
   ];
+
+  const handleDropdown = () => {
+    const style = refContainer.current.style.display;
+    if (style === 'none') {
+      refContainer.current.style = "display: block";
+      refRightArrow.current.style = "display: none";
+      refDownArrow.current.style = "display: block";
+    } else if (style === 'block') {
+      refContainer.current.style = "display: none"
+      refRightArrow.current.style = "display: block";
+      refDownArrow.current.style = "display: none";
+    }
+  }
 
   listNav.forEach((item,index) => {
     tabs.push(
@@ -41,11 +59,12 @@ export default function MobileNav () {
           {tabs}
         </div>
 
-        <div id="m-nav__dropdown-btn" className="m-nav__dropdown">
+        <div onClick={handleDropdown} className="m-nav__dropdown">
           Sell Bitcoin/ Giftcard
-          <span className="m-nav__arrow"></span>
+          <span ref={refRightArrow} style={{display: 'block'}} className="m-nav__arrow"></span>
+          <span ref={refDownArrow} style={{display: 'none'}} className="m-nav__down-arrow"></span>
 
-          <div id="m-nav__dropdown" className="m-nav__dropdown-content">
+          <div ref={refContainer} style={{display: 'none'}} className="m-nav__dropdown-content">
             <a href="/">Sell Bitcoin</a>
             <a href="/">Sell Giftcard</a>
           </div>

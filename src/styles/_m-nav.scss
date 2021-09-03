@@ -77,11 +77,15 @@
     }
   }
 
-  &__arrow {
+  &__arrow, &__down-arrow {
     display: inline-block;
     border-width: 4px;
     border-style: solid;
     border-color: transparent transparent transparent #606060;
+  }
+
+  &__down-arrow {
+    border-color: #606060 transparent transparent transparent;
   }
 
   // Responsive
