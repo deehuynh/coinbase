@@ -7,25 +7,25 @@
     right: 12%;
   }
   box-sizing: border-box;
-  font-size: 1px;
 
   &__col {
     &-1 {
       @include block(50%, auto);
       margin-top: 140px;
+      font-size: 16px;
       h5 {
         @extend %h5-12px;
-        font-size: 0.75em;
+        font-size: 0.750em;
       }
   
       h1 {
         @extend %h1-40px;
-        font-size: 2.5em;
-        line-height: 1.5em;
+        font-size: 2.500em;
       }
   
       p {
         @extend %p-18px;
+        font-size: 1.125em;
       }
     }
 
