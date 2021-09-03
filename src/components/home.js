@@ -26,12 +26,15 @@ import EthI from '../svgs/Eth.svg'
 import BankI from '../svgs/bank-building.svg'
 import Transfer from '../svgs/Transfer.svg'
 import Transfer2 from '../svgs/Transfer2.svg'
+// Import home-hero
+import HomeHero from "./home/home-hero";
 
 export default function Home (props) {
   return (
     <div className="home">
+      <HomeHero image={HomeImg} />
       {/* First row */}
-      <Row className="home__f-row">
+      {/* <Row className="home__f-row">
         <Col className="col--home">
           <p>
             We provide easy solution
@@ -53,7 +56,7 @@ export default function Home (props) {
         </Col>
 
         <ColImage className="col-image--home" image={HomeImg} />
-      </Row>
+      </Row> */}
 
       {/* Second row */}
       <Row className="home__s-row">

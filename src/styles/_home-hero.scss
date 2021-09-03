@@ -1,0 +1,45 @@
+.home-hero {
+  @include block(100%, 816.31px);
+  @include hero-img('../images/HomeBg.png');
+  @include flex();
+  padding: {
+    left: 12%;
+    right: 5%;
+  }
+  box-sizing: border-box;
+
+  &__col {
+    &-1 {
+      @include block(45%, auto);
+      margin-top: 140px;
+      font-size: 16px;
+      color: white;
+
+      p {
+        line-height: 1.5;
+      }
+
+      p:nth-child(1) {
+        font-size: 2.5em;
+        margin: 0;
+      }
+
+      p:nth-child(2) {
+        font-size: 1.125em;
+        margin: {
+          top: 25px;
+          bottom: 30px;
+        }
+      }
+  
+      & span {
+        font-weight: 700;
+      }
+    }
+
+    &-2 {
+      @include block(55%, auto);
+      text-align: right;
+    }
+  }
+}
