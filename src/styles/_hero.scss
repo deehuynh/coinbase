@@ -87,6 +87,7 @@
         width: 100%;
         margin-top: 50px;
         text-align: center;
+        font-size: 13px;
       }
 
       &-2 {
@@ -102,9 +103,6 @@
 
   @include media (668px) {
     &__col {
-      &-1 {
-
-      }
 
       &-2 {
         img {
