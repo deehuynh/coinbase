@@ -10,7 +10,7 @@
 
   &__col {
     &-1 {
-      @include block(45%, auto);
+      @include block(48%, auto);
       margin-top: 140px;
       font-size: 16px;
       color: white;
@@ -38,11 +38,158 @@
     }
 
     &-2 {
-      @include block(55%, auto);
+      @include block(52%, auto);
       margin: {
         top: 60px;
       }
       text-align: right;
+    }
+  }
+
+  //** RESPONSIVE **//
+
+  @include media (1330px) {
+    padding: {
+      left: 10%;
+    }
+  }
+
+  @include media (1280px) {
+    padding: {
+      left: 5%;
+      right: 0%;
+    }
+  }
+
+  @include media (1140px) {
+    padding: {
+      left: 3%;
+    }
+    &__col-1 {
+      font-size: 15px;
+    }
+  }
+
+  @include media (1024px) {
+    padding: {
+      left: 5%;
+      right: 1%;
+    }
+    &__col {
+      &-1 {
+        width: 55%;
+        font-size: 13px;
+      }
+
+      &-2 {
+        width: 45%;
+        margin-top: 120px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @include media (924px) {
+    flex-direction: column;
+    &__col {
+      &-1 {
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 13px;
+      }
+
+      &-2 {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        img {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  @include media (768px) {
+    &__col-2 {
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  @include media (668px) {
+    &__col {
+
+      &-1 {
+        font-size: 12px;
+      }
+
+      &-2 {
+        margin-top: 25px;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  @include media (480px) {
+    &__col-2 {
+      img {
+        width: 55%;
+      }
+    }
+  }
+
+  @include media (426px) {
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+
+    &__col {
+      &-1 {
+        margin-top: 30px;
+        font-size: 11px;
+      }
+
+      &-2 {
+        margin-top: 30px;
+
+        img {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  @include media (376px) {
+    &__col-1 {
+      margin-top: 40px;
+      font-size: 10px;
+    }
+  }
+
+  @include media (350px) {
+    &__col-1 {
+      p {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include media (337px) {
+    &__col-1 {
+      font-size: 10px;
+    }
+
+    &__col-2 {
+      margin-top: 40px;
     }
   }
 }
