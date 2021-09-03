@@ -7,6 +7,7 @@
     right: 12%;
   }
   box-sizing: border-box;
+  font-size: 1px;
 
   &__col {
     &-1 {
@@ -14,10 +15,13 @@
       margin-top: 140px;
       h5 {
         @extend %h5-12px;
+        font-size: 0.75em;
       }
   
       h1 {
         @extend %h1-40px;
+        font-size: 2.5em;
+        line-height: 1.5em;
       }
   
       p {
@@ -62,6 +66,17 @@
     padding: {
       left: 15px;
       right: 15px;
+    }
+
+    &__col {
+      &-1 {
+        width: 100%;
+        margin-top: 40px;
+      }
+
+      &-2 {
+        width: 100%;
+      }
     }
   }
 }
