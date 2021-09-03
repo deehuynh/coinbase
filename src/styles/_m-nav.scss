@@ -24,6 +24,7 @@
   
   &__btn {
     @include block(100%);
+    cursor: pointer;
   }
 
   &__content {

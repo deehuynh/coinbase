@@ -1,4 +1,5 @@
 import MenuBtn from '../svgs/menu-btn.svg'
+import CloseBtn from '../svgs/close-btn.svg'
 import { NavLink } from 'react-router-dom';
 import Button from './button'
 import { useRef } from 'react';
@@ -8,6 +9,9 @@ export default function MobileNav () {
   const refContainer = useRef(null);
   const refRightArrow = useRef(null);
   const refDownArrow = useRef(null);
+  const refNav = useRef(null);
+  const refOpenNav = useRef(null);
+  const refCloseNav = useRef(null);
 
   const tabs = [];
 
@@ -25,6 +29,19 @@ export default function MobileNav () {
       name: 'Contact Us', url: '/contact-us'
     },
   ];
+
+  const handleNav = () => {
+    const style = refNav.current.style.display;
+    if (style === 'none') {
+      refNav.current.style = "display: block";
+      refOpenNav.current.style = "display: none";
+      refCloseNav.current.style = "display: block";
+    } else if (style === 'block') {
+      refNav.current.style = "display: none";
+      refOpenNav.current.style = "display: block";
+      refCloseNav.current.style = "display: none";
+    }
+  }
 
   const handleDropdown = () => {
     const style = refContainer.current.style.display;
@@ -52,9 +69,10 @@ export default function MobileNav () {
 
   return (
     <nav className="m-nav">
-      <img className="m-nav__btn" src={MenuBtn} alt="Menu" />
+      <img ref={refOpenNav} style={{display: 'block'}} onClick={handleNav} className="m-nav__btn" src={MenuBtn} alt="Menu" />
+      <img ref={refCloseNav} style={{display: 'none'}} onClick={handleNav} className="m-nav__btn" src={CloseBtn} alt="Menu" />
 
-      <div className="m-nav__content" id="m-nav__content">
+      <div ref={refNav} style={{display: 'none'}} className="m-nav__content" id="m-nav__content">
         <div className="m-nav__tab">
           {tabs}
         </div>
