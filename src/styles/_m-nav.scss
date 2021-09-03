@@ -2,10 +2,22 @@
   @include flex(0,0,center);
 }
 
+#m-nav {
+  &__login-btn {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px 40px;
+    margin-top: 15px;
+  }
+}
+
 .m-nav {
   display: none;
   @include block(35px);
   justify-content: flex-end;
+
   margin: {
     left: 20px;
   };
@@ -13,6 +25,66 @@
   &__btn {
     @include block(100%);
   }
+
+  &__content {
+    @include block(100%, auto);
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background: white;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  &__tab {
+    a {
+      display: block;
+      @include link(uppercase, $c-nav-link, 0, 600);
+      font-size: 14px;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+  }
+
+  &__dropdown {
+    @include flex(0,space-between,center,wrap);
+    width: 100%;
+    background: rgba(0,0,0,0.09);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 15px 0;
+    cursor: pointer;
+    user-select: none;
+
+    &-content {
+      width: 100%;
+      margin-top: 20px;
+      display: none;
+      a {
+        display: block;
+        padding: 5px 0;
+        box-sizing: border-box;
+        color: #606060;
+        text-decoration: none;
+
+        &:hover {
+          color: $c-nav-link;
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    display: inline-block;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #606060;
+  }
+
+  // Responsive
   @include media (1024px) {
     display: block;
   }

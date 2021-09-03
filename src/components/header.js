@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import { useRef} from 'react'
 
 const baseUrl = "http://localhost:3000/"
+// const baseUrl = "https://dh-coinbase.web.app/"
 
 function Header (props) {
   return (
@@ -29,16 +30,16 @@ function Nav (props) {
   const data = [];
   const listNav = [
     {
-      name: 'Home', url: props.baseUrl
+      name: 'Home', url: '/'
     },
     {
-      name: 'About Us', url: props.baseUrl + '/about-us'
+      name: 'About Us', url: '/about-us'
     },
     {
-      name: 'Blog', url: props.baseUrl + '/blog'
+      name: 'Blog', url: '/blog'
     },
     {
-      name: 'Contact Us', url: props.baseUrl + '/contact-us'
+      name: 'Contact Us', url: '/contact-us'
     },
   ];
   listNav.forEach((item,index) => {

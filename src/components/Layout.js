@@ -20,14 +20,13 @@ import {
 } from 'react-router-dom'
 
 export default function Layout () {
-  const baseUrl = '/coinbase';
   return (
     <div className="layout">
       <Router>
         {/* Header component */}
         <Header>
           <Logo />
-          <Nav baseUrl={baseUrl}/>
+          <Nav />
           <Dropdown />
           <div className="m-menu-group">
             <Button name='login' id="header__login-btn" className="button--linear-white button--pd-18-55" />
@@ -41,15 +40,15 @@ export default function Layout () {
             <Home />
           </Route>
 
-          <Route path={baseUrl + `/about-us`}>
+          <Route path='/about-us'>
             <About />
           </Route>
           
-          <Route path={baseUrl + `/blog`}>
+          <Route path='/blog'>
             <Blog />
           </Route>
 
-          <Route path={baseUrl + `/contact-us`}>
+          <Route path='/contact-us'>
             <Contact />
           </Route>
         </Switch>
