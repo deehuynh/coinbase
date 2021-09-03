@@ -39,6 +39,9 @@
 
     &-2 {
       @include block(55%, auto);
+      margin: {
+        top: 60px;
+      }
       text-align: right;
     }
   }

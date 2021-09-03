@@ -19,10 +19,10 @@ export default function HomeHero (props) {
           giftcard at the best rate, why not give us a trial.
         </p>
 
-          <Button
-            name="get started" className="button--white-linear button--pd-20-35"
-            textClassName="button__text--linear"
-          />
+        <Button
+          name="get started" className="button--white-linear button--pd-20-35"
+          textClassName="button__text--linear"
+        />
       </Col>
 
       <ColImage className="home-hero__col-2" image={props.image} />
