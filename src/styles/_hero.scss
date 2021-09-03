@@ -134,7 +134,17 @@
     }
   }
 
-  @include media (321px) {
+  @include media (350px) {
+    &__col-1 {
+      p {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include media (337px) {
     &__col-1 {
       font-size: 10px;
     }
