@@ -99,7 +99,7 @@
     display: block;
   }
   @include media (375px) {
-    @include block(30px);
+    @include block(25px);
   }
 }
 

@@ -42,6 +42,18 @@
     margin-top: 35px;
   }
 
+  /*  BLOG COMPONENT  */
+  &__blog {
+    margin-top: 30px;
+  }
+
+  /*  ABOUT COMPONENT  */ 
+  &__about {
+    margin-top: 100px;
+  }
+
+  /*  RESPONSIVE  */ 
+
   @include media (1330px) {
     padding: {
       left: 10%;
