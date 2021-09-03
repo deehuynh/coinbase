@@ -22,4 +22,4 @@ The figma file taken from: [https://www.behance.net/gallery/89965451/CoinBase-We
 
 ## Live website
 
-[https://deehuynh.github.io/coinbase](https://deehuynh.github.io/coinbase)
+[https://dh-coinbase.web.app/](https://dh-coinbase.web.app/)
