@@ -27,9 +27,14 @@
       p:nth-child(2) {
         font-size: 1.125em;
         margin: {
-          top: 25px;
-          bottom: 30px;
+          top: 1.389em;
+          bottom: 1.667em;
         }
+      }
+
+      #home-hero__btn {
+        font-size: 0.875em;
+        padding: 1.429em 2.5em;
       }
   
       & span {

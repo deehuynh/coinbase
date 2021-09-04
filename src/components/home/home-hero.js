@@ -20,6 +20,7 @@ export default function HomeHero (props) {
         </p>
 
         <Button
+          id="home-hero__btn"
           name="get started" className="button--white-linear button--pd-20-35"
           textClassName="button__text--linear"
         />
