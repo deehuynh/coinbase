@@ -20,6 +20,6 @@ The figma file taken from: [https://www.behance.net/gallery/89965451/CoinBase-We
 
 ![img](https://i.imgur.com/XYmjtJM.png)
 
-## Live website d
+## Live website dx
 
 [https://dh-coinbase.web.app/](https://dh-coinbase.web.app/)
