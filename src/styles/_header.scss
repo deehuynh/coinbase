@@ -132,7 +132,7 @@
     padding-right: 40px;
     box-sizing: border-box;
 
-    span {
+    span#header__dropdown-arrow {
       margin: {
         left: 10px;
         top: 5px;
@@ -146,7 +146,7 @@
 
   &-content {
     @include block(160px, auto, 5px);
-    @include absolute(50px,0,0,190px);
+    @include absolute(50px,-96px,0,0);
     text-align: left;
     border: 1px solid #E0E0E0;
 
