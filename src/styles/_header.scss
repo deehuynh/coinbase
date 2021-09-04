@@ -120,7 +120,6 @@
 
 .header__dropdown {
   width: 22%;
-  text-align: center;
   font-size: 14px;
   cursor: pointer;
   position: relative;
@@ -129,13 +128,16 @@
     @include text(
       0,$c-nav-link, 700
     );
+    @include flex(0,flex-end);
+    padding-right: 40px;
+    box-sizing: border-box;
 
-    &::after {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 6px;
-      right: 40px;
+    span {
+      margin: {
+        left: 10px;
+        top: 5px;
+      }
+      display: inline-block;
       border-width: 5px;
       border-style: solid;
       border-color: black transparent transparent transparent;

@@ -75,7 +75,7 @@ function Dropdown () {
   return (
     <div className="header__dropdown">
       <div className="header__dropdown-title" onClick={handleDropdown}>
-        Sell Bitcoin/ Giftcard
+        Sell Bitcoin/ Giftcard <span></span>
 
         <div ref={refContainer} style={{display: 'none'}} id="dropdown" className="header__dropdown-content">
           <span>Sell Bitcoin</span>

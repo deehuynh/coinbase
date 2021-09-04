@@ -33,30 +33,6 @@ export default function Home (props) {
   return (
     <div className="home">
       <HomeHero image={HomeImg} />
-      {/* First row */}
-      {/* <Row className="home__f-row">
-        <Col className="col--home">
-          <p>
-            We provide easy solution
-            to exchange your <span>
-              Bitcoin/
-              GiftCard for money
-            </span>
-          </p>
-
-          <div className="col--light">
-            CoinBase is a platform for trading your bitcoin and
-            giftcard at the best rate, why not give us a trial.
-          </div>
-
-          <Button
-            name="get started" className="button--white-linear button--pd-20-35"
-            textClassName="button__text--linear"
-          />
-        </Col>
-
-        <ColImage className="col-image--home" image={HomeImg} />
-      </Row> */}
 
       {/* Second row */}
       <Row className="home__s-row">
