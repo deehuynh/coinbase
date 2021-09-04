@@ -2,9 +2,6 @@ import LogoI3 from '../images/Logo-3.png'
 import {NavLink} from 'react-router-dom'
 import { useRef} from 'react'
 
-const baseUrl = "http://localhost:3000/"
-// const baseUrl = "https://dh-coinbase.web.app/"
-
 function Header (props) {
   return (
     <header className="header header--pd">
@@ -17,9 +14,9 @@ function Header (props) {
 function Logo () {
   return (
     <div className="header__logo">
-      <a href={baseUrl}>
+      <NavLink exact to='/'>
         <img src={LogoI3} alt="Logo" />
-      </a>
+      </NavLink>
     </div>
   )
 }
