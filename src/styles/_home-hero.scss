@@ -31,11 +31,6 @@
           bottom: 1.667em;
         }
       }
-
-      #home-hero__btn {
-        font-size: 0.875em;
-        padding: 1.429em 2.5em;
-      }
   
       & span {
         font-weight: 700;
@@ -159,6 +154,11 @@
       &-1 {
         margin-top: 30px;
         font-size: 11px;
+
+        #home-hero__btn {
+          font-size: 13px;
+          padding: 18px 30px;
+        }
       }
 
       &-2 {
@@ -176,6 +176,12 @@
       margin-top: 40px;
       font-size: 10px;
     }
+
+    &__col-2 {
+      img {
+        width: 90%;
+      }
+    }
   }
 
   @include media (350px) {
@@ -191,6 +197,11 @@
   @include media (337px) {
     &__col-1 {
       font-size: 10px;
+
+      #home-hero__btn {
+        font-size: 12px;
+        padding: 16px 25px;
+      }
     }
 
     &__col-2 {
