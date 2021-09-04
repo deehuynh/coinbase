@@ -21,7 +21,7 @@ import Hero from "./hero"
 export default function About () {
     return (
       <div className="about">
-        <Hero className="hero__about" image={IMG1}>
+        <Hero className="hero__about hero__about-m" image={IMG1}>
           <h5>HOME/about us</h5>
 
           <h1>

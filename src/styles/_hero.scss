@@ -52,6 +52,12 @@
     margin-top: 100px;
   }
 
+  @include media (426px) {
+    &__about-m {
+      margin-top: 55px!important;
+    }
+  }
+
   /*  RESPONSIVE  */ 
 
   @include media (1330px) {
