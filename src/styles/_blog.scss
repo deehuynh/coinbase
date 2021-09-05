@@ -79,7 +79,6 @@
 
   @include media (426px) {
     &__pagination {
-      margin: 50px 0;
       font-size: 13px;
 
       span {
@@ -95,7 +94,6 @@
 
   @include media (376px) {
     &__pagination {
-      margin: 50px 0;
       font-size: 12px;
 
       span {
