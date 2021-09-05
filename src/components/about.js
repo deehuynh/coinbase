@@ -56,9 +56,9 @@ export default function About () {
             <h2>About CoinBase</h2>
 
             <p>
-              CoinBase is an online site and a p2admin platform that allows users
-              to buy, sell and/ or exchange digital and fiat assets safely. Owned
-              and managed by CoinBase Business Services established and Incoperated
+              CoinBase is an online site and a p2admin platform that allows <br /> users
+              to buy, sell and/ or exchange digital and fiat assets safely. <br /> Owned
+              and managed by CoinBase Business Services established <br /> and Incoperated
               in Nigeria.
             </p>
 
