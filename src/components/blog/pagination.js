@@ -7,7 +7,7 @@ export default function Pagination () {
       <span>02</span>
       <span>03</span>
       <span>...</span>
-      <span>Next</span>
+      <span className="next-btn">Next</span>
     </div>
   )
 }

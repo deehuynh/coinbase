@@ -22,6 +22,7 @@
     font-size: 16px;
     text-align: center;
     color: $c-nav-link;
+    margin: 80px 0;
 
     span {
       @include block(60px);
@@ -31,6 +32,16 @@
       border: 1px solid #E0E0E0;
       border-radius: 30px;
       box-sizing: border-box;
+      margin: 0 5px;
+      cursor: pointer;
+
+      &:hover:not(.blog__pagination--active) {
+        background: #f7f7f7;
+      }
+    }
+
+    .next-btn {
+      @include block(100px, 60px);
     }
 
     .blog__pagination--active {
