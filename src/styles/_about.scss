@@ -77,23 +77,49 @@
 
   // Column at 2nd row
   &__col-2 {
-    @include frame(34%, auto, center);
-
+    @include frame(100%, auto, center);
     box-sizing: border-box;
+    font-size: 16px;
 
     h2 {
       @extend %h2;
-      font-size: 18px!important;
-      line-height: 40px;
+      font-size: 1.125em!important;
+      line-height: 2.222em;
       top: -110px;
     }
 
     p {
       @extend %p-14px;
       text-align: center;
+      font-size: 0.875em!important;
       margin: {
         top: -80px;
       }
+    }
+
+    @include media (666px) {
+      font-size: 14px!important;
+    }
+
+    @include media (500px) {
+      font-size: 14px!important;
+      padding: 0 15px;
+      box-sizing: border-box;
+
+      h2 {
+        br {
+          display: none;
+        }
+      }
+    }
+
+    @include media (500px) {
+      font-size: 13px!important;
+      margin-top: -30px;
+    }
+
+    @include media (426px) {
+      font-size: 12px!important;
     }
   }
 
