@@ -57,6 +57,14 @@
     padding: {
       top: 100px;
     }
+
+    @include media (533px) {
+      height: auto;
+    }
+
+    @include media (375px) {
+      padding-top: 80px;
+    }
   }
 
   // 5th row
@@ -239,7 +247,7 @@
     }
 
     .about__tree {
-      @include frame(68%, auto, center);
+      @include frame(90%, auto, center);
       @include flex();
       margin: {
         top: 100px;
@@ -271,13 +279,6 @@
       h1 {
         @include text-gradient($c-linear-2);
       }
-
-      p {
-        padding: {
-          left: 85px;
-        }
-        box-sizing: border-box;
-      }
     }
 
     &-3 {
@@ -290,12 +291,6 @@
       h1 {
         @include text-gradient($c-linear-3);
       }
-      p {
-        padding: {
-          right: 85px;
-        }
-        box-sizing: border-box;
-      }
     }
 
     h3 {
@@ -305,6 +300,81 @@
       text-align: center;
       margin-top: 40px;
     }
+
+    @include media (1024px) {
+      br {
+        display: none;
+      }
+    }
+
+    @include media (810px) {
+      &-1 {
+        div:nth-child(2) {
+          margin-top: 200px;
+        }
+      }
+    }
+
+    @include media (720px) {
+      font-size: 15px;
+      .about__tree {
+        div {
+          font-size: 15px;
+        }
+
+        .about__col-4-1 {
+          padding-right: 20px;
+        }
+
+        .about__col-4-3 {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    @include media (533px) {
+      font-size: 13px;
+      .about__tree {
+        div {
+          font-size: 12px;
+        }
+        .about__col-4-2 {
+          height: 600px;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        .about__col-4-1 {
+          padding-right: 15px;
+        }
+
+        .about__col-4-3 {
+          div {
+            margin-top: 190px;
+          }
+          padding-left: 15px;
+        }
+      }
+    }
+
+    @include media (375px) {
+      .about__tree {
+        max-width: 100%;
+        margin-top: 70px;
+      }
+    }
+
+    @include media (375px) {
+      font-size: 12px;
+      .about__tree {
+        div {
+          font-size: 11px;
+        }
+      }
+    }
+
   }
 
   // Column at 5th row

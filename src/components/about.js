@@ -80,9 +80,9 @@ export default function About () {
                 <div>
                   <h1>May 2010</h1>
                   <p>
-                    Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. 
-                    Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. 
-                    Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum 
+                    Ut enim mi, mattis at sollicitudin rhoncus, rhoncus <br /> eget sem. 
+                    Curabitur aliquam tellus eu nisl suscipit, <br /> at vestibulum ex rutrum. 
+                    Nulla facilisi. Cras <br /> ullamcorper pellentesque orci, nec vestibulum <br />
                     nibh.uspendisse
                   </p>
                 </div>
@@ -90,9 +90,9 @@ export default function About () {
                 <div>
                   <h1>May 2019</h1>
                   <p>
-                    Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. 
-                    Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. 
-                    Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum 
+                    Ut enim mi, mattis at sollicitudin rhoncus, rhoncus <br /> eget sem. 
+                    Curabitur aliquam tellus eu nisl suscipit, <br /> at vestibulum ex rutrum. 
+                    Nulla facilisi. Cras <br /> ullamcorper pellentesque orci, nec vestibulum <br />
                     nibh.uspendisse
                   </p>
                 </div>
@@ -104,9 +104,9 @@ export default function About () {
                 <div>
                   <h1>May 2017</h1>
                   <p>
-                    Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. 
-                    Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. 
-                    Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum 
+                    Ut enim mi, mattis at sollicitudin rhoncus, rhoncus <br /> eget sem. 
+                    Curabitur aliquam tellus eu nisl suscipit, <br /> at vestibulum ex rutrum. 
+                    Nulla facilisi. Cras <br /> ullamcorper pellentesque orci, nec vestibulum <br />
                     nibh.uspendisse
                   </p>
                 </div>
