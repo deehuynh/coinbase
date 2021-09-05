@@ -13,6 +13,10 @@
   }
 }
 
+.m-nav-active {
+  @include text-gradient($c-linear);
+}
+
 .m-nav {
   display: none;
   @include block(35px);

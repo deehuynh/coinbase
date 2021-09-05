@@ -62,7 +62,7 @@ export default function MobileNav () {
         exact
         key={index}
         to={item.url}
-        activeStyle={{color: 'limegreen'}}
+        activeClassName="m-nav-active"
       >{item.name}</NavLink>
     );
   });
