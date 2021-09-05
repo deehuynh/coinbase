@@ -30,10 +30,13 @@
       line-height: 60px;
       border: 1px solid #E0E0E0;
       border-radius: 30px;
+      box-sizing: border-box;
     }
 
-    &--active {
+    .blog__pagination--active {
       border: none;
+      background: $c-linear;
+      color: white;
     }
   }
 
