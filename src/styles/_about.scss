@@ -233,6 +233,7 @@
 
   // Column at 4th row
   &__col-4 {
+    font-size: 16px;
     h2 {
       @extend %h2;
     }
@@ -243,11 +244,19 @@
       margin: {
         top: 100px;
       };
+      
+      div {
+        font-size: 16px;
+
+        h1 {
+          font-size: 1.5em;
+        }
+      }
     }
 
     p {
-      line-height: 30px;
-      font-size: 14px;
+      line-height: 2.143em;
+      font-size: 0.875em;
       color: $c-nav-link;
     }
 
@@ -260,7 +269,6 @@
       width: 50%;
       text-align: right;
       h1 {
-        font-size: 24px;
         @include text-gradient($c-linear-2);
       }
 
@@ -280,7 +288,6 @@
         margin-top: 220px;
       }
       h1 {
-        font-size: 24px;
         @include text-gradient($c-linear-3);
       }
       p {
@@ -292,7 +299,7 @@
     }
 
     h3 {
-      font-size: 12px;
+      font-size: 0.750em;
       text-transform: uppercase;
       color: $c-nav-link;
       text-align: center;
