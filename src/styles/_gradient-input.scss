@@ -2,18 +2,19 @@
   @include block(388px, auto);
   background: $c-linear;
   border-radius: 40px;
-  padding: 1px;
-  box-sizing: border-box;
   margin-right: 10px;
 
   input {
-    @include block(100%, 100%);
+    @include block(100%, auto);
+    display: block;
     padding: 16px;
+    background: white;
     border-radius: 50px;
-    border: none;
     outline: none;
     box-sizing: border-box;
     text-indent: 10px;
+    border: 1px solid transparent;
+    background-clip: padding-box; 
 
     &::placeholder {
         color: $c-nav-link;

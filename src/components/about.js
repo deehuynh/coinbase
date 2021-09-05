@@ -17,6 +17,7 @@ import SVG3 from '../svgs/customer-review.svg'
 import SVG4 from '../svgs/support.svg'
 // Import hero
 import Hero from "./hero"
+import EmailForm from "./email-form"
 
 export default function About () {
     return (
@@ -137,10 +138,7 @@ export default function About () {
               update of our products and services.
             </p>
 
-            <Col className='about__col-6-1'>
-              <GradientInput className="home__input" placeholder="EMAIL" />
-              <Button className="button--linear-white button--pd-18-40" name="discover"  />
-            </Col>
+            <EmailForm className="about__email-form" />
           </Col>
         </Row>
       </div>
