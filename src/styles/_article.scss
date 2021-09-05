@@ -10,28 +10,37 @@
     width: 100%;
   }
 
+  &__border-gradient {
+    @include block(100%, auto);
+    background: $c-linear;
+    border-radius: 0 0 30px 30px;
+  }
+
   &__info {
-    @include frame(calc(100% - 1px), auto, center);
+    @include frame(100%, auto, center);
     padding: {
       top: 60px;
       bottom: 40px;
+      left: 15px;
+      right: 15px;
     }
     box-sizing: border-box;
-    position: relative;
     background: white;
+    border: 1px solid transparent;
     background-clip: padding-box;
     border-radius: 0 0 30px 30px;
-    @include gradient-border(-1px, 0px 0px 31px 31px);
+    border-top: none;
+    font-size: 16px;
   }
 
   h1 {
     @include text-gradient($c-linear);
-    margin: 0 0 15px 0;
+    margin: 0 0 0.469em 0;
     text-transform: uppercase;
   }
 
   h5 {
-    font-size: 10px;
+    font-size: 0.625em;
     font-weight: 400;
     text-transform: uppercase;
 
@@ -42,16 +51,80 @@
       box-sizing: border-box;
     }
 
-    margin: 10px 0;
+    margin: 0;
   }
 
   p {
     width: 75%;
-    line-height: 28px;
-    margin: 35px auto;
+    line-height: 1.750em;
+    margin: 2.188em auto;
+    font-size: 1em;
   }
 
   &--mgbt-50 {
     margin-bottom: 50px;
+  }
+
+  /**  RESPONSIVE  **/ 
+  @include media (1024px) {
+    &__info {
+      font-size: 14px;
+
+      p {
+        width: 90%;
+      }
+    }
+  }
+
+  @include media (900px) {
+    max-width: 90%;
+    &__info {
+      padding: {
+        top: 40px;
+        bottom: 20px;
+      }
+    }
+  }
+
+  @include media (769px) {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    &__info {
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  @include media (450px) {
+    padding: 0 15px;
+    &__info {
+      padding: {
+        top: 25px;
+        bottom: 0px;
+      }
+      font-size: 12px;
+
+      #article__btn {
+        display: none;
+      }
+    }
+  }
+
+  @include media (376px) {
+    &__info {
+      font-size: 11px;
+    }
+  }
+
+  @include media (355px) {
+    &__info {
+      font-size: 9px;
+
+      p {
+        margin: 15px 0;
+      }
+    }
   }
 }

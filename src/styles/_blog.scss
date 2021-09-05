@@ -17,6 +17,24 @@
     @include block(100%, auto);
   }
 
+  @include media (769px) {
+    &__2nd-row {
+      margin-top: -50px;
+    }
+  }
+
+  @include media (540px) {
+    &__2nd-row {
+      margin-top: -80px;
+    }
+  }
+
+  @include media (376px) {
+    &__2nd-row {
+      margin-top: -120px;
+    }
+  }
+
   /*  Column  */
   &__col-1 {
     &-1 {
