@@ -17,6 +17,26 @@
     @include block(100%, auto);
   }
 
+  &__pagination {
+    @include block(100%, auto);
+    font-size: 16px;
+    text-align: center;
+    color: $c-nav-link;
+
+    span {
+      @include block(60px);
+      display: inline-block;
+      font-size: 1em;
+      line-height: 60px;
+      border: 1px solid #E0E0E0;
+      border-radius: 30px;
+    }
+
+    &--active {
+      border: none;
+    }
+  }
+
   @include media (769px) {
     &__2nd-row {
       margin-top: -50px;
