@@ -8,13 +8,14 @@
     transform-origin: 0% 50%;
 
     .active {
+      // filter: drop-shadow(0px 50px 100px rgba(0, 0, 0, 0.1));
       &::after {
         content: "";
         position: absolute;
-        top: 1px;
-        left: 1px;
-        bottom: 1px;
-        right: 1px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
         margin: auto;
         background: $c-linear;
         opacity: 0.4;
@@ -35,8 +36,7 @@
     top: 0;
     left: 0;
     opacity: 1!important;
-    // filter: drop-shadow(0px 50px 100px rgba(0, 0, 0, 0.1));
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     img {
       width: 100%;
     }
@@ -56,4 +56,80 @@
         line-height: 1.2!important;
       }
     }
+}
+
+@include media (1300px) {
+  .carousel-item {
+    @include block(230px,219.23px);
+  }
+}
+
+@include media (1000px) {
+  .carousel-item {
+    @include block(186.875px,178.125px);
+
+    div {
+      bottom: 18px;
+      left: 25px;
+    }
+  }
+}
+
+@include media (768px) {
+  .about-carousel {
+    height: 300px;
+  }
+  .carousel-item {
+    @include block(149.5px,142.5px);
+  }
+}
+
+@include media (601px) {
+  .carousel-item {
+    @include block(119.6px,114px);
+
+    div {
+      bottom: 10px;
+      left: 18px;
+      p,h5 {
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+@include media (500px) {
+  .about-carousel {
+    height: 180px;
+
+    .active::after {
+      border-radius: 10px;
+    }
+  }
+  .carousel-item {
+    @include block(99.66px,95px);
+    border-radius: 10px;
+  }
+}
+
+@include media (375px) {
+  .about-carousel {
+    height: 150px;
+
+    .active::after {
+      border-radius: 8px;
+    }
+  }
+  .carousel-item {
+    @include block(74.75px,71.25px);
+    border-radius: 8px;
+
+    div {
+      bottom: 5px;
+      left: 12px;
+      p,h5 {
+        font-size: 6px;
+      }
+    }
+  }
 }

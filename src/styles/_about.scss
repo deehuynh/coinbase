@@ -75,6 +75,18 @@
     @include block(100%, 600px);
     padding: 0 15px;
     box-sizing: border-box;
+
+    @include media (768px) {
+      height: 500px;
+    }
+
+    @include media (768px) {
+      height: 500px;
+    }
+
+    @include media (500px) {
+      height: 400px;
+    }
   }
 
   // 6th row
