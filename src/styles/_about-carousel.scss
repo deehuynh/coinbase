@@ -25,18 +25,18 @@
 }
 
 .carousel-item {
-
-    @include link();
     visibility: hidden;
     width: 299px;
     height: 285px;
     border-radius: 15px;
     position: absolute;
     background: #C4C4C4;
+    color: white;
     top: 0;
     left: 0;
     opacity: 1!important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     img {
       width: 100%;
     }

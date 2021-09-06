@@ -1,7 +1,5 @@
 import { Carousel } from 'react-materialize';
 import "materialize-css";
-import { Link } from 'react-router-dom';
-// import "materialize-css/dist/css/materialize.min.css"
 
 export default function AboutCarousel () {
   return (
@@ -12,16 +10,16 @@ export default function AboutCarousel () {
         duration: 100,
       }}
     >
-      <Link to='/'>
+      <section>
         <div>
           <h5>CEO</h5>
           <p>Amanda Roth</p>
         </div>
-      </Link>
-      <Link to='/'></Link>
-      <Link to='/'></Link>
-      <Link to='/'></Link>
-      <Link to='/'></Link>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
     </Carousel>
   )
 }
