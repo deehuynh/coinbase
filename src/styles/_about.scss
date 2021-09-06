@@ -72,7 +72,9 @@
 
   // 5th row
   &__5th-row {
-    @include block(100%, 580px);
+    @include block(100%, 600px);
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
   // 6th row
@@ -385,6 +387,7 @@
   // Column at 5th row
   &__col-5 {
     color: $c-nav-link;
+    font-size: 16px;
 
     h2 {
       @extend %h2;
@@ -392,8 +395,23 @@
 
     p {
       margin-top: 50px;
-      font-size: 16px;
+      font-size: 1em;
       text-align: center;
+      line-height: 2.5em;
+    }
+
+    @include media (560px) {
+      br {
+        display: none;
+      }
+    }
+
+    @include media (425px) {
+      font-size: 14px;
+    }
+
+    @include media (334px) {
+      font-size: 13px;
     }
   }
 
