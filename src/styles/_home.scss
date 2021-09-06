@@ -12,6 +12,16 @@
   &__s-row {
     @include block(100%, 170px);
     @include flex();
+
+    @include media (1024px) {
+      flex-direction: column;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+
+    @include media (924px) {
+      flex-direction: column-reverse;
+    }
   }
 
   /* Third row */ 

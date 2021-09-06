@@ -18,6 +18,29 @@
         top: -20px;
         left: 10%;
       }
+
+      @include media (1024px) {
+        margin-top: -180px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+
+        img {
+          max-width: 50%;
+        }
+      }
+
+      @include media (924px) {
+        margin-top: 0px;
+        margin-bottom: -350px;
+        img {
+          max-width: 40%;
+        }
+      }
+
+      @include media (768px) {
+        margin-bottom: -320px;
+      }
     }
 
     &-4 {
