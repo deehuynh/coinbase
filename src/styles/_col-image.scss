@@ -41,6 +41,23 @@
       @include media (768px) {
         margin-bottom: -320px;
       }
+
+      @include media (600px) {
+        margin-top: -180px;
+        margin-bottom: 0;
+
+        img {
+          max-width: 70%;
+        }
+      }
+
+      @include media (470px) {
+        margin-top: -150px;
+
+        img {
+          max-width: 90%;
+        }
+      }
     }
 
     &-4 {

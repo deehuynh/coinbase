@@ -49,7 +49,7 @@ export default function Home (props) {
           kindly sign up and verify your identity.
           </p>
 
-          <Button className="button--linear-white button--pd-18-40" name="discover" />
+          <Button id="home__btn-row2" className="button--linear-white button--pd-18-40" name="discover" />
         </Col>
       </Row>
 

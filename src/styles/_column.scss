@@ -118,6 +118,28 @@
           font-size: 13px;
           margin-bottom: 60px;
         }
+
+        @include media (600px) {
+          margin-bottom: 0;
+        }
+
+        @include media (470px) {
+          p {
+            width: 100%;
+          }
+        }
+
+        @include media (375px) {
+          p {
+            word-break: break-all;
+            text-align: left;
+          }
+
+          #home__btn-row2 {
+            font-size: 12px;
+            padding: 16px 30px;
+          }
+        }
       }
 
     // Col at Third row

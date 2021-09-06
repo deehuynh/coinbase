@@ -22,6 +22,10 @@
     @include media (924px) {
       flex-direction: column-reverse;
     }
+
+    @include media (600px) {
+      flex-direction: column;
+    }
   }
 
   /* Third row */ 
