@@ -85,8 +85,10 @@
 }
 
 @include media (601px) {
+  .about-carousel {
+    perspective: 250px;
+  }
   .carousel-item {
-    @include block(119.6px,114px);
 
     div {
       bottom: 10px;
@@ -100,20 +102,22 @@
 
 @include media (500px) {
   .about-carousel {
-    height: 180px;
+    height: 280px;
+    perspective: 170px;
 
     .active::after {
       border-radius: 10px;
     }
   }
   .carousel-item {
-    @include block(99.66px,95px);
+    // @include block(99.66px,95px);
     border-radius: 10px;
   }
 }
 
-@include media (375px) {
+@include media (425px) {
   .about-carousel {
+    perspective: 180px;
     height: 150px;
 
     .active::after {
@@ -121,15 +125,21 @@
     }
   }
   .carousel-item {
-    @include block(74.75px,71.25px);
+    @include block(119.6px,114px);
     border-radius: 8px;
 
     div {
-      bottom: 5px;
-      left: 12px;
+      bottom: 8px;
+      left: 14px;
       p,h5 {
-        font-size: 6px;
+        font-size: 7px;
       }
     }
+  }
+}
+
+@include media (350px) {
+  .about-carousel {
+    perspective: 145px;
   }
 }
