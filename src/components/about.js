@@ -3,9 +3,8 @@ import Row from "./row"
 //Import column
 import Col from './column'
 import ColImg from './column-image'
-// Import button
-import Button from "./button"
-import GradientInput from "./gradient-input"
+// Import carousel
+import AboutCarousel from "./about-carousel"
 // Import images
 import IMG1 from '../images/about-img-1.png'
 import IMG2 from '../images/about-img-2.png'
@@ -126,6 +125,8 @@ export default function About () {
               Meet the team that  makes the process of this system fast and <br />
               painless as possible to provide you with good result 
             </p>
+
+            <AboutCarousel />
           </Col>
         </Row>
 

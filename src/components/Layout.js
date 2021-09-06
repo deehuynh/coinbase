@@ -13,6 +13,7 @@ import Blog from "./blog/blog"
 import Contact from "./contact/contact"
 import Footer from "./footer"
 
+
 // Importing the react-router
 import {
   BrowserRouter as Router,
