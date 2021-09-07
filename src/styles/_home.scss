@@ -94,6 +94,18 @@
       top: 160px;
     }
     box-sizing: border-box;
+
+    @include media (610px) {
+      height: 300px;
+    }
+
+    @include media (515px) {
+      height: 200px;
+    }
+
+    @include media (355px) {
+      height: 180px;
+    }
   }
 
   /* Seventh row */ 

@@ -134,6 +134,7 @@
 
   @include media (610px) {
     perspective: 60px;
+    height: 320px;
     .home-carousel__slide {
       @include block(360px, 240px);
 
@@ -145,6 +146,7 @@
   }
 
   @include media (515px) {
+    height: 280px;
     .home-carousel__slide {
       @include block(300px, 200px);
       font-size: 10px;
@@ -175,6 +177,7 @@
   }
 
   @include media (355px) {
+    height: 240px;
     .home-carousel__slide {
       @include block(240px, 170px);
       font-size: 9px;
@@ -182,6 +185,10 @@
 
       p {
         font-size: 8px;
+      }
+
+      .button--not-active {
+        font-size: 6px;
       }
     }
   }
