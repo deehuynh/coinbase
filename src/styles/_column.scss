@@ -131,8 +131,8 @@
 
         @include media (375px) {
           p {
-            word-break: break-all;
             text-align: left;
+            text-indent: 20px;
           }
 
           #home__btn-row2 {
@@ -144,7 +144,7 @@
 
     // Col at Third row
       &-3 {
-        @include block(77.5%, 367px);
+        @include block(1160px, 367px);
         background-color: white;
         margin: {
           left: auto;
@@ -152,7 +152,7 @@
         }
         border-radius: 30px;
         box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
-        
+        font-size: 16px;
         .home__th-row-1 {
           @include block(100%, 70px);
           @include flex(0, space-between, center);
@@ -162,9 +162,10 @@
             right: 65px;
           };
           box-sizing: border-box;
+          font-size: 1em;
 
           span {
-            font-size: 18px;
+            font-size: 1.125em;
             font-weight: 700;
             @include text-gradient($c-linear);
           }
@@ -308,30 +309,125 @@
             }
           }
         }
+
+        @include media (1200px) {
+          width: 100%;
+        }
       }
 
     // Col at fourth row
       &-4 {
-        @include block(36%, auto);
-        @extend %text-gradient-h2;
-        @extend %text-gradient-p;
+        font-size: 16px;
+        &-1 {
+          width: 50%;
+          @extend %text-gradient-h2;
+          @extend %text-gradient-p;
 
-        margin: {
-          top: -35px;
-          left: 14%;
+          margin: {
+            top: -35px;
+          }
+        }
+
+        &-2 {
+          width: 50%;
+          margin-top: -50px;
+          text-align: right;
+          img {
+            max-width: 100%;
+          }
+        }
+
+        @include media (1250px) {
+          &-1 {
+            width: 60%;
+          }
+          &-2 {
+            margin-top: 10px;
+            width: 40%;
+          }
+        }
+
+        @include media (1024px) {
+          &-1 {
+            margin-bottom: 40px;
+            width: 100%;
+            text-align: center;
+            h2::before {
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+            br {
+              display: none;
+            }
+          }
+          &-2 {
+            margin-bottom: 60px;
+            width: 100%;
+            text-align: center;
+
+            img {
+              max-width: none;
+              width: 330px;
+            }
+          }
+        }
+
+        @include media (615px) {
+          &-1 {
+            font-size: 14px;
+            margin-bottom: 70px;
+          }
+          &-2 {
+            img {
+              width: 270px;
+            }
+          }
+        }
+
+        @include media (550px) {
+          &-1 {
+            margin-bottom: 20px;
+          }
+        }
+
+        @include media (480px) {
+          &-1 {
+            margin-bottom: 40px;
+          }
+          &-2 {
+            img {
+              width: 220px;
+            }
+          }
+        }
+
+        @include media (424px) {
+          &-1 {
+            margin-bottom: 40px;
+
+            #home__btn-row4 {
+              display: none;
+            }
+          }
+
+          &-2 {
+            img {
+              width: 280px;
+            }
+          }
         }
       }
     // Col at fifth row
       &-5 {
-        @include block(65.4%, 504px);
+        // @include frame(984px, 504px,center);
+        @include frame(984px, auto,center);
+        padding-bottom: 69px;
         background-color: white;
         opacity: 0.98;
         box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
         border-radius: 30px;
-        margin: {
-          left: auto;
-          right: auto;
-        }
+        box-sizing: border-box;
 
         @extend %text-gradient-h2;
         @extend %text-gradient-h2-center;
@@ -342,11 +438,9 @@
         div {
           padding: {
             top: 120px;
-            left: 20%;
-            right: 20%;
           }
           box-sizing: border-box;
-          @include flex(0, space-between);
+          @include flex(0, center);
           p {
             @include block(262px, 226px);
             position: relative;
@@ -354,6 +448,10 @@
             border: 2px solid transparent;
             background: white;
             background-clip: padding-box;
+            margin: {
+              left: 25px;
+              right: 25px;
+            };
 
             &::after {
               position: absolute;
@@ -377,6 +475,60 @@
               text-align: center;
               font-weight: 700;
             }
+          }
+        }
+
+        @include media (900px) {
+          div {
+            p {
+              margin: {
+                left: 10px;
+                right: 10px;
+              }
+            }
+          }
+        }
+
+        @include media (768px) {
+          // padding-bottom: 40px;
+          div {
+            flex-direction: column;
+            padding: {
+              left: 20px;
+              right: 20px;
+            }
+            p {
+              width: 100%;
+              height: 120px;
+              box-sizing: border-box;
+              margin: {
+                left: 0;
+                right: 0;
+              }
+
+              img {
+                width: 40px;
+                top: -20px;
+              }
+
+              span {
+                font-size: 14px;
+                bottom: 20px;
+              }
+            }
+          }
+        }
+
+        @include media (600px) {
+          h2 {
+            font-size: 24.5px;
+          }
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @include media (330px) {
+          h2 {
+            font-size: 22px;
           }
         }
       }

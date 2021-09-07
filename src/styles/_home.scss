@@ -34,14 +34,26 @@
     @include hero-img('../images/home-bg-2.png');
     padding: {
       top: 460px;
+      left: 15px;
+      right: 15px;
     }
     box-sizing: border-box;
   }
 
   /* fourth row */ 
   &__fourth-row {
-    @include block(100%, 480px);
+    @include frame(1270px, 480px,center);
     @include flex();
+    padding: 0 75px;
+    box-sizing: border-box;
+
+    @include media (1024px) {
+      flex-direction: column-reverse;
+    }
+
+    @include media (424px) {
+      padding: 0 15px;
+    }
   }
 
   /* fifth row */
@@ -52,6 +64,27 @@
       top: 143px;
     }
     box-sizing: border-box;
+
+    @include media (1024px) {
+      padding: {
+        left: 75px;
+        right: 75px;
+      }
+    }
+
+    @include media (600px) {
+      padding: {
+        left: 35px;
+        right: 35px;
+      }
+    }
+
+    @include media (425px) {
+      padding: {
+        left: 15px;
+        right: 15px;
+      }
+    }
   }
 
   /* sixth row */ 

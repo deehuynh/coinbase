@@ -28,6 +28,7 @@ import Transfer from '../svgs/Transfer.svg'
 import Transfer2 from '../svgs/Transfer2.svg'
 // Import home-hero
 import HomeHero from "./home/home-hero";
+import EmailForm from "./email-form"
 
 export default function Home (props) {
   return (
@@ -135,18 +136,20 @@ export default function Home (props) {
 
       {/* Fourth row */}
       <Row className="home__fourth-row">
-       <Col className="col--home-4">
+       <Col className="col--home-4-1">
           <h2>Great experience <br /> with CoinBase</h2>
           <p>
-          CoinBase is an online site and a p2admin platform that allows users to buy, 
-          sell and/ or exchange digital and fiat assets safely. Owned and managed 
-          by CoinBase Business Services established and Incoperated in Nigeria.
+          CoinBase is an online site and a p2admin platform that allows <br /> users to buy, 
+          sell and/ or exchange digital and fiat assets safely. <br /> Owned and managed 
+          by CoinBase Business Services established <br /> and Incoperated in Nigeria.
           </p>
 
-          <Button className="button--linear-white button--pd-18-40" name="discover" />
+          <Button id="home__btn-row4" className="button--linear-white button--pd-18-40" name="discover" />
         </Col>
 
-        <ColImage className="col-image--home-4" image={HomeImg3} />
+        <div className="col--home-4-2">
+          <img src={HomeImg3} alt="Homeimg" />
+        </div>
       </Row>
 
       {/* fifth row */}
@@ -277,17 +280,18 @@ export default function Home (props) {
 
       {/* Ninth row */}
       <Row className="home__ninth-row">
-        <Col className="col--home-10">
-          <h2>Subscribe our newsletter</h2>
-          <p>
-            Subscribe to our newsletter for daily/weekly <br /> update of our products and services.
-          </p>
-        </Col>
+      <Row className="about__6th-row">
+          <Col className="about__col-6">
+            <h2>Subscribe our newsletter</h2>
 
-        <Col className='col--home-11'>
-          <GradientInput className="home__input" placeholder="EMAIL" />
-          <Button className="button--linear-white button--pd-18-40" name="discover"  />
-        </Col>
+            <p>
+              Subscribe to our newsletter for daily/weekly <br />
+              update of our products and services.
+            </p>
+
+            <EmailForm className="about__email-form" />
+          </Col>
+        </Row>
       </Row>
     </div>
   )
