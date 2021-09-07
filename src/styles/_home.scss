@@ -38,6 +38,13 @@
       right: 15px;
     }
     box-sizing: border-box;
+
+    @include media (1024px) {
+      padding: {
+        left: 55px;
+        right: 55px;
+      }
+    }
   }
 
   /* fourth row */ 
