@@ -340,8 +340,24 @@
                 width: 28.4%;
               }
 
+              .home__ch-col-2 {
+                width: 30%;
+                div:nth-child(2) {
+                  strong {
+                    word-break: break-all;
+                    text-align: right;
+                  }
+                }
+              }
+
               .home__ch-col-3 {
                 width: 29.2%;
+
+                p:nth-child(2) {
+                  span {
+                    display: inline-block;
+                  }
+                }
               }
             }
           }
