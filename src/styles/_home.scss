@@ -116,6 +116,21 @@
       top: 280px;
     }
     box-sizing: border-box;
+
+    @include media (768px) {
+      height: 580px;
+      padding-top: 170px;
+    }
+
+    @include media (600px) {
+      height: 520px;
+      padding-top: 100px;
+    }
+
+    @include media (330px) {
+      height: 440px;
+      padding-top: 60px;
+    }
   }
 
   //**  RESPONSIVE  **//

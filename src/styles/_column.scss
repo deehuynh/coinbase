@@ -551,12 +551,28 @@
       &-6 {
         @include block(100%, auto);
         .home__sixth-row12 {
+          font-size: 16px;
           @extend %text-gradient-h2-center;
           @extend %text-gradient-p;
+          h2 {
+            line-height: 40px;
+          }
           p {
             text-align: center;
           }
           margin-bottom: 50px;  
+
+          @include media (600px) {
+            font-size: 14px;
+
+            p {
+              line-height: 0;
+            }
+          }
+
+          @include media (340px) {
+            font-size: 13px;
+          }
         }
         .home__sixth-row11 {
           @include block(90%, auto);
@@ -771,6 +787,48 @@
           margin: {
             left: 15px;
             right: 15px;
+          }
+        }
+
+        @include media (900px) {
+          margin-top: 200px;
+          img {
+            width: 220px;
+          }
+        }
+
+        @include media (768px) {
+          margin-top: 200px;
+          img {
+            width: 180px;
+          }
+        }
+
+        @include media (600px) {
+          margin-top: 150px;
+          img {
+            width: 150px;
+          }
+        }
+
+        @include media (470px) {
+          img {
+            width: 130px;
+          }
+        }
+
+        @include media (380px) {
+          img {
+            margin: {
+              left: 7px;
+              right: 7px;
+            }
+          }
+        }
+
+        @include media (330px) {
+          img {
+            width: 110px;
           }
         }
       }

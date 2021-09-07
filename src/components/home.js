@@ -1,16 +1,12 @@
 // Importing the row component
 import Row from "./row"
 // Importing the column component
-import Col from '../components/column'
+import Col from './column'
 import ColImage from "./column-image"
 import Image from "./image";
 // Importing the button component
 import Button from "./button"
 import ImageButton from "./image-button"
-import GradientInput from "./gradient-input";
-// Importing the splice
-import {Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 // Importing the image
 import HomeImg from '../images/home-hero.png'
 import HomeImg2 from '../images/s-row-img.png'
@@ -29,6 +25,7 @@ import Transfer2 from '../svgs/Transfer2.svg'
 // Import home-hero
 import HomeHero from "./home/home-hero";
 import EmailForm from "./email-form"
+import HomeCarousel from "./home/home-carousel";
 
 export default function Home (props) {
   return (
@@ -179,7 +176,8 @@ export default function Home (props) {
           </Row>
 
           <Row className="home__sixth-row11">
-            <Splide
+            <HomeCarousel />
+            {/* <Splide
               options={ {
                 type: 'loop',
                 autoWidth: true,
@@ -234,7 +232,7 @@ export default function Home (props) {
                 </Col>
               </Col>
               </SplideSlide>
-            </Splide>
+            </Splide> */}
           </Row>
         </Col>
       </Row>

@@ -10,16 +10,16 @@ export default function AboutCarousel () {
         duration: 100,
       }}
     >
-      <section>
+      <section className="about-carousel-item">
         <div>
           <h5>CEO</h5>
           <p>Amanda Roth</p>
         </div>
       </section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section className="about-carousel-item"></section>
+      <section className="about-carousel-item"></section>
+      <section className="about-carousel-item"></section>
+      <section className="about-carousel-item"></section>
     </Carousel>
   )
 }

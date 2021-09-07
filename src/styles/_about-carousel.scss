@@ -24,7 +24,7 @@
     }
 }
 
-.carousel-item {
+.about-carousel-item {
     visibility: hidden;
     width: 299px;
     height: 285px;
@@ -59,13 +59,13 @@
 }
 
 @include media (1300px) {
-  .carousel-item {
+  .about-carousel-item {
     @include block(230px,219.23px);
   }
 }
 
 @include media (1000px) {
-  .carousel-item {
+  .about-carousel-item {
     @include block(186.875px,178.125px);
 
     div {
@@ -79,7 +79,7 @@
   .about-carousel {
     height: 300px;
   }
-  .carousel-item {
+  .about-carousel-item {
     @include block(149.5px,142.5px);
   }
 }
@@ -88,7 +88,7 @@
   .about-carousel {
     perspective: 250px;
   }
-  .carousel-item {
+  .about-carousel-item {
 
     div {
       bottom: 10px;
@@ -109,7 +109,7 @@
       border-radius: 10px;
     }
   }
-  .carousel-item {
+  .about-carousel-item {
     // @include block(99.66px,95px);
     border-radius: 10px;
   }
@@ -124,7 +124,7 @@
       border-radius: 8px;
     }
   }
-  .carousel-item {
+  .about-carousel-item {
     @include block(119.6px,114px);
     border-radius: 8px;
 

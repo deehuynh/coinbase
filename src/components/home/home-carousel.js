@@ -1,22 +1,19 @@
 // Importing the splice
-import {Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
+import { Carousel } from 'react-materialize';
+import "materialize-css";
 // import button
-import Button from './button';
+import Button from '../button';
 
-export default function Carousel () {
+export default function HomeCarousel () {
   return (
-    <div className="home-carousel">
-      <Splide
-        options = {{
-          type: 'slide',
-          perPage: 3,
-          perMove: 1,
-          focus: 'center',
-          fixedWidth: '400px',
+      <Carousel
+        className="home-carousel"
+        options={{
+          dist: -40,
+          duration: 100,
         }}
       >
-        <SplideSlide className="home-carousel__slide">
+        <div className="home-carousel__slide">
           <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
           <h2>ETH TO NAIRA EXCHANGE <br />
             RATE IS NOW #400 PER...
@@ -26,9 +23,9 @@ export default function Carousel () {
             quodsi complectitur, postea...
           </p>
           <Button className='button--not-active button--pd-15-30' name='read more' />
-        </SplideSlide>
+        </div>
 
-        <SplideSlide className="home-carousel__slide">
+        <div className="home-carousel__slide">
           <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
           <h2>ETH TO NAIRA EXCHANGE <br />
             RATE IS NOW #400 PER...
@@ -38,9 +35,9 @@ export default function Carousel () {
             quodsi complectitur, postea...
           </p>
           <Button className='button--not-active button--pd-15-30' name='read more' />
-        </SplideSlide>
+        </div>
 
-        <SplideSlide className="home-carousel__slide">
+        <div className="home-carousel__slide">
           <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
           <h2>ETH TO NAIRA EXCHANGE <br />
             RATE IS NOW #400 PER...
@@ -50,8 +47,7 @@ export default function Carousel () {
             quodsi complectitur, postea...
           </p>
           <Button className='button--not-active button--pd-15-30' name='read more' />
-        </SplideSlide>
-      </Splide>
-    </div>
+        </div>
+      </Carousel>
   )
 }
