@@ -215,6 +215,13 @@
                 left: 45px;
               }
               box-sizing: border-box;
+
+              @include media (1024px) {
+                padding: {
+                  left: 20px;
+                  right: 20px;
+                }
+              }
             }
 
             .home__ch-col-1 {
@@ -310,6 +317,10 @@
                   img {
                     margin: 0 15px;
                   }
+
+                  // span:nth-child(2) {
+                  //   display: inline;
+                  // }
                 }
               }
             }
@@ -317,6 +328,16 @@
             @include media (1200px) {
               .home__ch-col-1 {
                 width: 24.5%;
+              }
+
+              .home__ch-col-3 {
+                width: 29.2%;
+              }
+            }
+
+            @include media (1024px) {
+              .home__ch-col-1 {
+                width: 28.4%;
               }
 
               .home__ch-col-3 {
