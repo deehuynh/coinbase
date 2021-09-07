@@ -666,6 +666,7 @@
 
     // Col at seventh-row 
       &-7 {
+        font-size: 16px;
         @include block(100%, auto);
         @extend %text-gradient-h2-center;
         h2 {
@@ -689,11 +690,52 @@
             top: 230px;
             left: 50%;
           };
+
+          @include media (980px) {
+            display: none;
+          }
+        }
+
+        @include media (900px) {
+          p {
+            width: 50%;
+          }
+        }
+
+        @include media (600px) {
+          h2 {
+            font-size: 24px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+
+        @include media (500px) {
+          p {
+            width: 80%;
+          }
+
+          h2 {
+            top: 620px;
+          }
+
+          p {
+            margin-top: 680px;
+          }
+        }
+
+        @include media (350px) {
+          h2 {
+            font-size: 22px;
+          }
         }
       }
 
     // Col at eighth row
       &-8 {
+        font-size: 16px;
         @include block(100%, auto);
 
         @extend %text-gradient-h2-center;
@@ -706,6 +748,14 @@
         p {
           text-align: center;
           margin-top: -25px;
+        }
+
+        @include media (615px) {
+          font-size: 14px;
+        }
+
+        @include media (350px) {
+          font-size: 13px;
         }
       }
     
