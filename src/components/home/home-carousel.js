@@ -14,6 +14,7 @@ export default function HomeCarousel () {
         }}
       >
         <div className="home-carousel__slide">
+          <div className="home-carousel-border">
           <h5><span>19 JUNE, 2019</span> BUSINESS</h5>
           <h2>ETH TO NAIRA EXCHANGE <br />
             RATE IS NOW #400 PER...
@@ -23,6 +24,7 @@ export default function HomeCarousel () {
             quodsi complectitur, postea...
           </p>
           <Button className='button--not-active button--pd-15-30' name='read more' />
+          </div>
         </div>
 
         <div className="home-carousel__slide">
