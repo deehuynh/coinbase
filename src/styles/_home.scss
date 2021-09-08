@@ -45,6 +45,13 @@
         right: 55px;
       }
     }
+
+    @include media (925px) {
+      padding: {
+        left: 25px;
+        right: 25px;
+      }
+    }
   }
 
   /* fourth row */ 
