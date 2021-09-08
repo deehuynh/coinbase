@@ -68,6 +68,17 @@ export default function Home (props) {
             </Row>
 
             <Row className="home__th-row-4">
+              <Row className="home__th-row-1-clone">
+                <span>OUR RATES</span>
+                <span>OUR RESERVES</span>
+                <span>LATEST EXCHANGES</span>
+              </Row>
+              <Row className="home__th-row-3-clone">
+                <Button
+                  className="button--linear-white button--pd-10-20 button--s8"
+                  name="8 hours ago" 
+                />
+              </Row>
               <div className="home__th-row-4--container">
               <Col className="home__ch-col-1">
                 <div>
