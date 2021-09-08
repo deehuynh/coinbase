@@ -204,6 +204,10 @@
               padding-right: 50px;
               padding-bottom: 5px;
             }
+
+            @include media (925px) {
+              padding-bottom: 12px;
+            }
           }
 
           .home__th-row-4 {
@@ -404,6 +408,35 @@
                   span {
                     font-size: 12px;
                   }
+                }
+              }
+
+              .home__ch-col-2 {
+                div:nth-child(1) {
+                  p {
+                    img {
+                      @include block(20px);
+                    }
+
+                    span {
+                      font-size: 12px;
+                      margin: 0 10px;
+                    }
+                  }
+                }
+
+                div:nth-child(2) {
+                  font-size: 12px;
+                  p {
+                    font-size: 12px;
+                  }
+                }
+              }
+
+              .home__ch-col-3 {
+                width: 27%;
+                p {
+                  font-size: 12px;
                 }
               }
             }
