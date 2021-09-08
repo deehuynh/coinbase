@@ -33,10 +33,10 @@ export default function Footer () {
 
         <div>
           <span><a href="/">Home</a></span>
-          <span><a href="/">About</a></span>
-          <span><a href="/">Blog</a></span>
+          <span><a href="/about-us">About</a></span>
+          <span><a href="/blog">Blog</a></span>
           <span><a href="/">Sell</a></span>
-          <span><a href="/">Contact Us</a></span>
+          <span><a href="/contact-us">Contact Us</a></span>
         </div>
       </Col>
 

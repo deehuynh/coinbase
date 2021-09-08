@@ -14,10 +14,18 @@
 
   &--linear-white {
     background: $c-linear;
+    &:hover {
+      background: $c-linear-hover;
+    }
   }
 
   &--white-linear {
     background: white;
+    transition: .4s;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &--not-active {

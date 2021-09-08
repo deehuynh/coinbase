@@ -33,6 +33,10 @@
     font-size: 16px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   h1 {
     @include text-gradient($c-linear);
     margin: 0 0 0.469em 0;
