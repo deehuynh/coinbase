@@ -40,14 +40,24 @@ function Nav (props) {
     },
   ];
   listNav.forEach((item,index) => {
-    data.push(
-      <NavLink 
-        exact
-        key={index}
-        to={item.url}
-        activeClassName="header__nav--active"
-      >{item.name}</NavLink>
-    );
+    if (item.name === 'Home') {
+      data.push(
+        <NavLink
+          exact
+          key={index}
+          to={item.url}
+          activeClassName="header__nav--active"
+        >{item.name}</NavLink>
+      );
+    } else {
+      data.push(
+        <NavLink
+          key={index}
+          to={item.url}
+          activeClassName="header__nav--active"
+        >{item.name}</NavLink>
+      );
+    }
   });
 
   return (

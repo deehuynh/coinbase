@@ -57,14 +57,24 @@ export default function MobileNav () {
   }
 
   listNav.forEach((item,index) => {
-    tabs.push(
-      <NavLink 
-        exact
-        key={index}
-        to={item.url}
-        activeClassName="m-nav-active"
-      >{item.name}</NavLink>
-    );
+    if (item.name === 'Home') {
+      tabs.push(
+        <NavLink 
+          exact
+          key={index}
+          to={item.url}
+          activeClassName="m-nav-active"
+        >{item.name}</NavLink>
+      );
+    } else {
+      tabs.push(
+        <NavLink 
+          key={index}
+          to={item.url}
+          activeClassName="m-nav-active"
+        >{item.name}</NavLink>
+      );
+    }
   });
 
   return (
