@@ -1,0 +1,44 @@
+.modal {
+  @include modal;
+
+  &__content {
+    position: absolute;
+    width: 644px;
+    height: 583px;
+    border-radius: 30px;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: $c-nav-link;
+    padding: 50px 15px;
+    box-sizing: border-box;
+
+    h2 {
+      @include text-gradient($c-linear);
+      text-align: center;
+      margin: {
+        top: 0;
+        bottom: 30px;
+      }
+    }
+
+    p {
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  &__input-group {
+    @include flex(column, center);
+  }
+
+  &__input {
+    @include block(345px, auto);
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}

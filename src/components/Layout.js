@@ -13,6 +13,7 @@ import Blog from "./blog/blog"
 import Contact from "./contact/contact"
 import Footer from "./footer"
 import ScrollToTop from "./scrollToTop"
+import Signin from "./signin"
 
 // Importing the react-router
 import {
@@ -56,6 +57,8 @@ export default function Layout () {
         </Switch>
 
         <Footer />
+
+        <Signin />
       </Router>
     </div>
   )

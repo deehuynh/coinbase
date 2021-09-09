@@ -263,6 +263,16 @@
   }
 }
 
+//14. Modal
+@mixin modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  @include block(100%);
+  background-color: rgba(0,0,0,0.4);
+}
+
 /*  RESPONSIVE  */ 
 @mixin media (
   $size,
