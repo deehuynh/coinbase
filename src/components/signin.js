@@ -21,9 +21,9 @@ export default function Signin () {
 
         <p>i forgot my password?</p>
 
-        <Button name='login' className="button--linear-white button--pd-18-55" />
+        <Button id="signin" name='login' className="button--linear-white button--pd-18-55" />
 
-        <p>Don’t have an account yet? <Link to='/'>Sign Up</Link></p>
+        <p>Don’t have an account yet? <span>Sign Up</span></p>
       </div>
     </div>
   )
