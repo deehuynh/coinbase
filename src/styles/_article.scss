@@ -1,9 +1,15 @@
+.article-link {
+  text-decoration: none;
+}
+
+
 .article {
   @include frame(78%, auto, center);
   border-radius: 20px 20px 0 0;
   text-align: center;
   color: $c-nav-link;
   box-sizing: border-box;
+  transition: .2s;
   
   img {
     display: block;
@@ -41,6 +47,10 @@
     @include text-gradient($c-linear);
     margin: 0 0 0.469em 0;
     text-transform: uppercase;
+
+    &:hover {
+      @include text-gradient($c-linear-hover);
+    }
   }
 
   h5 {
@@ -117,6 +127,10 @@
       #article__btn {
         display: none;
       }
+    }
+
+    &:hover {
+      opacity: 0.6;
     }
   }
 
