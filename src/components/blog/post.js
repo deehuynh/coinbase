@@ -1,5 +1,8 @@
 import IMG1 from '../../images/post-img-1.png'
 import MessageForm from '../message-form'
+import YTBi from '../../svgs/youtube.svg'
+import FBi from '../../svgs/fb-circle.svg'
+import Ti from '../../svgs/twitter-circle.svg'
 
 export default function Post () {
   return (
@@ -46,6 +49,11 @@ export default function Post () {
         <p className="post__tag">Tags: Business, Capital, Finance</p>
         <p className="post__media">
           Share with
+          <span>
+            <img src={FBi} alt="media" />
+            <img src={Ti} alt="media" />
+            <img src={YTBi} alt="media" />
+          </span>
         </p>
       </div>
 
