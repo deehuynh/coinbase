@@ -12,7 +12,7 @@ import About from "./about"
 import Blog from "./blog/blog"
 import Contact from "./contact/contact"
 import Footer from "./footer"
-
+import ScrollToTop from "./scrollToTop"
 
 // Importing the react-router
 import {
@@ -24,6 +24,7 @@ export default function Layout () {
   return (
     <div className="layout">
       <Router>
+        <ScrollToTop />
         {/* Header component */}
         <Header>
           <Logo />

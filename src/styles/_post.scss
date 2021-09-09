@@ -179,10 +179,7 @@
     height: 45px;
     @include flex(0, space-between, center);
     color: $c-nav-link;
-    span:nth-child(1) {
-      display: block;
-    }
-    span:last-child {
+    span {
       width: 145px;
       height: 37px;
       @include flex(0, space-between);
@@ -199,7 +196,7 @@
     }
 
     @include media (425px) {
-      span:last-child {
+      span {
         width: 135px;
         img {
           width: 35px;
