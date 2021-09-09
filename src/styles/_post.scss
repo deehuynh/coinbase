@@ -59,8 +59,13 @@
   }
   
   &__content {
-    @include frame(732px, auto, center);
+    @include frame(762px, auto, center);
     margin-top: -60px;
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+    box-sizing: border-box;
     
     div {
       font-size: 16px;
@@ -83,6 +88,39 @@
       color: $c-nav-link;
       margin-bottom: 40px;
       margin-top: 0px;
+    }
+
+    @include media (768px) {
+      margin-top: -100px;
+    }
+
+    @include media (525px) {
+      margin-top: -120px;
+    }
+
+    @include media (425px) {
+      margin-top: -130px;
+    }
+  }
+
+  &__contact {
+    @include frame(762px, auto, center);
+    padding: {
+      left: 15px;
+      right: 15px;
+      bottom: 60px;
+    }
+    box-sizing: border-box;
+    font-size: 16px;
+
+    color: #333333;
+
+    p {
+      margin-bottom: 50px;
+    }
+
+    @include media (425px) {
+      font-size: 15px;
     }
   }
 }

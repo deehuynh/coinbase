@@ -50,7 +50,7 @@ export default function Post () {
       </div>
 
       <div className="post__contact">
-        <h4>Leave A Comment</h4>
+        <h2>Leave A Comment</h2>
         <p>Your email address will not be published. Required fields are marked *</p>
         <MessageForm />
       </div>
