@@ -183,11 +183,18 @@
         color: $c-nav-link;
         background: white;
         border-radius: 5px 5px 0px 0px;
+
+        &:hover {
+          color: #777777;
+        }
       }
 
       &:last-child {
         background: $c-linear;
         border-radius: 0px 0px 5px 5px;
+        &:hover {
+          background: $c-linear-hover;
+        }
       }
     }
   }
