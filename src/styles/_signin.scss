@@ -4,13 +4,12 @@
   &__content {
     position: absolute;
     max-width: 644px;
-    height: 583px;
+    height: auto;
     border-radius: 30px;
     background-color: white;
     left: 15px;
     right: 15px;
-    top: 0;
-    bottom: 0;
+    top: 70px;
     margin: auto;
     color: $c-nav-link;
     padding: 50px 25px;
@@ -54,7 +53,7 @@
       }
     }
 
-    #signin {
+    #signin, #signup {
       margin: {
         top: 40px;
         bottom: 50px;

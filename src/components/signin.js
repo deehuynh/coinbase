@@ -54,6 +54,7 @@ export default function Signin (props) {
         <div className="modal__close" onClick={handleClose}>
           <img src={UndoBtn} alt="close" />
         </div>
+        <p>Already a member? <span onClick={handleClose}>Login</span></p>
       </div>
     </div>
   )
