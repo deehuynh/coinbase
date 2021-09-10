@@ -79,7 +79,13 @@ function Dropdown (props) {
     }
   }
   const openSellB = () => {
+    props.refSell.current.style = "display: block";
     props.refSellB.current.style = "display: block";
+  }
+
+  const openSellG = () => {
+    props.refSell.current.style = "display: block";
+    props.refSellG.current.style = "display: block";
   }
 
   return (
@@ -89,7 +95,7 @@ function Dropdown (props) {
 
         <div ref={refContainer} style={{display: 'none'}} id="dropdown" className="header__dropdown-content">
           <span onClick={openSellB}>Sell Bitcoin</span>
-          <span>Sell Giftcard</span>
+          <span onClick={openSellG}>Sell Giftcard</span>
         </div>
         
       </div>

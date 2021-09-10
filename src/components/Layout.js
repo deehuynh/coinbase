@@ -25,6 +25,7 @@ import {
 
 export default function Layout () {
   const refModal = useRef(null);
+  const refSell = useRef(null);
   const refSellB = useRef(null);
   const refSellG = useRef(null);
   useEffect(()=>{
@@ -44,7 +45,7 @@ export default function Layout () {
         <Header>
           <Logo />
           <Nav />
-          <Dropdown refSellB={refSellB} refSellG={refSellG} />
+          <Dropdown refSell={refSell} refSellB={refSellB} refSellG={refSellG} />
           <div className="m-menu-group">
             <Button refModal={refModal} name='login' id="header__login-btn" className="button--linear-white button--pd-18-55" />
             <MobileNav refModal={refModal} />
@@ -73,7 +74,7 @@ export default function Layout () {
         <Footer />
 
         <Signin refModal={refModal} />
-        <Sell refSellB={refSellB} refSellG={refSellG} />
+        <Sell refSell={refSell} refSellB={refSellB} refSellG={refSellG} />
       </Router>
     </div>
   )
