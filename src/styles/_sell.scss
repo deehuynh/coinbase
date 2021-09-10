@@ -29,6 +29,11 @@
   }
 
   &__card {
-    
+    border-radius: 15px;
+
+    &--big {
+      @include block(427px, 393px);
+      background: radial-gradient(100% 100% at 46.86% 0%, #FF8000 0%, #E34141 100%);
+    }
   }
 }
