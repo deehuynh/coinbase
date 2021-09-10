@@ -10,8 +10,10 @@ export default function Sell (props) {
           title="Sell bitcoin"
           intro="Choose your preffered product to continue"
         >
-          <Card type="bitcoin" image={Bitcoini} name="Bitcoin" bg="sell__card--orange" />
-          <Card type="bitcoin" image={Ethi} name="Ethereum" bg="sell__card--blue" />
+          <div className="sell__card-group">
+            <Card type="bitcoin" image={Bitcoini} name="Bitcoin" bg="sell__card--orange" />
+            <Card type="bitcoin" image={Ethi} name="Ethereum" bg="sell__card--blue" />
+          </div>
         </Menu>
 
         <Menu  

@@ -28,6 +28,10 @@
     }
   }
 
+  &__card-group {
+    @include flex(0, space-between);
+  }
+
   &__card {
     border-radius: 15px;
 
