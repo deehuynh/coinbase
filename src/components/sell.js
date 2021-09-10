@@ -1,6 +1,6 @@
 export default function Sell (props) {
   return (
-    <div ref={props.refSell} style={{display: "none"}} className="sell">
+    <div ref={props.refSell} style={{display: "none"}} id="sell" className="sell">
       <Menu refSell={props.refSellB} display="none">
         Sell Bitcoin
       </Menu>

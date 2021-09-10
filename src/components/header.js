@@ -81,11 +81,13 @@ function Dropdown (props) {
   const openSellB = () => {
     props.refSell.current.style = "display: block";
     props.refSellB.current.style = "display: block";
+    document.body.style.overflow = "hidden";
   }
 
   const openSellG = () => {
     props.refSell.current.style = "display: block";
     props.refSellG.current.style = "display: block";
+    document.body.style.overflow = "hidden";
   }
 
   return (

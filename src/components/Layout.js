@@ -34,6 +34,11 @@ export default function Layout () {
         refModal.current.style = "display: none";
         document.body.style.overflow = "auto";
       }
+
+      if (e.target.id === refSell.current.id) {
+        refModal.current.style = "display: none";
+        document.body.style.overflow = "auto";
+      }
     }
   });
   
