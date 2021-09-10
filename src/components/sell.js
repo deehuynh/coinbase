@@ -1,8 +1,12 @@
 export default function Sell (props) {
   return (
-    <div className="sell">
-      <Menu>
-        ...
+    <div ref={props.refSell} style={{display: "none"}} className="sell">
+      <Menu ref={props.refSellB} display="block">
+        Sell Bitcoin
+      </Menu>
+
+      <Menu ref={props.refSellG} display="none">
+        Sell
       </Menu>
     </div>
   )
@@ -10,7 +14,7 @@ export default function Sell (props) {
 
 function Menu (props) {
   return (
-    <div className="sell__menu">
+    <div style={{display: props.display}} className="sell__menu">
       {props.children}
     </div>
   )

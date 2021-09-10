@@ -68,7 +68,7 @@ function Nav (props) {
 }
 
 /* Dropdown component */
-function Dropdown () {
+function Dropdown (props) {
   const refContainer = useRef(null);
   const handleDropdown = () => {
     const style = refContainer.current.style.display; 
@@ -78,6 +78,9 @@ function Dropdown () {
       refContainer.current.style = "display: none"
     }
   }
+  const openSellB = () => {
+    props.refSellB.current.style = "display: block";
+  }
 
   return (
     <div className="header__dropdown">
@@ -85,7 +88,7 @@ function Dropdown () {
         Sell Bitcoin/ Giftcard <span id="header__dropdown-arrow"></span>
 
         <div ref={refContainer} style={{display: 'none'}} id="dropdown" className="header__dropdown-content">
-          <span>Sell Bitcoin</span>
+          <span onClick={openSellB}>Sell Bitcoin</span>
           <span>Sell Giftcard</span>
         </div>
         

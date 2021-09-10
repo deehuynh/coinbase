@@ -14,6 +14,7 @@ import Contact from "./contact/contact"
 import Footer from "./footer"
 import ScrollToTop from "./scrollToTop"
 import Signin from "./signin"
+import Sell from "./sell"
 import { useRef, useEffect } from "react"
 
 // Importing the react-router
@@ -24,6 +25,8 @@ import {
 
 export default function Layout () {
   const refModal = useRef(null);
+  const refSellB = useRef(null);
+  const refSellG = useRef(null);
   useEffect(()=>{
     window.onclick = (e) => {
       if (e.target.id === refModal.current.id) {
@@ -41,7 +44,7 @@ export default function Layout () {
         <Header>
           <Logo />
           <Nav />
-          <Dropdown />
+          <Dropdown refSellB={refSellB} refSellG={refSellG} />
           <div className="m-menu-group">
             <Button refModal={refModal} name='login' id="header__login-btn" className="button--linear-white button--pd-18-55" />
             <MobileNav refModal={refModal} />
@@ -70,6 +73,7 @@ export default function Layout () {
         <Footer />
 
         <Signin refModal={refModal} />
+        <Sell refSellB={refSellB} refSellG={refSellG} />
       </Router>
     </div>
   )
