@@ -11,7 +11,7 @@ export default function Sell (props) {
           intro="Choose your preffered product to continue"
         >
           <Card type="bitcoin" image={Bitcoini} name="Bitcoin" bg="sell__card--orange" />
-          <Card type="bitcoin" image={Ethi} name="Ethereum" bg="ff" />
+          <Card type="bitcoin" image={Ethi} name="Ethereum" bg="sell__card--blue" />
         </Menu>
 
         <Menu  
