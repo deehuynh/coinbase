@@ -1,10 +1,34 @@
 .sell {
   @include modal;
 
-  &__menu {
+  &__container {
     max-width: 888px;
     background-color: white;
     margin: 100px auto;
     border-radius: 30px;
+    color: $c-nav-link;
+    padding: 50px 25px;
+    box-sizing: border-box;
+  }
+
+  &__menu {
+    text-align: center;
+    font-size: 16px;
+
+    h2 {
+      @include text-gradient($c-linear);
+      margin: {
+        top: 0;
+        bottom: 30px;
+      }
+    }
+    
+    p {
+      margin: 0;
+    }
+  }
+
+  &__card {
+    
   }
 }

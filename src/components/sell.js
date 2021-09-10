@@ -1,13 +1,27 @@
+import Bitcoini from "../svgs/bitcoin-white.svg"
+import Ethi from "../svgs/eth-white.svg"
+
 export default function Sell (props) {
   return (
     <div ref={props.refSell} style={{display: "none"}} id="sell" className="sell">
-      <Menu refSell={props.refSellB} display="none">
-        Sell Bitcoin
-      </Menu>
+      <div className="sell__container">
+        <Menu
+          refSell={props.refSellB} display="none"
+          title="Sell bitcoin"
+          intro="Choose your preffered product to continue"
+        >
+          <Card type="bitcoin" image={Bitcoini} name="Bitcoin" />
+          <Card type="bitcoin" image={Ethi} name="Ethereum" />
+        </Menu>
 
-      <Menu refSell={props.refSellG} display="none">
-        Sell
-      </Menu>
+        <Menu  
+          refSell={props.refSellG} display="none"
+          title="Got Gift Cards For Sale?"
+          intro="Choose your preferred card type to continue the exchange process"
+        >
+          
+        </Menu>
+      </div>
     </div>
   )
 }
@@ -15,7 +29,25 @@ export default function Sell (props) {
 function Menu (props) {
   return (
     <div ref={props.refSell} style={{display: props.display}} className="sell__menu">
+      <h2>{props.title}</h2>
+      <p>{props.intro}</p>
       {props.children}
+    </div>
+  )
+}
+
+function Card (props) {
+  if (props.type === "bitcoin") {
+    return (
+      <div className="sell__card sell__card--big">
+        <img src={props.image} alt="card" />
+        <span>{props.name}</span>
+      </div>
+    )
+  }
+  return (
+    <div className="sell__card sell__card--small">
+      <img src={props.image} alt="card" />
     </div>
   )
 }
