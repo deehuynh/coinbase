@@ -1,3 +1,9 @@
 .sell {
   @include modal;
+
+  &__menu {
+    max-width: 888px;
+    background-color: white;
+    margin: 100px auto;
+  }
 }
