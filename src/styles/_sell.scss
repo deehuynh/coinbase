@@ -97,4 +97,14 @@
       background: linear-gradient(145.64deg, #00E0FF 9.67%, #0047FF 107.49%);
     }
   }
+
+  &__close-btn {
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

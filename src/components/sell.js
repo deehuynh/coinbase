@@ -2,6 +2,12 @@ import Bitcoini from "../svgs/bitcoin-white.svg"
 import Ethi from "../svgs/eth-white.svg"
 
 export default function Sell (props) {
+  const handleClose = () => {
+    props.refSell.current.style = "display: none";
+    props.refSellB.current.style = "display: none";
+    props.refSellG.current.style = "display: none";
+    document.body.style.overflow = "auto";
+  }
   return (
     <div ref={props.refSell} style={{display: "none"}} id="sell" className="sell">
       <div className="sell__container">
@@ -15,7 +21,7 @@ export default function Sell (props) {
             <Card type="bitcoin" image={Ethi} name="Ethereum" bg="sell__card--blue" />
           </div>
 
-          <div className="sell__close-btn">close</div>
+          <div className="sell__close-btn" onClick={handleClose}>Close</div>
         </Menu>
 
         <Menu  
