@@ -14,6 +14,8 @@ export default function Sell (props) {
             <Card type="bitcoin" image={Bitcoini} name="Bitcoin" bg="sell__card--orange" />
             <Card type="bitcoin" image={Ethi} name="Ethereum" bg="sell__card--blue" />
           </div>
+
+          <div className="sell__close-btn">close</div>
         </Menu>
 
         <Menu  
