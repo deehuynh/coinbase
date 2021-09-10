@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Button from './button'
 import { useRef } from 'react';
 
-export default function MobileNav () {
+export default function MobileNav (props) {
 
   const refContainer = useRef(null);
   const refRightArrow = useRef(null);
@@ -98,7 +98,7 @@ export default function MobileNav () {
           </div>
         </div>
 
-        <Button name='login' id="m-nav__login-btn" className="button--linear-white button--pd-18-55" />
+        <Button refSignin={props.refSignin} name='login' id="m-nav__login-btn" className="button--linear-white button--pd-18-55" />
       </div>
     </nav>
   )
