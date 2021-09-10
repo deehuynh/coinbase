@@ -33,7 +33,14 @@
 
     &--big {
       @include block(427px, 393px);
+    }
+
+    &--orange {
       background: radial-gradient(100% 100% at 46.86% 0%, #FF8000 0%, #E34141 100%);
+    }
+
+    &--blue {
+      background: linear-gradient(145.64deg, #00E0FF 9.67%, #0047FF 107.49%);
     }
   }
 }

@@ -10,8 +10,8 @@ export default function Sell (props) {
           title="Sell bitcoin"
           intro="Choose your preffered product to continue"
         >
-          <Card type="bitcoin" image={Bitcoini} name="Bitcoin" />
-          <Card type="bitcoin" image={Ethi} name="Ethereum" />
+          <Card type="bitcoin" image={Bitcoini} name="Bitcoin" bg="sell__card--orange" />
+          <Card type="bitcoin" image={Ethi} name="Ethereum" bg="ff" />
         </Menu>
 
         <Menu  
@@ -39,7 +39,7 @@ function Menu (props) {
 function Card (props) {
   if (props.type === "bitcoin") {
     return (
-      <div className="sell__card sell__card--big">
+      <div className={`sell__card sell__card--big ` + props.bg}>
         <img src={props.image} alt="card" />
         <span>{props.name}</span>
       </div>
