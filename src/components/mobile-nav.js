@@ -98,7 +98,7 @@ export default function MobileNav (props) {
           </div>
         </div>
 
-        <Button refSignin={props.refSignin} name='login' id="m-nav__login-btn" className="button--linear-white button--pd-18-55" />
+        <Button refModal={props.refModal} name='login' id="m-nav__login-btn" className="button--linear-white button--pd-18-55" />
       </div>
     </nav>
   )

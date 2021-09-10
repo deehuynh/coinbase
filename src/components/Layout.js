@@ -23,11 +23,11 @@ import {
 } from 'react-router-dom'
 
 export default function Layout () {
-  const refSignin = useRef(null);
+  const refModal = useRef(null);
   useEffect(()=>{
     window.onclick = (e) => {
-      if (e.target.id === refSignin.current.id) {
-        refSignin.current.style = "display: none";
+      if (e.target.id === refModal.current.id) {
+        refModal.current.style = "display: none";
       }
     }
   });
@@ -42,8 +42,8 @@ export default function Layout () {
           <Nav />
           <Dropdown />
           <div className="m-menu-group">
-            <Button refSignin={refSignin} name='login' id="header__login-btn" className="button--linear-white button--pd-18-55" />
-            <MobileNav refSignin={refSignin} />
+            <Button refModal={refModal} name='login' id="header__login-btn" className="button--linear-white button--pd-18-55" />
+            <MobileNav refModal={refModal} />
           </div>
         </Header>
 
@@ -68,7 +68,7 @@ export default function Layout () {
 
         <Footer />
 
-        <Signin refSignin={refSignin} />
+        <Signin refModal={refModal} />
       </Router>
     </div>
   )
