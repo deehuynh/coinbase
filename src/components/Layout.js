@@ -14,8 +14,7 @@ import Contact from "./contact/contact"
 import Footer from "./footer"
 import ScrollToTop from "./scrollToTop"
 import Signin from "./signin"
-import useModal from '../Hooks/useModal'
-import { useRef } from "react"
+import { useRef, useEffect } from "react"
 
 // Importing the react-router
 import {
@@ -25,7 +24,14 @@ import {
 
 export default function Layout () {
   const refSignin = useRef(null);
-  console.log(refSignin.current);
+  useEffect(()=>{
+    window.onclick = (e) => {
+      if (e.target.id === refSignin.current.id) {
+        refSignin.current.style = "display: none";
+      }
+    }
+  });
+  
   return (
     <div className="layout">
       <Router>
