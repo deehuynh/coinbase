@@ -30,13 +30,30 @@
 
   &__card-group {
     @include flex(0, space-between);
+    @include frame(650px, auto, center);
+    margin: {
+      top: 60px;
+      bottom: 50px;
+    };
   }
 
   &__card {
+    cursor: pointer;
     border-radius: 15px;
+    color: white;
 
     &--big {
+      position: relative;
       @include block(308px, 214px);
+
+      img {
+        @include block(45px);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
     }
 
     &--orange {
