@@ -1,5 +1,6 @@
 import Button from "./button"
 import CloseBtn from "../svgs/close-btn.svg"
+import UndoBtn from "../svgs/undo.svg"
 import { useRef } from "react"
 
 function Input (props) {
@@ -14,6 +15,10 @@ export default function Signin (props) {
   const triggerSignup = () => {
     refSignin.current.style = "display: none";
     refSignup.current.style = "display: block";
+  }
+  const handleClose = () => {
+    refSignin.current.style = "display: block";
+    refSignup.current.style = "display: none";
   }
   return (
     <div style={{display: 'none'}} ref={props.refModal} id="signin-modal" className="modal">
@@ -46,8 +51,8 @@ export default function Signin (props) {
           <Input placeholder="Confirm password" />
         </div>
         <Button id="signup" name='sign up' className="button--linear-white button--pd-18-55" />
-        <div className="modal__close" onClick={()=>{props.refModal.current.style = "display: none"}}>
-          <img src={CloseBtn} alt="close" />
+        <div className="modal__close" onClick={handleClose}>
+          <img src={UndoBtn} alt="close" />
         </div>
       </div>
     </div>
