@@ -14,6 +14,8 @@ import Contact from "./contact/contact"
 import Footer from "./footer"
 import ScrollToTop from "./scrollToTop"
 import Signin from "./signin"
+import useModal from '../Hooks/useModal'
+import { useRef } from "react"
 
 // Importing the react-router
 import {
@@ -22,6 +24,8 @@ import {
 } from 'react-router-dom'
 
 export default function Layout () {
+  const refSignin = useRef(null);
+  console.log(refSignin.current);
   return (
     <div className="layout">
       <Router>
@@ -32,7 +36,7 @@ export default function Layout () {
           <Nav />
           <Dropdown />
           <div className="m-menu-group">
-            <Button name='login' id="header__login-btn" className="button--linear-white button--pd-18-55" />
+            <Button refSignin={refSignin} name='login' id="header__login-btn" className="button--linear-white button--pd-18-55" />
             <MobileNav />
           </div>
         </Header>
@@ -58,7 +62,7 @@ export default function Layout () {
 
         <Footer />
 
-        <Signin />
+        <Signin refSignin={refSignin} />
       </Router>
     </div>
   )

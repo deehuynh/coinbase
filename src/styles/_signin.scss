@@ -3,17 +3,17 @@
 
   &__content {
     position: absolute;
-    width: 644px;
+    max-width: 644px;
     height: 583px;
     border-radius: 30px;
     background-color: white;
-    left: 0;
-    right: 0;
+    left: 15px;
+    right: 15px;
     top: 0;
     bottom: 0;
     margin: auto;
     color: $c-nav-link;
-    padding: 50px 15px;
+    padding: 50px 25px;
     box-sizing: border-box;
     text-align: center;
 
@@ -80,6 +80,32 @@
 
     &::placeholder {
       opacity: 1;
+    }
+  }
+
+  &__close {
+    @include block(50px, auto);
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+
+    img {
+      width: 17px;
+    }
+  }
+
+  @include media (425px) {
+    &__content {
+      font-size: 15px;
+
+      p:nth-child(4) {
+        width: 100%;
+      }
+    }
+
+    &__input {
+      width: 100%;
     }
   }
 }
