@@ -12,11 +12,15 @@ function Input (props) {
 export default function Signin (props) {
   const refSignup = useRef(null);
   const refSignin = useRef(null);
+  const handleCloseModal = () => {
+    props.refModal.current.style = "display: none";
+    document.body.style.overflow = "auto";
+  }
   const triggerSignup = () => {
     refSignin.current.style = "display: none";
     refSignup.current.style = "display: block";
   }
-  const handleClose = () => {
+  const handleUndo = () => {
     refSignin.current.style = "display: block";
     refSignup.current.style = "display: none";
   }
@@ -36,7 +40,7 @@ export default function Signin (props) {
         <Button id="signin" name='login' className="button--linear-white button--pd-18-55" />
 
         <p>Don’t have an account yet? <span onClick={triggerSignup}>Sign Up</span></p>
-        <div className="modal__close" onClick={()=>{props.refModal.current.style = "display: none"}}>
+        <div className="modal__close" onClick={handleCloseModal}>
           <img src={CloseBtn} alt="close" />
         </div>
       </div>
@@ -51,10 +55,10 @@ export default function Signin (props) {
           <Input placeholder="Confirm password" />
         </div>
         <Button id="signup" name='sign up' className="button--linear-white button--pd-18-55" />
-        <div className="modal__close" onClick={handleClose}>
+        <div className="modal__close" onClick={handleUndo}>
           <img src={UndoBtn} alt="close" />
         </div>
-        <p>Already a member? <span onClick={handleClose}>Login</span></p>
+        <p>Already a member? <span onClick={handleUndo}>Login</span></p>
       </div>
     </div>
   )

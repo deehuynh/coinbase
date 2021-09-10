@@ -271,6 +271,7 @@
   z-index: 1;
   @include block(100%);
   background-color: rgba(0,0,0,0.4);
+  overflow: auto;
 }
 
 /*  RESPONSIVE  */ 

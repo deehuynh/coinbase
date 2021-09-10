@@ -28,6 +28,7 @@ export default function Layout () {
     window.onclick = (e) => {
       if (e.target.id === refModal.current.id) {
         refModal.current.style = "display: none";
+        document.body.style.overflow = "auto";
       }
     }
   });

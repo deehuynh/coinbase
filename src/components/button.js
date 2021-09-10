@@ -1,7 +1,8 @@
 export default function Button (props) {
   const handleClick = () => {
     if (props.refModal) {
-      props.refModal.current.style = "display: block"
+      props.refModal.current.style = "display: block";
+      document.body.style.overflow = "hidden";
     }
   }
   return (
