@@ -36,7 +36,9 @@ export default function Layout () {
       }
 
       if (e.target.id === refSell.current.id) {
-        refModal.current.style = "display: none";
+        refSell.current.style = "display: none";
+        refSellB.current.style = "display: none";
+        refSellG.current.style = "display: none";
         document.body.style.overflow = "auto";
       }
     }
