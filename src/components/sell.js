@@ -1,5 +1,11 @@
 import Bitcoini from "../svgs/bitcoin-white.svg"
 import Ethi from "../svgs/eth-white.svg"
+//import card
+import AmazonCard from "../images/amazon-card.png"
+import AppstoreCard from "../images/appstore-card.png"
+import SteamCard from "../images/steam-card.png"
+import GGPlayCard from "../images/ggplay-card.png"
+import OthersCard from "../images/others-card.png"
 
 export default function Sell (props) {
   const handleClose = () => {
@@ -29,7 +35,9 @@ export default function Sell (props) {
           title="Got Gift Cards For Sale?"
           intro="Choose your preferred card type to continue the exchange process"
         >
-          
+          <div className="sell__card-group-2">
+            <Card image={AmazonCard} />
+          </div>
         </Menu>
       </div>
     </div>

@@ -99,12 +99,17 @@
   }
 
   &__close-btn {
+    display: none;
     font-weight: 600;
     cursor: pointer;
     opacity: 0.8;
 
     &:hover {
       opacity: 1;
+    }
+
+    @include media (768px) {
+      display: block;
     }
   }
 }
