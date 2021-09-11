@@ -37,6 +37,10 @@ export default function Sell (props) {
         >
           <div className="sell__card-group-2">
             <Card image={AmazonCard} />
+            <Card image={AppstoreCard} />
+            <Card image={SteamCard} />
+            <Card image={GGPlayCard} />
+            <Card image={OthersCard} />
           </div>
         </Menu>
       </div>

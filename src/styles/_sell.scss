@@ -46,6 +46,15 @@
     }
   }
 
+  &__card-group-2 {
+    @include flex(0,0,0,wrap);
+    @include frame(755px, auto, center);
+    margin: {
+      top: 40px;
+      bottom: 20px;
+    };
+  }
+
   &__card {
     cursor: pointer;
     border-radius: 15px;
@@ -86,6 +95,15 @@
       
       @include media (365px) {
         width: 100%;
+      }
+    }
+
+    &--small {
+      width: 231.52px;
+      margin: 14px 10px;
+
+      &:hover {
+        opacity: 0.9;
       }
     }
 
