@@ -30,6 +30,10 @@
     p {
       margin: 0;
     }
+
+    @include media (425px) {
+      font-size: 15px;
+    }
   }
 
   &__card-group {
@@ -53,6 +57,10 @@
       top: 40px;
       bottom: 20px;
     };
+
+    @include media (840px) {
+      justify-content: center;
+    }
   }
 
   &__card {
@@ -104,6 +112,23 @@
 
       &:hover {
         opacity: 0.9;
+      }
+
+      @include media (840px) {
+        margin: 8px 7px;
+        width: 30%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      @include media (768px) {
+        width: 40%;
+      }
+
+      @include media (425px) {
+        width: 45%;
       }
     }
 

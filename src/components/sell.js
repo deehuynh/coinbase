@@ -42,6 +42,8 @@ export default function Sell (props) {
             <Card image={GGPlayCard} />
             <Card image={OthersCard} />
           </div>
+
+          <div className="sell__close-btn" onClick={handleClose}>Close</div>
         </Menu>
       </div>
     </div>
