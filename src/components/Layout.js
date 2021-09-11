@@ -28,6 +28,15 @@ export default function Layout () {
   const refSell = useRef(null);
   const refSellB = useRef(null);
   const refSellG = useRef(null);
+  const refDetailB = useRef(null);
+  const refDetailE = useRef(null);
+  const refDetailAm = useRef(null);
+  const refDetailAs = useRef(null);
+  const refDetailS = useRef(null);
+  const refDetailGg = useRef(null);
+  const refDetailO = useRef(null);
+  
+
   useEffect(()=>{
     window.onclick = (e) => {
       if (e.target.id === refModal.current.id) {
@@ -39,6 +48,13 @@ export default function Layout () {
         refSell.current.style = "display: none";
         refSellB.current.style = "display: none";
         refSellG.current.style = "display: none";
+        refDetailB.current.style = "display: none";
+        refDetailE.current.style = "display: none";
+        refDetailAm.current.style = "display: none";
+        refDetailAs.current.style = "display: none";
+        refDetailS.current.style = "display: none";
+        refDetailGg.current.style = "display: none";
+        refDetailO.current.style = "display: none";
         document.body.style.overflow = "auto";
       }
     }
@@ -62,7 +78,7 @@ export default function Layout () {
         {/* Content */}
         <Switch>
           <Route exact path='/'>
-            <Home />
+            <Home refSell={refSell} refSellB={refSellB} />
           </Route>
 
           <Route path='/about-us'>
@@ -81,7 +97,11 @@ export default function Layout () {
         <Footer />
 
         <Signin refModal={refModal} />
-        <Sell refSell={refSell} refSellB={refSellB} refSellG={refSellG} />
+        <Sell 
+          refDetailB={refDetailB} refDetailE={refDetailE}
+          refDetailAm={refDetailAm} refDetailAs={refDetailAs} refDetailS={refDetailS} 
+          refDetailGg={refDetailGg} refDetailO={refDetailO}
+          refSell={refSell} refSellB={refSellB} refSellG={refSellG} />
       </Router>
     </div>
   )

@@ -30,7 +30,7 @@ import HomeCarousel from "./home/home-carousel";
 export default function Home (props) {
   return (
     <div className="home">
-      <HomeHero image={HomeImg} />
+      <HomeHero refSell={props.refSell} refSellB={props.refSellB} image={HomeImg} />
 
       {/* Second row */}
       <Row className="home__s-row">

@@ -9,9 +9,14 @@
     color: $c-nav-link;
     padding: 50px 25px;
     box-sizing: border-box;
+    overflow: hidden;
 
     @include media (910px) {
       margin: 100px 15px;
+    }
+
+    @include media (768px) {
+      margin: 40px 15px;
     }
   }
 
@@ -44,9 +49,11 @@
       bottom: 50px;
     };
 
-    @include media (768px) {
-      flex-direction: column;
-      margin-bottom: 0;
+    @include media (425px) {
+      margin: {
+        top: 40px;
+        bottom: 40px;
+      };
     }
   }
 
@@ -94,15 +101,50 @@
       }
 
       @include media (768px) {
+        width: 45%;
         margin: {
-          bottom: 40px;
           left: auto;
           right: auto;
         };
       }
-      
-      @include media (365px) {
-        width: 100%;
+
+       @include media (600px) {
+         height: 150px;
+
+         img {
+           top: 40px;
+         }
+
+         span {
+           top: 100px;
+         }
+       }
+
+      @include media (425px) {
+        height: 120px;
+        img {
+          top: 30px;
+          @include block(35px);
+        }
+
+        span {
+          font-size: 13px;
+          top: 80px;  
+        }
+      }
+
+      @include media (350px) {
+        width: 46%;
+        height: 100px;
+
+        img {
+          @include block(27px);
+        }
+
+        span {
+          top: 70px;
+          font-size: 9px;
+        }
       }
     }
 
@@ -158,6 +200,75 @@
 
     @include media (768px) {
       display: block;
+    }
+  }
+
+  &__detail {
+    position: relative;
+    text-align: center;
+    &-bg {
+      position: absolute;
+      @include block(484px);
+      border-radius: 100%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: -320px;
+
+      @include media (768px) {
+        transform: scale(.8);
+      }
+    }
+
+    &-card {
+      height: 225px;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 2;
+      }
+
+      @include media (768px) {
+        height: 170px;
+        img {
+          transform: scale(.8);
+          top: -35px;
+        }
+      }
+    }
+
+    p {
+      span {
+        font-weight: 700;
+      }
+      
+      &:nth-child(3) {
+        width: 70%;
+        margin:  0 auto;
+        padding: 30px;
+        border-bottom: 1px solid #CDCDCD;
+      }
+    }
+
+    &-intro {
+      margin: 35px 0;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    &-undo {
+      @include block(18px);
+      cursor: pointer;
+      position: absolute;
+      top: -20px;
+      right: 5px;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
