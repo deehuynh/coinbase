@@ -130,6 +130,11 @@
       @include media (425px) {
         width: 45%;
       }
+
+      @include media (361px) {
+        width: 45%;
+        margin: 5px;
+      }
     }
 
     &--orange {

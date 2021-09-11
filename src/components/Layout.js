@@ -55,7 +55,7 @@ export default function Layout () {
           <Dropdown refSell={refSell} refSellB={refSellB} refSellG={refSellG} />
           <div className="m-menu-group">
             <Button refModal={refModal} name='login' id="header__login-btn" className="button--linear-white button--pd-18-55" />
-            <MobileNav refModal={refModal} />
+            <MobileNav refSell={refSell} refSellB={refSellB} refSellG={refSellG} refModal={refModal} />
           </div>
         </Header>
 

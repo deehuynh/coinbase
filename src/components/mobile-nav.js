@@ -77,6 +77,20 @@ export default function MobileNav (props) {
     }
   });
 
+  const openSellB = (e) => {
+    e.preventDefault();
+    props.refSell.current.style = "display: block";
+    props.refSellB.current.style = "display: block";
+    document.body.style.overflow = "hidden";
+  }
+
+  const openSellG = (e) => {
+    e.preventDefault();
+    props.refSell.current.style = "display: block";
+    props.refSellG.current.style = "display: block";
+    document.body.style.overflow = "hidden";
+  }
+
   return (
     <nav className="m-nav">
       <img ref={refOpenNav} style={{display: 'block'}} onClick={handleNav} className="m-nav__btn" src={MenuBtn} alt="Menu" />
@@ -93,8 +107,8 @@ export default function MobileNav (props) {
           <span ref={refDownArrow} style={{display: 'none'}} className="m-nav__down-arrow"></span>
 
           <div ref={refContainer} style={{display: 'none'}} className="m-nav__dropdown-content">
-            <a href="/">Sell Bitcoin</a>
-            <a href="/">Sell Giftcard</a>
+            <a href="/" onClick={(e)=>{openSellB(e)}}>Sell Bitcoin</a>
+            <a href="/" onClick={(e)=>{openSellG(e)}}>Sell Giftcard</a>
           </div>
         </div>
 
