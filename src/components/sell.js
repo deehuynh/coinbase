@@ -179,7 +179,9 @@ function Detail (props) {
         The total value you derived here will be the amount you’ll <br />
         be receiving during the total transaction process 
       </p>
-      <div className="sell__exchange-value"></div>
+      <div className="sell__exchange-value">
+        #0.00
+      </div>
       <Button id="sell__btn" name="proceed" className="button--linear-white button--pd-18-40" />
       <div onClick={props.handleUndoB} className="sell__detail-undo">
         <img src={UndoBtn} alt="undo" />
