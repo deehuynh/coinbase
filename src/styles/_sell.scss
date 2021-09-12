@@ -249,7 +249,12 @@
         width: 70%;
         margin:  0 auto;
         padding: 30px;
+        box-sizing: border-box;
         border-bottom: 1px solid #CDCDCD;
+      
+        @include media (516px) {
+          width: 100%;
+        }
       }
     }
 
@@ -257,6 +262,12 @@
       margin: 35px 0;
       font-size: 12px;
       line-height: 18px;
+
+      @include media (425px) {
+        br {
+          display: none;
+        }
+      }
     }
 
     &-undo {
@@ -272,7 +283,31 @@
     }
   }
 
+  &__input {
+    margin-bottom: 35px;
+    @include frame(347px, auto, center);
+
+    input {
+      width: 100%;
+      padding: 18px 20px;
+      @include input;
+      border-radius: 5px;
+      font-family: $f-primary;
+      border: 2px solid #D1D1D1;
+    }
+  }
+
   &__exchange-value {
-    border: 2px dashed white;
+    span {
+      display: inline-block;
+      padding: 20px 60px;
+      border: 2px dashed white;
+      margin-bottom: 35px;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background:
+        linear-gradient(#fff,#fff) padding-box,
+        linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%) border-box;
+      }
   }
 }

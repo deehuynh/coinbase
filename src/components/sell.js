@@ -108,6 +108,7 @@ export default function Sell (props) {
           handleUndoB={handleUndoB}
           image={BitcoinCard} price='N360.00' 
           des='is our conversion rate for 0.1 BTC on this platform.'
+          input='Bitcoin Value'
         />
         <Detail 
           refDetail={props.refDetailE} 
@@ -115,6 +116,7 @@ export default function Sell (props) {
           handleUndoB={handleUndoB}
           image={EthCard} price='N360.00'
           des='is our conversion rate for 0.1 ETH on this platform.'
+          input='Ethereum Value'
         />
 
         <Menu  
@@ -167,6 +169,14 @@ export default function Sell (props) {
   )
 }
 
+function Input (props) {
+  return (
+    <div className="sell__input">
+      <input type="text" placeholder={props.placeholder} defaultValue='' />
+    </div>
+  )
+}
+
 function Detail (props) {
   return (
     <div ref={props.refDetail} className="sell__detail" style={{display: "none"}}>
@@ -179,8 +189,11 @@ function Detail (props) {
         The total value you derived here will be the amount you’ll <br />
         be receiving during the total transaction process 
       </p>
+      <Input placeholder={props.input} />
       <div className="sell__exchange-value">
-        #0.00
+        <span>
+          #0.00
+        </span>
       </div>
       <Button id="sell__btn" name="proceed" className="button--linear-white button--pd-18-40" />
       <div onClick={props.handleUndoB} className="sell__detail-undo">

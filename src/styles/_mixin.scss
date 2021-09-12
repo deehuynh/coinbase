@@ -289,3 +289,11 @@
     }
   }
 }
+
+@mixin input {
+  outline: none;
+  box-sizing: border-box;
+  &::placeholder {
+    opacity: 1;
+  }
+}
