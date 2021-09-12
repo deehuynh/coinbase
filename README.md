@@ -20,6 +20,10 @@ The figma file taken from: [https://www.behance.net/gallery/89965451/CoinBase-We
 
 ![img](https://i.imgur.com/XYmjtJM.png)
 
+## Responsive: <span style="color:limegreen">true</span>
+
+## Status: finish
+
 ## Live website
 
 [https://dh-coinbase.web.app/](https://dh-coinbase.web.app/)
