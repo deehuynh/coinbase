@@ -15,7 +15,7 @@ import Footer from "./footer"
 import ScrollToTop from "./scrollToTop"
 import Signin from "./signin"
 import Sell from "./sell"
-import ScrollToTopBtn from "./top-btn"
+// import ScrollToTopBtn from "./top-btn"
 import { useRef, useEffect } from "react"
 
 // Importing the react-router
@@ -103,7 +103,7 @@ export default function Layout () {
           refDetailAm={refDetailAm} refDetailAs={refDetailAs} refDetailS={refDetailS} 
           refDetailGg={refDetailGg} refDetailO={refDetailO}
           refSell={refSell} refSellB={refSellB} refSellG={refSellG} />
-        <ScrollToTopBtn />
+        {/* <ScrollToTopBtn /> */}
       </Router>
     </div>
   )
