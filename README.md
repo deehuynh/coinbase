@@ -20,7 +20,7 @@ The figma file taken from: [https://www.behance.net/gallery/89965451/CoinBase-We
 
 ![img](https://i.imgur.com/XYmjtJM.png)
 
-## Responsive: <span style="color:limegreen">true</span>
+## Responsive: <span style="color:blue">true</span>
 
 ## Status: finish
 
