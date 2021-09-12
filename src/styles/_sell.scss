@@ -230,7 +230,7 @@
       }
 
       @include media (425px) {
-        height: 400px;
+        display: none;
       }
     }
 
@@ -253,6 +253,18 @@
           max-width: 100%;
         }
       }
+
+      @include media (390px) {
+        img {
+          top: -20px;
+        }
+      }
+
+      @include media (340px) {
+        img {
+          top: -10px;
+        }
+      }
     }
 
     p {
@@ -269,6 +281,10 @@
       
         @include media (516px) {
           width: 100%;
+        }
+
+        @include media (375px) {
+          padding: 30px 15px;
         }
       }
     }
@@ -294,6 +310,10 @@
 
       &:hover {
         opacity: 0.7;
+      }
+
+      @include media (390px) {
+        right: -5px;
       }
     }
   }
