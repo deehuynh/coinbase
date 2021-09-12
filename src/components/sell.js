@@ -10,6 +10,11 @@ import BitcoinCard from "../images/bitcoin-card.png"
 import EthCard from "../images/eth-card.png"
 import Button from "./button"
 import UndoBtn from "../svgs/undo.svg"
+import AmC from "../images/am-card.png"
+import AsC from "../images/as-card.png"
+import SC from "../images/s-card.png"
+import GGC from "../images/gg-card.png"
+import OC from "../images/o-card.png"
 
 export default function Sell (props) {
   const handleClose = () => {
@@ -19,49 +24,49 @@ export default function Sell (props) {
     document.body.style.overflow = "auto";
   }
   const openDetailB = () => {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
     props.refSellB.current.style = "display: none";
     props.refSellG.current.style = "display: none";
     props.refDetailB.current.style = "display: block";
   }
 
   const openDetailE = () => {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
     props.refSellB.current.style = "display: none";
     props.refSellG.current.style = "display: none";
     props.refDetailE.current.style = "display: block";
   }
 
   const openDetailAm = () => {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
     props.refSellB.current.style = "display: none";
     props.refSellG.current.style = "display: none";
     props.refDetailAm.current.style = "display: block";
   }
 
   const openDetailAs = () => {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
     props.refSellB.current.style = "display: none";
     props.refSellG.current.style = "display: none";
     props.refDetailAs.current.style = "display: block";
   }
 
   const openDetailS = () => {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
     props.refSellB.current.style = "display: none";
     props.refSellG.current.style = "display: none";
     props.refDetailS.current.style = "display: block";
   }
 
   const openDetailGg = () => {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
     props.refSellB.current.style = "display: none";
     props.refSellG.current.style = "display: none";
     props.refDetailGg.current.style = "display: block";
   }
 
   const openDetailO = () => {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
     props.refSellB.current.style = "display: none";
     props.refSellG.current.style = "display: none";
     props.refDetailO.current.style = "display: block";
@@ -72,7 +77,7 @@ export default function Sell (props) {
     props.refSellG.current.style = "display: none";
     props.refDetailE.current.style = "display: none";
     props.refDetailB.current.style = "display: none";
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
   }
 
   const handleUndoG = () => {
@@ -83,7 +88,7 @@ export default function Sell (props) {
     props.refDetailS.current.style = "display: none";
     props.refDetailO.current.style = "display: none";
     props.refDetailGg.current.style = "display: none";
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
   }
 
   return (
@@ -139,30 +144,40 @@ export default function Sell (props) {
           bg="radial-gradient(100% 100% at 46.86% 0%, #FF8000 0%, #E34141 100%)" 
           handleUndoB={handleUndoG}
           refDetail={props.refDetailAm}
+          image={AmC}
+          input='Amount'
         />
 
         <Detail 
-          bg="radial-gradient(100% 100% at 46.86% 0%, #FF8000 0%, #E34141 100%)" 
+          bg="linear-gradient(145.64deg, #00E0FF 9.67%, #0047FF 107.49%)"
           handleUndoB={handleUndoG}
           refDetail={props.refDetailAs}
+          image={AsC}
+          input='Amount'
         />
 
         <Detail 
-          bg="radial-gradient(100% 100% at 46.86% 0%, #FF8000 0%, #E34141 100%)" 
+          bg="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)" 
           handleUndoB={handleUndoG}
           refDetail={props.refDetailS}
+          image={SC}
+          input='Amount'
         />
 
         <Detail 
-          bg="radial-gradient(100% 100% at 46.86% 0%, #FF8000 0%, #E34141 100%)" 
+          bg="linear-gradient(145.64deg, #99FDD9 19.86%, #1E62A2 107.49%)" 
           handleUndoB={handleUndoG}
           refDetail={props.refDetailGg}
+          image={GGC}
+          input='Amount'
         />
 
         <Detail 
-          bg="radial-gradient(100% 100% at 46.86% 0%, #FF8000 0%, #E34141 100%)" 
+          bg="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)" 
           handleUndoB={handleUndoG}
           refDetail={props.refDetailO}
+          image={OC}
+          input='Amount'
         />
       </div>
     </div>
