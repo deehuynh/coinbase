@@ -1,0 +1,28 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  background: white;
+
+  img {
+    @include block(25px);
+  }
+
+  &:hover {
+    opacity: .9;
+  }
+
+  @include media (600px) {
+    right: 10px;
+
+    img {
+      @include block(15px);
+    }
+    padding: 10px 13px;
+  }
+}
