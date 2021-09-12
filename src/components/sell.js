@@ -146,6 +146,8 @@ export default function Sell (props) {
           refDetail={props.refDetailAm}
           image={AmC}
           input='Amount'
+          price='N360.00'
+          des='is our conversion rate for every Amazon card on this platform.'
         />
 
         <Detail 
@@ -154,6 +156,8 @@ export default function Sell (props) {
           refDetail={props.refDetailAs}
           image={AsC}
           input='Amount'
+          price='N360.00'
+          des='is our conversion rate for every App Store iTunes card on this platform.'
         />
 
         <Detail 
@@ -162,6 +166,8 @@ export default function Sell (props) {
           refDetail={props.refDetailS}
           image={SC}
           input='Amount'
+          price='N300.00'
+          des='is our conversion rate for every Steam card on this platform.'
         />
 
         <Detail 
@@ -170,6 +176,8 @@ export default function Sell (props) {
           refDetail={props.refDetailGg}
           image={GGC}
           input='Amount'
+          price='N300.00'
+          des='is our conversion rate for every Google Play card on this platform.'
         />
 
         <Detail 
@@ -178,6 +186,8 @@ export default function Sell (props) {
           refDetail={props.refDetailO}
           image={OC}
           input='Amount'
+          price='N300.00'
+          des='is our conversion rate for others card on this platform.'
         />
       </div>
     </div>
