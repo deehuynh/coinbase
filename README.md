@@ -23,7 +23,7 @@ giftcard at the best rate.
 
 The figma file taken from: [https://www.behance.net/gallery/89965451/CoinBase-Web-Mobile-Free-UI-Kit](https://www.behance.net/gallery/89965451/CoinBase-Web-Mobile-Free-UI-Kit)
 
-![img](https://i.imgur.com/XYmjtJM.png)
+![img](https://i.imgur.com/KX42pE9.png)
 
 ## Live website
 
